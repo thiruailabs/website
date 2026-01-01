@@ -17,7 +17,7 @@
 			<div class="bg-white border border-neutral-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
 				<div class="flex items-start justify-between mb-4">
 					<h3 class="text-2xl font-semibold text-neutral-900">Future of Jobs AI Chat</h3>
-					<span class="px-3 py-1 bg-amber-100 text-amber-800 text-xs font-medium rounded-full whitespace-nowrap">Building</span>
+					<span class="px-3 py-1 bg-[#fedf19] text-[#202020] text-xs font-semibold rounded-full whitespace-nowrap">Building</span>
 				</div>
 				
 				<div class="space-y-4 mb-6">
@@ -37,7 +37,7 @@
 				<div class="flex gap-3">
 					<a 
 						href="#" 
-						class="inline-flex items-center gap-1 px-4 py-2 bg-neutral-900 text-white font-medium rounded-md hover:bg-neutral-800 transition-colors"
+						class="inline-flex items-center gap-1 px-4 py-2 bg-[#fe1817] text-white font-medium rounded-md hover:bg-[#202020] transition-colors"
 					>
 						Join waitlist
 						<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,7 +56,7 @@
 			<div class="bg-white border border-neutral-200 rounded-lg p-8 opacity-75">
 				<div class="flex items-start justify-between mb-4">
 					<h3 class="text-2xl font-semibold text-neutral-900">Agentic Workflow Automation</h3>
-					<span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full whitespace-nowrap">Idea</span>
+					<span class="px-3 py-1 bg-[#202020] text-white text-xs font-semibold rounded-full whitespace-nowrap">Idea</span>
 				</div>
 				
 				<div class="space-y-4 mb-6">
@@ -79,7 +79,7 @@
 			<div class="bg-white border border-neutral-200 rounded-lg p-8 opacity-75">
 				<div class="flex items-start justify-between mb-4">
 					<h3 class="text-2xl font-semibold text-neutral-900">Specialized AI Assistants</h3>
-					<span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full whitespace-nowrap">Idea</span>
+					<span class="px-3 py-1 bg-[#202020] text-white text-xs font-semibold rounded-full whitespace-nowrap">Idea</span>
 				</div>
 				
 				<div class="space-y-4 mb-6">
@@ -101,9 +101,9 @@
 		</div>
 	</section>
 
-	<section class="bg-neutral-100 border border-neutral-200 rounded-lg p-8 max-w-3xl">
-		<h2 class="text-xl font-semibold text-neutral-900 mb-3">Product Philosophy</h2>
-		<p class="text-neutral-700 leading-relaxed">
+	<section class="bg-[#202020] border border-neutral-700 rounded-lg p-8 max-w-3xl">
+		<h2 class="text-xl font-semibold text-[#fedf19] mb-3">Product Philosophy</h2>
+		<p class="text-neutral-300 leading-relaxed">
 			Each product is built with a systems-first mindset: production-ready infrastructure, proper authentication and billing, comprehensive observability, and a focus on solving specific problems exceptionally well rather than being a generic solution.
 		</p>
 	</section>

@@ -1,0 +1,30 @@
+/* Thiru AI Labs Brand Colors */
+@theme {
+	--color-brand-yellow: #fedf19;
+	--color-brand-red: #fe1817;
+	--color-brand-dark: #202020;
+	--color-brand-charcoal: #262626;
+
+	/* Extend default colors with brand palette */
+	--color-brand-yellow-50: #fffef5;
+	--color-brand-yellow-100: #fffce5;
+	--color-brand-yellow-200: #fff9cc;
+	--color-brand-yellow-300: #fff3a3;
+	--color-brand-yellow-400: #ffe770;
+	--color-brand-yellow-500: #fedf19;
+	--color-brand-yellow-600: #e6c800;
+	--color-brand-yellow-700: #b39c00;
+	--color-brand-yellow-800: #807000;
+	--color-brand-yellow-900: #4d4300;
+
+	--color-brand-red-50: #fff5f5;
+	--color-brand-red-100: #ffe5e5;
+	--color-brand-red-200: #ffcccc;
+	--color-brand-red-300: #ffa3a3;
+	--color-brand-red-400: #ff7070;
+	--color-brand-red-500: #fe1817;
+	--color-brand-red-600: #e60008;
+	--color-brand-red-700: #b30006;
+	--color-brand-red-800: #800004;
+	--color-brand-red-900: #4d0003;
+}

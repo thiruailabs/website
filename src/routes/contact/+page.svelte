@@ -42,7 +42,7 @@
 					</a>
 					
 					<a 
-						href="https://linkedin.com/in/nickthiru" 
+						href="https://linkedin.com/in/nick-thiru" 
 						target="_blank"
 						rel="noopener noreferrer"
 						class="flex items-center gap-3 text-neutral-700 hover:text-neutral-900 transition-colors group"
