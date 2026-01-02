@@ -27,7 +27,7 @@
 				<h2 class="text-xl font-semibold text-neutral-900 mb-4">Connect</h2>
 				<div class="space-y-3">
 					<a 
-						href="https://github.com/nickthiru" 
+						href="https://github.com/thiruailabs" 
 						target="_blank"
 						rel="noopener noreferrer"
 						class="flex items-center gap-3 text-neutral-700 hover:text-neutral-900 transition-colors group"
