@@ -25,7 +25,7 @@
 				<h2 class="text-2xl font-bold text-neutral-900 mb-4">Founder</h2>
 				<div class="bg-neutral-50 border border-neutral-200 rounded-lg p-6">
 					<p class="text-neutral-700 mb-4">
-						<strong class="text-neutral-900">Nick Thiru</strong> is a systems engineer and AI practitioner building production AI systems. He writes about AI, systems thinking, and building in public.
+						<strong class="text-neutral-900">Nick Thiru</strong> is an AI systems architect, engineer, and practitioner building production AI systems that solve real-world problems. He writes about AI, systems thinking, and building in public.
 					</p>
 					<a 
 						href="https://nickthiru.dev/about" 

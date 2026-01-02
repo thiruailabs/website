@@ -5,7 +5,7 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 	<div class="max-w-3xl mx-auto">
 		<h1 class="text-4xl md:text-5xl font-bold text-neutral-900 mb-4">Privacy Policy</h1>
-		<p class="text-neutral-600 mb-8">Last updated: December 29, 2024</p>
+		<p class="text-neutral-600 mb-8">Last updated: December 29, 2025</p>
 		
 		<div class="prose prose-neutral max-w-none">
 			<div class="space-y-8">

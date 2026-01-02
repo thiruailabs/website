@@ -106,7 +106,7 @@ vercel deploy
 
 ## License
 
-© 2024 Thiru AI Labs. All rights reserved.
+© 2026 Thiru AI Labs. All rights reserved.
 
 You can preview the production build with `npm run preview`.
 
