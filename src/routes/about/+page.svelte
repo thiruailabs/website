@@ -9,11 +9,11 @@
 		<div class="prose prose-lg max-w-none">
 			<div class="space-y-6 text-neutral-700 leading-relaxed">
 				<p>
-					Thiru AI Labs is a solo AI systems studio focused on building production-grade agentic micro-SaaS products and automation systems. Unlike typical AI demos or prototypes, every product here is built as a complete system with proper infrastructure, authentication, billing, and observability from day one.
+					Thiru AI Labs is the solo AI systems studio of Nick Thiru, focused on building production-grade agentic micro-SaaS products and automation systems that solve real-world problems, mostly in the business domain. Rather than building generic chatbots that attempt to do everything, we develop specialized agents designed for particular use cases and audiences.
 				</p>
-				
+
 				<p>
-					The studio specializes in creating small, focused AI workflows that solve specific problems exceptionally well. Rather than building generic chatbots that attempt to do everything, we develop specialized agents designed for particular use cases and audiences.
+					Combining full-stack web development, AWS/CDK infrastructure, and LangGraph-based agent workflows, Thiru AI Labs designs, builds, and operates production-grade AI systems. Every product here is built as a complete system with proper infrastructure, authentication, billing, and observability from day one.
 				</p>
 				
 				<p>
