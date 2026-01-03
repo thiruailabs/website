@@ -1,4 +1,6 @@
 <script>
+	import { onMount } from 'svelte';
+	
 	export let isOpen = false;
 	export let productName = "LinkedIn Ghostwriter Agent";
 	
@@ -10,6 +12,13 @@
 		if (event.target === event.currentTarget) {
 			closeModal();
 		}
+	}
+	
+	// Trigger Tally to load embeds when modal opens
+	$: if (isOpen && typeof window !== 'undefined' && window.Tally) {
+		setTimeout(() => {
+			window.Tally.loadEmbeds();
+		}, 100);
 	}
 </script>
 
@@ -52,14 +61,14 @@
 				
 				<!-- Tally Form Embed -->
 				<iframe 
-					data-tally-src="https://tally.so/embed/YOUR_FORM_ID?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+					data-tally-src="https://tally.so/embed/NplAJG?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
 					loading="lazy" 
 					width="100%" 
-					height="400" 
+					height="529" 
 					frameborder="0" 
 					marginheight="0" 
 					marginwidth="0" 
-					title="Waitlist Form"
+					title="Join the Waitlist for LinkedIn Ghostwriter Agent"
 					class="rounded-lg"
 				></iframe>
 				
