@@ -69,11 +69,11 @@
 		<div class="grid md:grid-cols-2 gap-6">
 			<div class="bg-white border border-neutral-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
 				<div class="flex items-start justify-between mb-4">
-					<h3 class="text-xl font-semibold text-neutral-900">Future of Jobs AI Chat</h3>
+					<h3 class="text-xl font-semibold text-neutral-900">LinkedIn Ghostwriter Agent</h3>
 					<span class="px-3 py-1 bg-[#fedf19] text-[#202020] text-xs font-semibold rounded-full">Building</span>
 				</div>
 				<p class="text-neutral-600 mb-4">
-					Interactive AI assistant helping professionals understand and navigate the evolving job market in the age of AI.
+					AI that turns voice notes into LinkedIn posts that sound authentically like you. Captures ideas on-the-go and learns your unique style over time.
 				</p>
 				<a href="/products" class="inline-flex items-center gap-1 text-[#202020] font-medium hover:text-[#fe1817] hover:gap-2 transition-all">
 					Learn more

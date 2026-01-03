@@ -1,6 +1,18 @@
+<script>
+	import WaitlistModal from '$lib/components/WaitlistModal.svelte';
+	
+	let isWaitlistOpen = false;
+	
+	function openWaitlist() {
+		isWaitlistOpen = true;
+	}
+</script>
+
 <svelte:head>
 	<title>Products - Thiru AI Labs</title>
 </svelte:head>
+
+<WaitlistModal bind:isOpen={isWaitlistOpen} productName="LinkedIn Ghostwriter Agent" />
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 	<div class="max-w-3xl mb-12">
@@ -16,34 +28,34 @@
 		<div class="grid md:grid-cols-2 gap-6">
 			<div class="bg-white border border-neutral-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
 				<div class="flex items-start justify-between mb-4">
-					<h3 class="text-2xl font-semibold text-neutral-900">Future of Jobs AI Chat</h3>
+					<h3 class="text-2xl font-semibold text-neutral-900">LinkedIn Ghostwriter Agent</h3>
 					<span class="px-3 py-1 bg-[#fedf19] text-[#202020] text-xs font-semibold rounded-full whitespace-nowrap">Building</span>
 				</div>
 				
 				<div class="space-y-4 mb-6">
 					<div>
 						<h4 class="text-sm font-semibold text-neutral-700 mb-1">Audience</h4>
-						<p class="text-neutral-600">Professionals navigating career transitions in the AI era</p>
+						<p class="text-neutral-600">Solo entrepreneurs, consultants, and professionals building personal brands on LinkedIn</p>
 					</div>
 					
 					<div>
 						<h4 class="text-sm font-semibold text-neutral-700 mb-1">Outcome</h4>
 						<p class="text-neutral-600">
-							Understand how AI will impact your industry and role, get personalized guidance on upskilling and career planning
+							Turn voice notes into authentic LinkedIn posts instantly. Maintain consistent posting without spending hours writing.
 						</p>
 					</div>
 				</div>
 				
 				<div class="flex gap-3">
-					<a 
-						href="#" 
+					<button 
+						on:click={openWaitlist}
 						class="inline-flex items-center gap-1 px-4 py-2 bg-[#fe1817] text-white font-medium rounded-md hover:bg-[#202020] transition-colors"
 					>
 						Join waitlist
 						<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
 						</svg>
-					</a>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -55,20 +67,20 @@
 		<div class="grid md:grid-cols-2 gap-6">
 			<div class="bg-white border border-neutral-200 rounded-lg p-8 opacity-75">
 				<div class="flex items-start justify-between mb-4">
-					<h3 class="text-2xl font-semibold text-neutral-900">Agentic Workflow Automation</h3>
+					<h3 class="text-2xl font-semibold text-neutral-900">Competitor Intelligence Agent</h3>
 					<span class="px-3 py-1 bg-[#202020] text-white text-xs font-semibold rounded-full whitespace-nowrap">Idea</span>
 				</div>
 				
 				<div class="space-y-4 mb-6">
 					<div>
 						<h4 class="text-sm font-semibold text-neutral-700 mb-1">Audience</h4>
-						<p class="text-neutral-600">Knowledge workers with repetitive research and analysis tasks</p>
+						<p class="text-neutral-600">Startup founders, product managers, and marketing leaders monitoring competitors</p>
 					</div>
 					
 					<div>
 						<h4 class="text-sm font-semibold text-neutral-700 mb-1">Outcome</h4>
 						<p class="text-neutral-600">
-							Automate complex multi-step workflows with AI agents that can reason, research, and synthesize information
+							Continuous 24/7 monitoring of competitors across multiple channels with AI-powered analysis and proactive alerts
 						</p>
 					</div>
 				</div>
@@ -78,20 +90,20 @@
 
 			<div class="bg-white border border-neutral-200 rounded-lg p-8 opacity-75">
 				<div class="flex items-start justify-between mb-4">
-					<h3 class="text-2xl font-semibold text-neutral-900">Specialized AI Assistants</h3>
+					<h3 class="text-2xl font-semibold text-neutral-900">Research & Report Generator</h3>
 					<span class="px-3 py-1 bg-[#202020] text-white text-xs font-semibold rounded-full whitespace-nowrap">Idea</span>
 				</div>
 				
 				<div class="space-y-4 mb-6">
 					<div>
 						<h4 class="text-sm font-semibold text-neutral-700 mb-1">Audience</h4>
-						<p class="text-neutral-600">Domain experts needing AI support for specific workflows</p>
+						<p class="text-neutral-600">Consultants, analysts, and researchers needing comprehensive reports</p>
 					</div>
 					
 					<div>
 						<h4 class="text-sm font-semibold text-neutral-700 mb-1">Outcome</h4>
 						<p class="text-neutral-600">
-							Purpose-built AI assistants trained on domain-specific knowledge and optimized for particular use cases
+							Multi-agent system that researches topics deeply and generates publication-quality reports with proper citations
 						</p>
 					</div>
 				</div>
