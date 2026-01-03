@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 	
 	export let isOpen = false;
@@ -8,16 +8,16 @@
 		isOpen = false;
 	}
 	
-	function handleBackdropClick(event) {
+	function handleBackdropClick(event: MouseEvent) {
 		if (event.target === event.currentTarget) {
 			closeModal();
 		}
 	}
 	
 	// Trigger Tally to load embeds when modal opens
-	$: if (isOpen && typeof window !== 'undefined' && window.Tally) {
+	$: if (isOpen && typeof window !== 'undefined' && (window as any).Tally) {
 		setTimeout(() => {
-			window.Tally.loadEmbeds();
+			(window as any).Tally.loadEmbeds();
 		}, 100);
 	}
 </script>
