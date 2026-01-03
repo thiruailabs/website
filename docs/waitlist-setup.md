@@ -90,65 +90,72 @@ If the iframe doesn't load properly, you may need to add the Tally script to you
 1. Start your dev server: `npm run dev`
 2. Navigate to `/products`
 3. Click "Join waitlist" button
-4. Fill out the form and submit
-5. Check your email for the notification
-6. Verify the submission appears in your Tally dashboard
+4. Enter your email and submit
+5. Check your inbox for Buttondown's confirmation email
+6. Verify the subscriber appears in your Buttondown dashboard with tag `ghostwriter_waitlist`
 
 ## Managing Waitlist
 
-### View Submissions
+### View Subscribers
 
-1. Log into Tally
-2. Click on your form
-3. Go to "Responses" tab
-4. View all submissions in a table format
+1. Log into [Buttondown](https://buttondown.com)
+2. Go to **Subscribers**
+3. Filter by tag: `ghostwriter_waitlist`
+4. View all waitlist members
 
 ### Export Data
 
-1. Click "Export" button
-2. Choose format: CSV, Excel, or Google Sheets
-3. Import into your email marketing tool when ready to launch
+1. In Buttondown, go to **Subscribers**
+2. Filter by tag: `ghostwriter_waitlist`
+3. Click **Export** → Choose CSV or JSON
+4. Use for launch announcements or migration
 
-### Email Notifications
+### Send Updates
 
-- You'll receive an email for each new signup
-- Configure notification frequency in Settings
-- Can disable notifications if volume gets high
+To send an email to waitlist members only:
+
+1. Go to **Emails** → **New Email**
+2. Write your update
+3. Under **Recipients**, select tag: `ghostwriter_waitlist`
+4. Send or schedule
+
+## Tag Strategy
+
+Use tags to segment your audience across both sites:
+
+**nickthiru.dev tags:**
+- `site` - general newsletter subscribers
+- `technical` - technical content readers
+- `operator` - operator content readers
+
+**thiruailabs.com tags:**
+- `ghostwriter_waitlist` - LinkedIn Ghostwriter waitlist
+- `ghostwriter_beta` - beta testers (future)
+- `ghostwriter_customer` - paying customers (future)
+- `competitor_intel_waitlist` - Product #2 waitlist (future)
+- `research_waitlist` - Product #3 waitlist (future)
 
 ## Cost
 
-- **Free tier:** Unlimited forms, unlimited responses
-- **No credit card required**
-- **No hidden fees**
+**Buttondown Free Tier:**
+- Up to 100 subscribers: Free
+- Unlimited emails
+- All features included
 
-## Alternative: Custom Backend (Future)
+**Paid Tier (if needed):**
+- $9/month for up to 1,000 subscribers
+- $29/month for up to 5,000 subscribers
 
-If you later want full control over the data, you can migrate to a custom solution:
+## Benefits Over Tally
 
-### Option 1: Supabase (Recommended)
-
-1. Create Supabase project (free tier: 500MB database)
-2. Create `waitlist` table with columns: id, name, email, linkedin_url, created_at
-3. Create API endpoint in SvelteKit
-4. Replace Tally iframe with custom form
-
-### Option 2: Google Sheets
-
-1. Use Google Sheets as a database
-2. Create API endpoint that writes to Sheets
-3. Free and simple, but not scalable
-
-### Option 3: Email Service (Mailchimp/ConvertKit)
-
-1. Use their embedded forms
-2. Automatically adds to email list
-3. Ready for launch announcements
-
-## Recommendation
-
-**Start with Tally** for MVP validation. It's free, fast, and requires zero backend setup. You can always migrate to a custom solution later if needed.
+- ✅ **Email sending built-in** - send updates directly
+- ✅ **Welcome automation** - immediate confirmation
+- ✅ **Unified management** - one dashboard for all subscribers
+- ✅ **Cross-promotion** - announce products to writing audience
+- ✅ **Better analytics** - see overlap between content and products
+- ✅ **No extra tools** - Buttondown handles everything
 
 ## Support
 
-- Tally documentation: https://tally.so/help
-- Tally community: https://tally.so/community
+- Buttondown documentation: https://buttondown.com/help
+- Buttondown support: support@buttondown.com

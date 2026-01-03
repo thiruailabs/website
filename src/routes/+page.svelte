@@ -5,7 +5,7 @@
 <!-- Hero Section - Split Design -->
 <section class="grid md:grid-cols-2 min-h-[400px]">
 	<!-- Left Side - Dark with Live Status Indicator -->
-	<div class="bg-[#202020] hidden md:flex items-center justify-center">
+	<div class="bg-brand-dark hidden md:flex items-center justify-center">
 		<div class="text-center px-8">
 			<!-- Pulse indicator -->
 			<div class="flex items-center justify-center gap-3 mb-4">
@@ -22,7 +22,7 @@
 	</div>
 	
 	<!-- Right Side - Dark with Logo and CTAs -->
-	<div class="bg-[#202020] px-8 py-12 md:px-20 lg:px-32 flex flex-col justify-center items-center text-center">
+	<div class="bg-brand-dark px-8 py-12 md:px-20 lg:px-32 flex flex-col justify-center items-center text-center">
 		<!-- Full Logo with rounded corners -->
 		<div class="mb-6">
 			<img src="/logo.png" alt="Thiru AI Labs" class="h-32 md:h-36 lg:h-40 rounded-xl" />
@@ -36,7 +36,7 @@
 		<div class="flex flex-col sm:flex-row gap-4">
 			<a 
 				href="/products" 
-				class="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-[#202020] transition-all group"
+				class="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-brand-dark transition-all group"
 			>
 				Explore products
 				<svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -47,7 +47,7 @@
 				href="https://nickthiru.dev/writing" 
 				target="_blank"
 				rel="noopener noreferrer"
-				class="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-[#fedf19] text-[#fedf19] font-medium rounded-full hover:bg-[#fedf19] hover:text-[#202020] transition-all group"
+				class="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-[#fedf19] text-[#fedf19] font-medium rounded-full hover:bg-[#fedf19] hover:text-brand-dark transition-all group"
 			>
 				Read Nick's writing
 				<svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,12 +70,12 @@
 			<div class="bg-white border border-neutral-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
 				<div class="flex items-start justify-between mb-4">
 					<h3 class="text-xl font-semibold text-neutral-900">LinkedIn Ghostwriter Agent</h3>
-					<span class="px-3 py-1 bg-[#fedf19] text-[#202020] text-xs font-semibold rounded-full">Building</span>
+					<span class="px-3 py-1 bg-[#fedf19] text-brand-dark text-xs font-semibold rounded-full">Building</span>
 				</div>
 				<p class="text-neutral-600 mb-4">
 					AI that turns voice notes into LinkedIn posts that sound authentically like you. Captures ideas on-the-go and learns your unique style over time.
 				</p>
-				<a href="/products" class="inline-flex items-center gap-1 text-[#202020] font-medium hover:text-[#fe1817] hover:gap-2 transition-all">
+				<a href="/products" class="inline-flex items-center gap-1 text-brand-dark font-medium hover:text-[#fe1817] hover:gap-2 transition-all">
 					Learn more
 					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -86,12 +86,12 @@
 			<div class="bg-white border border-neutral-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
 				<div class="flex items-start justify-between mb-4">
 					<h3 class="text-xl font-semibold text-neutral-900">More Products Coming</h3>
-					<span class="px-3 py-1 bg-[#202020] text-white text-xs font-semibold rounded-full">Idea</span>
+					<span class="px-3 py-1 bg-brand-dark text-white text-xs font-semibold rounded-full">Idea</span>
 				</div>
 				<p class="text-neutral-600 mb-4">
 					Exploring new opportunities in agentic automation and specialized AI workflows for knowledge workers.
 				</p>
-				<a href="/products" class="inline-flex items-center gap-1 text-[#202020] font-medium hover:text-[#fe1817] hover:gap-2 transition-all">
+				<a href="/products" class="inline-flex items-center gap-1 text-brand-dark font-medium hover:text-[#fe1817] hover:gap-2 transition-all">
 					View roadmap
 					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -120,7 +120,7 @@
 					</p>
 				</div>
 				
-				<div class="bg-white border border-neutral-200 rounded-lg p-6 border-l-4 border-l-[#202020]">
+				<div class="bg-white border border-neutral-200 rounded-lg p-6 border-l-4 border-l-brand-dark">
 					<h3 class="text-lg font-semibold text-neutral-900 mb-2">Small, Focused Workflows</h3>
 					<p class="text-neutral-600">
 						Building specialized AI agents for specific tasks, not generic chatbots that try to do everything.
