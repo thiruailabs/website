@@ -31,6 +31,16 @@ This is a lightweight studio wrapper website that serves as the company front do
 npm install
 ```
 
+### Environment Variables
+
+Create a `.env` file in the project root:
+
+```sh
+BUTTONDOWN_API_KEY=your_buttondown_api_key_here
+```
+
+Get your API key from [Buttondown Settings](https://buttondown.com/settings).
+
 ### Development
 
 Start the development server:
