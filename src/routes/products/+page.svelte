@@ -28,25 +28,32 @@
 		<div class="grid md:grid-cols-2 gap-6">
 			<div class="bg-white border border-neutral-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
 				<div class="flex items-start justify-between mb-4">
-					<h3 class="text-2xl font-semibold text-neutral-900">LinkedIn Ghostwriter Agent</h3>
+					<h3 class="text-2xl font-semibold text-neutral-900">LinkedIn Ghostwriter</h3>
 					<span class="px-3 py-1 bg-[#fedf19] text-[#202020] text-xs font-semibold rounded-full whitespace-nowrap">Building</span>
 				</div>
 				
 				<div class="space-y-4 mb-6">
-					<div>
-						<h4 class="text-sm font-semibold text-neutral-700 mb-1">Audience</h4>
-						<p class="text-neutral-600">Solo entrepreneurs, consultants, and professionals building personal brands on LinkedIn</p>
-					</div>
+					<p class="text-neutral-700 leading-relaxed">
+						Turn voice notes into authentic LinkedIn posts. Style learning, quality gates, and scheduling built-in. 
+						For founders who want to post consistently without sounding like corporate AI.
+					</p>
 					
 					<div>
-						<h4 class="text-sm font-semibold text-neutral-700 mb-1">Outcome</h4>
-						<p class="text-neutral-600">
-							Turn voice notes into authentic LinkedIn posts instantly. Maintain consistent posting without spending hours writing.
-						</p>
+						<h4 class="text-sm font-semibold text-neutral-700 mb-1">Who it's for</h4>
+						<p class="text-neutral-600">Solo entrepreneurs, consultants, and professionals building personal brands on LinkedIn</p>
 					</div>
 				</div>
 				
 				<div class="flex gap-3">
+					<a 
+						href="/products/linkedin-ghostwriter"
+						class="inline-flex items-center gap-1 px-4 py-2 bg-[#202020] text-white font-medium rounded-md hover:bg-[#fe1817] transition-colors"
+					>
+						Learn more
+						<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+						</svg>
+					</a>
 					<button 
 						on:click={openWaitlist}
 						class="inline-flex items-center gap-1 px-4 py-2 bg-[#fe1817] text-white font-medium rounded-md hover:bg-[#202020] transition-colors"

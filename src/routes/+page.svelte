@@ -75,7 +75,7 @@
 				<p class="text-neutral-600 mb-4">
 					AI that turns voice notes into LinkedIn posts that sound authentically like you. Captures ideas on-the-go and learns your unique style over time.
 				</p>
-				<a href="/products" class="inline-flex items-center gap-1 text-brand-dark font-medium hover:text-[#fe1817] hover:gap-2 transition-all">
+				<a href="/products/linkedin-ghostwriter" class="inline-flex items-center gap-1 text-brand-dark font-medium hover:text-[#fe1817] hover:gap-2 transition-all">
 					Learn more
 					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
