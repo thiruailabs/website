@@ -29,11 +29,16 @@
 		</div>
 		
 		<p class="text-neutral-300 text-lg md:text-xl leading-relaxed mb-2 max-w-lg">
-			A solo AI systems studio building production-grade agentic micro-SaaS and automation systems. 
+			A solo AI systems studio building production-grade AI agentic micro-SaaS and automation systems. 
 		</p>
+
 		<p class="text-neutral-300 text-md md:text-xl leading-relaxed mb-6 max-w-lg">
+			<a href="https://nickthiru.dev/writing/what-are-ai-agents" target="_blank" rel="noopener noreferrer" class="text-[#fedf19] hover:underline inline-flex items-center gap-1">
+          What are AI agents and agentic systems, anyway? →
+        </a><br>
+
 			<a href="https://nickthiru.dev/writing/why-building-solo" target="_blank" rel="noopener noreferrer" class="text-[#fedf19] hover:underline inline-flex items-center gap-1">
-				Why a <i>solo</i> studio? →
+				And why a <i>solo</i> studio? →
 			</a>
 		</p>
 		
@@ -331,11 +336,11 @@
 							rel="noopener noreferrer"
 							class="inline-flex items-center gap-2 text-brand-dark hover:text-[#fe1817] font-medium transition-colors"
 						>
-								LinkedIn
-								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-								</svg>
-							</a>
+							LinkedIn
+							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+							</svg>
+						</a>
 						</div>
 					</div>
 				</div>
