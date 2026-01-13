@@ -66,9 +66,20 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
 	<section class="py-16 border-t border-neutral-200">
-		<div class="mb-12">
-			<h2 class="text-3xl font-bold text-neutral-900 mb-3">Products</h2>
-			<p class="text-lg text-neutral-600">Building focused AI workflows for real-world problems</p>
+		<div class="mb-12 flex items-start justify-between">
+			<div>
+				<h2 class="text-3xl font-bold text-neutral-900 mb-3">Products</h2>
+				<p class="text-lg text-neutral-600">Building focused AI workflows for real-world problems</p>
+			</div>
+			<a 
+				href="/products" 
+				class="inline-flex items-center gap-1 text-brand-dark hover:text-[#fe1817] font-medium transition-colors mt-1"
+			>
+				View all
+				<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+				</svg>
+			</a>
 		</div>
 		
 		<div class="grid md:grid-cols-2 gap-6">
@@ -284,7 +295,7 @@
 			<div class="bg-white border border-neutral-200 rounded-lg p-8 md:p-10">
 				<div class="flex flex-col md:flex-row gap-8 items-start">
 					<div class="flex-shrink-0">
-						<img src="/home-profile.png" alt="Nick Thiru" class="w-32 h-32 rounded-lg object-cover" />
+						<img src="/founder-image.png" alt="Nick Thiru" class="w-32 h-32 rounded-lg object-cover object-top" />
 					</div>
 					<div class="flex-1">
 						<h3 class="text-2xl font-bold text-neutral-900 mb-4">Nick Thiru</h3>
@@ -314,12 +325,12 @@
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
 								</svg>
 							</a>
-							<a 
-								href="https://linkedin.com/in/nickthiru" 
-								target="_blank"
-								rel="noopener noreferrer"
-								class="inline-flex items-center gap-2 text-brand-dark hover:text-[#fe1817] font-medium transition-colors"
-							>
+						<a 
+							href="https://linkedin.com/in/nick-thiru" 
+							target="_blank"
+							rel="noopener noreferrer"
+							class="inline-flex items-center gap-2 text-brand-dark hover:text-[#fe1817] font-medium transition-colors"
+						>
 								LinkedIn
 								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />

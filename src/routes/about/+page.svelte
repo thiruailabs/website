@@ -9,7 +9,7 @@
 		<div class="prose prose-lg max-w-none">
 			<div class="space-y-6 text-neutral-700 leading-relaxed">
 				<p>
-					Thiru AI Labs is the solo AI systems studio of Nick Thiru, focused on building production-grade agentic micro-SaaS products and automation systems that solve real-world problems, mostly in the business domain. Rather than building generic chatbots that attempt to do everything, Thiru AI Labs develops specialized agents designed for particular use cases and audiences. <a href="https://nickthiru.dev/writing/why-building-solo" target="_blank" rel="noopener noreferrer" class="text-[#fe1817] hover:underline inline-flex items-center gap-1">Why solo? →</a>
+					Thiru AI Labs is the solo AI systems studio of Nick Thiru, focused on building production-grade agentic micro-SaaS products and automation systems that solve real-world problems, mostly in the business domain. Rather than building generic chatbots that attempt to do everything, Thiru AI Labs develops specialized agents designed for particular use cases and audiences. <a href="https://nickthiru.dev/writing/why-building-solo" target="_blank" rel="noopener noreferrer" class="text-[#fe1817] hover:underline inline-flex items-center gap-1">Why a solo studio? →</a>
 				</p>
 
 				<p>
