@@ -22,6 +22,13 @@
 				
 				<div class="flex items-center gap-8">
 					<a 
+						href="/about" 
+						class="text-base font-semibold text-[#202020] hover:text-[#fe1817] transition-colors"
+						class:text-[#fe1817]={$page.url.pathname === '/about'}
+					>
+						About
+					</a>
+					<a 
 						href="/products" 
 						class="text-base font-semibold text-[#202020] hover:text-[#fe1817] transition-colors"
 						class:text-[#fe1817]={$page.url.pathname === '/products'}
@@ -29,11 +36,11 @@
 						Products
 					</a>
 					<a 
-						href="/about" 
+						href="/consult" 
 						class="text-base font-semibold text-[#202020] hover:text-[#fe1817] transition-colors"
-						class:text-[#fe1817]={$page.url.pathname === '/about'}
+						class:text-[#fe1817]={$page.url.pathname === '/consult'}
 					>
-						About
+						Consult
 					</a>
 					<a 
 						href="/contact" 
@@ -72,8 +79,9 @@
 				<div>
 					<h4 class="text-sm font-semibold text-white mb-3">Navigation</h4>
 					<ul class="space-y-2">
-						<li><a href="/products" class="text-sm text-neutral-400 hover:text-[#fe1817] transition-colors">Products</a></li>
 						<li><a href="/about" class="text-sm text-neutral-400 hover:text-[#fe1817] transition-colors">About</a></li>
+						<li><a href="/products" class="text-sm text-neutral-400 hover:text-[#fe1817] transition-colors">Products</a></li>
+						<li><a href="/consult" class="text-sm text-neutral-400 hover:text-[#fe1817] transition-colors">Consult</a></li>
 						<li><a href="/contact" class="text-sm text-neutral-400 hover:text-[#fe1817] transition-colors">Contact</a></li>
 					</ul>
 				</div>

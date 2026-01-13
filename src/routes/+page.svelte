@@ -28,8 +28,13 @@
 			<img src="/logo.png" alt="Thiru AI Labs" class="h-32 md:h-36 lg:h-40 rounded-xl" />
 		</div>
 		
-		<p class="text-neutral-300 text-lg md:text-xl leading-relaxed mb-6 max-w-lg">
-			A solo AI systems studio building production-grade agentic micro-SaaS and automation systems.
+		<p class="text-neutral-300 text-lg md:text-xl leading-relaxed mb-2 max-w-lg">
+			A solo AI systems studio building production-grade agentic micro-SaaS and automation systems. 
+		</p>
+		<p class="text-neutral-300 text-md md:text-xl leading-relaxed mb-6 max-w-lg">
+			<a href="https://nickthiru.dev/writing/why-building-solo" target="_blank" rel="noopener noreferrer" class="text-[#fedf19] hover:underline inline-flex items-center gap-1">
+				Why a <i>solo</i> studio? →
+			</a>
 		</p>
 		
 		<!-- CTAs with rounded borders -->
@@ -103,30 +108,248 @@
 
 	<section class="py-16 border-t border-neutral-200">
 		<div class="max-w-3xl mx-auto">
-			<h2 class="text-3xl font-bold text-neutral-900 mb-8 text-center">How We Build</h2>
+			<h2 class="text-3xl font-bold text-neutral-900 mb-8 text-center">The Approach</h2>
 			
 			<div class="space-y-6">
 				<div class="bg-white border border-neutral-200 rounded-lg p-6 border-l-4 border-l-[#fe1817]">
 					<h3 class="text-lg font-semibold text-neutral-900 mb-2">Systems-First Approach</h3>
 					<p class="text-neutral-600">
-						Every product is built as a complete system with proper architecture, not just a prototype or demo.
+						Every product is built as a complete system with proper architecture, not just a prototype or demo. Production-ready from day one with scalable infrastructure and clean code.
 					</p>
 				</div>
 				
 				<div class="bg-white border border-neutral-200 rounded-lg p-6 border-l-4 border-l-[#fedf19]">
 					<h3 class="text-lg font-semibold text-neutral-900 mb-2">Production Focus</h3>
 					<p class="text-neutral-600">
-						Authentication, billing, observability, and infrastructure are first-class concerns from day one.
+						Authentication, billing, observability, and infrastructure are first-class concerns from day one. No shortcuts, no technical debt, no "we'll fix it later."
 					</p>
 				</div>
 				
 				<div class="bg-white border border-neutral-200 rounded-lg p-6 border-l-4 border-l-brand-dark">
 					<h3 class="text-lg font-semibold text-neutral-900 mb-2">Small, Focused Workflows</h3>
 					<p class="text-neutral-600">
-						Building specialized AI agents for specific tasks, not generic chatbots that try to do everything.
+						Building specialized AI agents for specific tasks, not generic chatbots that try to do everything. Each product solves one problem exceptionally well.
 					</p>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<!-- Tech Stack Section -->
+	<section class="py-16 border-t border-neutral-200 bg-neutral-50">
+		<div class="max-w-5xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold text-neutral-900 mb-3">Built With Modern AI Infrastructure</h2>
+				<p class="text-lg text-neutral-600">Production-grade stack for reliable, scalable AI systems</p>
+			</div>
+			
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="bg-white border border-neutral-200 rounded-lg p-6 text-center hover:shadow-md transition-shadow">
+					<div class="w-12 h-12 bg-[#fe1817]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+						<svg class="w-6 h-6 text-[#fe1817]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+						</svg>
+					</div>
+					<h3 class="text-lg font-semibold text-neutral-900 mb-2">AI & LLMs</h3>
+					<p class="text-sm text-neutral-600 mb-3">OpenAI GPT-4, Claude, LangChain, LangGraph for agentic workflows</p>
+				</div>
+
+				<div class="bg-white border border-neutral-200 rounded-lg p-6 text-center hover:shadow-md transition-shadow">
+					<div class="w-12 h-12 bg-[#fedf19]/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+						<svg class="w-6 h-6 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+						</svg>
+					</div>
+					<h3 class="text-lg font-semibold text-neutral-900 mb-2">Infrastructure</h3>
+					<p class="text-sm text-neutral-600 mb-3">AWS CDK, Supabase, PostgreSQL, serverless architecture</p>
+				</div>
+
+				<div class="bg-white border border-neutral-200 rounded-lg p-6 text-center hover:shadow-md transition-shadow">
+					<div class="w-12 h-12 bg-brand-dark/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+						<svg class="w-6 h-6 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+						</svg>
+					</div>
+					<h3 class="text-lg font-semibold text-neutral-900 mb-2">Frontend</h3>
+					<p class="text-sm text-neutral-600 mb-3">SvelteKit, TypeScript, TailwindCSS for modern UX</p>
+				</div>
+			</div>
+
+			<div class="mt-8 text-center">
+				<p class="text-sm text-neutral-500">
+					Every component chosen for production reliability, not just developer convenience
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Building in Public Section -->
+	<section class="py-16 border-t border-neutral-200">
+		<div class="max-w-4xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold text-neutral-900 mb-3">Building in Public</h2>
+				<p class="text-lg text-neutral-600">Transparent development, real learnings, authentic progress</p>
+			</div>
+
+			<div class="grid md:grid-cols-2 gap-6">
+				<div class="bg-white border border-neutral-200 rounded-lg p-6">
+					<div class="flex items-start gap-4">
+						<div class="w-10 h-10 bg-[#fe1817]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+							<svg class="w-5 h-5 text-[#fe1817]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+							</svg>
+						</div>
+						<div>
+							<h3 class="text-lg font-semibold text-neutral-900 mb-2">Development Logs</h3>
+							<p class="text-sm text-neutral-600">
+								Detailed build logs documenting decisions, challenges, and solutions. No fluff, just real engineering work.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-white border border-neutral-200 rounded-lg p-6">
+					<div class="flex items-start gap-4">
+						<div class="w-10 h-10 bg-[#fedf19]/20 rounded-lg flex items-center justify-center flex-shrink-0">
+							<svg class="w-5 h-5 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+							</svg>
+						</div>
+						<div>
+							<h3 class="text-lg font-semibold text-neutral-900 mb-2">Technical Writing</h3>
+							<p class="text-sm text-neutral-600">
+								In-depth articles on AI systems, architecture patterns, and production lessons learned from building real products.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-white border border-neutral-200 rounded-lg p-6">
+					<div class="flex items-start gap-4">
+						<div class="w-10 h-10 bg-brand-dark/10 rounded-lg flex items-center justify-center flex-shrink-0">
+							<svg class="w-5 h-5 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+							</svg>
+						</div>
+						<div>
+							<h3 class="text-lg font-semibold text-neutral-900 mb-2">Metrics & Progress</h3>
+							<p class="text-sm text-neutral-600">
+								Real numbers, honest updates on what's working and what's not. No vanity metrics, just authentic progress tracking.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-white border border-neutral-200 rounded-lg p-6">
+					<div class="flex items-start gap-4">
+						<div class="w-10 h-10 bg-[#fe1817]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+							<svg class="w-5 h-5 text-[#fe1817]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+							</svg>
+						</div>
+						<div>
+							<h3 class="text-lg font-semibold text-neutral-900 mb-2">Community Feedback</h3>
+							<p class="text-sm text-neutral-600">
+								Open to feedback, questions, and collaboration. Building products people actually want to use.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mt-8 text-center">
+				<a 
+					href="https://nickthiru.dev/writing" 
+					target="_blank"
+					rel="noopener noreferrer"
+					class="inline-flex items-center gap-2 px-6 py-3 bg-brand-dark text-white font-medium rounded-lg hover:bg-[#fe1817] transition-colors"
+				>
+					Read the build logs
+					<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+					</svg>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Founder Credibility Section -->
+	<section class="py-16 border-t border-neutral-200 bg-neutral-50">
+		<div class="max-w-4xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold text-neutral-900 mb-3">About the Founder</h2>
+				<p class="text-lg text-neutral-600">Engineering background meets AI systems expertise</p>
+			</div>
+
+			<div class="bg-white border border-neutral-200 rounded-lg p-8 md:p-10">
+				<div class="flex flex-col md:flex-row gap-8 items-start">
+					<div class="flex-shrink-0">
+						<img src="/home-profile.png" alt="Nick Thiru" class="w-32 h-32 rounded-lg object-cover" />
+					</div>
+					<div class="flex-1">
+						<h3 class="text-2xl font-bold text-neutral-900 mb-4">Nick Thiru</h3>
+						<div class="space-y-4 text-neutral-600">
+							<p>
+								Software engineer with deep expertise in building production AI systems. Focused on agentic workflows, LLM orchestration, and scalable infrastructure.
+							</p>
+							<p>
+								Previously built systems at scale. Now building focused AI products as a solo founder, applying enterprise-grade engineering practices to micro-SaaS.
+							</p>
+							<div class="flex flex-wrap gap-3 mt-6">
+								<span class="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm font-medium rounded-full">AI Systems Architecture</span>
+								<span class="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm font-medium rounded-full">LangGraph & Agents</span>
+								<span class="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm font-medium rounded-full">AWS Infrastructure</span>
+								<span class="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm font-medium rounded-full">Production Engineering</span>
+							</div>
+						</div>
+						<div class="mt-6 flex gap-4">
+							<a 
+								href="https://nickthiru.dev" 
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-2 text-brand-dark hover:text-[#fe1817] font-medium transition-colors"
+							>
+								Personal site
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+								</svg>
+							</a>
+							<a 
+								href="https://linkedin.com/in/nickthiru" 
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-2 text-brand-dark hover:text-[#fe1817] font-medium transition-colors"
+							>
+								LinkedIn
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why Solo Section -->
+	<section class="py-16 border-t border-neutral-200">
+		<div class="max-w-3xl mx-auto text-center">
+			<h2 class="text-3xl font-bold text-neutral-900 mb-6">Why a Solo Studio?</h2>
+			<p class="text-lg text-neutral-600 mb-6 leading-relaxed">
+				Building solo allows for rapid iteration, deep focus, and authentic products without the overhead of team coordination or investor pressures. Every decision optimized for product quality and customer value, not growth metrics or fundraising narratives.
+			</p>
+			<a 
+				href="https://nickthiru.dev/writing/why-building-solo" 
+				target="_blank"
+				rel="noopener noreferrer"
+				class="inline-flex items-center gap-2 text-brand-dark hover:text-[#fe1817] font-semibold text-lg transition-colors"
+			>
+				Read the full philosophy
+				<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+				</svg>
+			</a>
 		</div>
 	</section>
 </div>

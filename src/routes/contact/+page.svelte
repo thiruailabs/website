@@ -10,7 +10,7 @@
 			<div class="bg-white border border-neutral-200 rounded-lg p-8">
 				<h2 class="text-xl font-semibold text-neutral-900 mb-4">Email</h2>
 				<p class="text-neutral-600 mb-4">
-					For inquiries about products, partnerships, or general questions:
+					For inquiries about products, consulting, partnerships, or general questions:
 				</p>
 				<a 
 					href="mailto:nick@thiruailabs.com" 
@@ -98,7 +98,7 @@
 						<svg class="w-5 h-5 text-neutral-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
 						</svg>
-						<span>Media and speaking requests</span>
+						<span>Consulting needs</span>
 					</li>
 				</ul>
 			</div>
