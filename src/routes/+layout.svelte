@@ -9,7 +9,7 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 	<title>Thiru AI Labs</title>
-	<meta name="description" content="A solo AI systems studio building production-grade agentic micro-SaaS and automation systems." />
+	<meta name="description" content="A solo AI systems studio building production-grade, agentic AI SaaS products and systems." />
 </svelte:head>
 
 <div class="min-h-screen flex flex-col bg-neutral-50">
@@ -50,12 +50,12 @@
 						Contact
 					</a>
 					<a 
-						href="https://nickthiru.dev/writing" 
+						href="https://nickthiru.dev" 
 						target="_blank"
 						rel="noopener noreferrer"
 						class="inline-flex items-center px-3 py-1.5 bg-[#fe1817] text-white text-base font-semibold rounded-md hover:bg-[#202020] transition-colors"
 					>
-						Visit Nick's writing
+						Visit Nick's website
 					</a>
 				</div>
 			</div>
@@ -72,7 +72,7 @@
 				<div class="md:col-span-2">
 					<h3 class="text-lg font-semibold text-[#fe1817] mb-2">Thiru AI Labs</h3>
 					<p class="text-sm text-neutral-400 max-w-md">
-						A solo AI systems studio building production-grade agentic micro-SaaS and automation systems.
+						A solo AI systems studio building production-grade, agentic AI SaaS products and systems.
 					</p>
 				</div>
 				

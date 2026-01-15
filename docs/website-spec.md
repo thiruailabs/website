@@ -27,7 +27,7 @@ It should:
 
 ### 1.3 One-sentence positioning
 
-> Thiru AI Labs is the solo AI systems studio of Nick Thiru, building production-grade agentic micro-SaaS products and automation systems.
+> Thiru AI Labs is the solo AI systems studio of Nick Thiru, building production-grade Agentic AI SaaS products and systems.
 
 ---
 
@@ -62,7 +62,7 @@ Primary CTA button in nav:
 
 **Subheadline:**
 
-> A solo AI systems studio building production-grade agentic micro‑SaaS and automation systems.
+> A solo AI systems studio building production-grade Agentic AI SaaS products and systems.
 
 **Primary CTA:**
 

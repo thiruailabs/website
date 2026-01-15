@@ -1,6 +1,6 @@
 # Thiru AI Labs Website
 
-The official website for Thiru AI Labs - a solo AI systems studio building production-grade agentic micro-SaaS products and automation systems.
+The official website for Thiru AI Labs - a solo AI systems studio building production-grade agentic AI SaaS products and systems.
 
 ## Overview
 

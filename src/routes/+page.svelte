@@ -28,15 +28,17 @@
 			<img src="/logo.png" alt="Thiru AI Labs" class="h-32 md:h-36 lg:h-40 rounded-xl" />
 		</div>
 		
-		<p class="text-neutral-300 text-lg md:text-xl leading-relaxed mb-2 max-w-lg">
-			A solo AI systems studio building production-grade AI agentic micro-SaaS and automation systems. 
+		<p class="text-neutral-300 text-lg md:text-xl leading-relaxed mb-3 max-w-lg">
+			A solo AI systems studio building production-grade, agentic AI SaaS products and systems. 
+		</p>
+
+		<p class="text-neutral-300 text-md md:text-xl leading-relaxed mb-1 max-w-lg">
+			<a href="https://nickthiru.dev/writing/what-are-ai-agents" target="_blank" rel="noopener noreferrer" class="text-[#fedf19] hover:underline inline-flex items-center gap-1">
+          What are AI agents and agentic AI systems, anyway? →
+        </a>
 		</p>
 
 		<p class="text-neutral-300 text-md md:text-xl leading-relaxed mb-6 max-w-lg">
-			<a href="https://nickthiru.dev/writing/what-are-ai-agents" target="_blank" rel="noopener noreferrer" class="text-[#fedf19] hover:underline inline-flex items-center gap-1">
-          What are AI agents and agentic systems, anyway? →
-        </a><br>
-
 			<a href="https://nickthiru.dev/writing/why-building-solo" target="_blank" rel="noopener noreferrer" class="text-[#fedf19] hover:underline inline-flex items-center gap-1">
 				And why a <i>solo</i> studio? →
 			</a>
@@ -57,7 +59,7 @@
 				href="https://nickthiru.dev/writing" 
 				target="_blank"
 				rel="noopener noreferrer"
-				class="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-[#fedf19] text-[#fedf19] font-medium rounded-full hover:bg-[#fedf19] hover:text-brand-dark transition-all group"
+				class="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-[#fe1817] text-[#fe1817] font-bold rounded-full hover:bg-[#fe1817] hover:text-brand-dark transition-all group"
 			>
 				Read Nick's writing
 				<svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -110,7 +112,7 @@
 					<span class="px-3 py-1 bg-brand-dark text-white text-xs font-semibold rounded-full">Idea</span>
 				</div>
 				<p class="text-neutral-600 mb-4">
-					Exploring new opportunities in agentic automation and specialized AI workflows for knowledge workers.
+					Exploring new opportunities in agentic AI automation and specialized AI workflows for knowledge workers.
 				</p>
 				<a href="/products" class="inline-flex items-center gap-1 text-brand-dark font-medium hover:text-[#fe1817] hover:gap-2 transition-all">
 					View roadmap
@@ -167,7 +169,7 @@
 						</svg>
 					</div>
 					<h3 class="text-lg font-semibold text-neutral-900 mb-2">AI & LLMs</h3>
-					<p class="text-sm text-neutral-600 mb-3">OpenAI GPT-4, Claude, LangChain, LangGraph for agentic workflows</p>
+					<p class="text-sm text-neutral-600 mb-3">OpenAI GPT-4, Claude, LangChain, LangGraph for agentic AI workflows</p>
 				</div>
 
 				<div class="bg-white border border-neutral-200 rounded-lg p-6 text-center hover:shadow-md transition-shadow">
@@ -306,41 +308,65 @@
 						<h3 class="text-2xl font-bold text-neutral-900 mb-4">Nick Thiru</h3>
 						<div class="space-y-4 text-neutral-600">
 							<p>
-								Software engineer with deep expertise in building production AI systems. Focused on agentic workflows, LLM orchestration, and scalable infrastructure.
+								Software engineer with deep expertise in building production AI systems. Focused on agentic AI workflows, LLM orchestration, and scalable infrastructure.
 							</p>
 							<p>
-								Previously built systems at scale. Now building focused AI products as a solo founder, applying enterprise-grade engineering practices to micro-SaaS.
+								Previously built systems at scale. Now building focused AI products as a solo founder, applying enterprise-grade engineering practices to SaaS products and systems.
 							</p>
 							<div class="flex flex-wrap gap-3 mt-6">
 								<span class="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm font-medium rounded-full">AI Systems Architecture</span>
 								<span class="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm font-medium rounded-full">LangGraph & Agents</span>
 								<span class="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm font-medium rounded-full">AWS Infrastructure</span>
+								<span class="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm font-medium rounded-full">Sveltekit Frontend</span>
+								<span class="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm font-medium rounded-full">Full-Stack Web</span>
 								<span class="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm font-medium rounded-full">Production Engineering</span>
 							</div>
 						</div>
-						<div class="mt-6 flex gap-4">
+						<div class="mt-6 flex gap-5">
 							<a 
 								href="https://nickthiru.dev" 
 								target="_blank"
 								rel="noopener noreferrer"
-								class="inline-flex items-center gap-2 text-brand-dark hover:text-[#fe1817] font-medium transition-colors"
+								class="inline-flex items-center gap-1 text-brand-dark hover:text-[#fe1817] font-medium transition-colors"
 							>
-								Personal site
+								Personal website
 								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
 								</svg>
 							</a>
-					<a 
-						href="https://linkedin.com/in/nick-thiru" 
-						target="_blank"
-						rel="noopener noreferrer"
-						class="inline-flex items-center gap-2 text-brand-dark hover:text-[#fe1817] font-medium transition-colors"
-					>
-						LinkedIn
-						<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-						</svg>
-					</a>
+							<a 
+								href="https://linkedin.com/in/nick-thiru" 
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-1 text-brand-dark hover:text-[#fe1817] font-medium transition-colors"
+							>
+								LinkedIn
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+								</svg>
+							</a>
+							<a 
+								href="https://twitter.com/nickthiru" 
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-1 text-brand-dark hover:text-[#fe1817] font-medium transition-colors"
+							>
+								Twitter/X
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+								</svg>
+							</a>
+							<a 
+								href="https://github.com/nickthiru" 
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-1 text-brand-dark hover:text-[#fe1817] font-medium transition-colors"
+							>
+								GitHub
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+								</svg>
+							</a>
 						</div>
 					</div>
 				</div>

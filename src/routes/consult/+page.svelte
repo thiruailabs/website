@@ -3,14 +3,14 @@
 
 <svelte:head>
 	<title>Consulting - Thiru AI Labs</title>
-	<meta name="description" content="Need help shipping AI agentic systems? We help teams design, build, and deploy production-grade LangGraph agents." />
+	<meta name="description" content="Need help shipping agentic AI systems? We help teams design, build, and deploy production-grade LangGraph agents." />
 </svelte:head>
 
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 	<header class="mb-12">
 		<h1 class="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">Consulting</h1>
 		<p class="text-xl text-neutral-600 leading-relaxed">
-			Need help shipping AI agentic systems? We help teams design, build, and deploy production-grade LangGraph agents.
+			Need help shipping agentic AI systems? We help teams design, build, and deploy production-grade LangGraph agents.
 		</p>
 	</header>
 
@@ -23,7 +23,7 @@
 					Our focus is on the messy middle—the gap between "it works in a notebook" and "it's running reliably in production."
 				</p>
 				<p>
-					We specialize in <strong class="text-neutral-900">LangGraph-based agentic systems</strong> that need to handle 
+					We specialize in <strong class="text-neutral-900">LangGraph-based agentic AI systems</strong> that need to handle 
 					real workflows, not just demos. Think multi-step agents with quality gates, state management, error handling, 
 					and observability.
 				</p>
@@ -121,7 +121,7 @@
 				</li>
 				<li class="flex items-start gap-2">
 					<span class="text-[#fe1817] mt-1">→</span>
-					<span><strong class="text-neutral-900">Product teams</strong> adding agentic capabilities to existing platforms</span>
+					<span><strong class="text-neutral-900">Product teams</strong> adding agentic AI capabilities to existing platforms</span>
 				</li>
 				<li class="flex items-start gap-2">
 					<span class="text-[#fe1817] mt-1">→</span>
