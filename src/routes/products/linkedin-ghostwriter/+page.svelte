@@ -21,8 +21,8 @@
 		<div class="flex items-center gap-3 mb-4">
 			<span class="px-3 py-1 bg-[#fedf19] text-[#202020] text-xs font-semibold rounded-full">Building Now</span>
 		</div>
-		<h1 class="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">LinkedIn Ghostwriter</h1>
-		<p class="text-xl text-neutral-600 leading-relaxed mb-8">
+		<h1 class="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">LinkedIn Ghostwriter</h1>
+		<p class="text-xl text-neutral-600 dark:text-neutral-400 leading-relaxed mb-8">
 			Turn voice notes into authentic LinkedIn posts. Style learning, quality gates, and scheduling built-in. 
 			For founders who want to post consistently without sounding like corporate AI.
 		</p>
@@ -39,16 +39,16 @@
 
 	<!-- The Problem -->
 	<section class="mb-16">
-		<h2 class="text-3xl font-bold text-neutral-900 mb-6">The Problem</h2>
-		<div class="bg-neutral-50 border border-neutral-200 rounded-lg p-8 space-y-4">
-			<p class="text-neutral-700 leading-relaxed">
+		<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">The Problem</h2>
+		<div class="bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-8 space-y-4">
+			<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
 				You know you should post on LinkedIn consistently. It's how you build your brand, attract clients, and establish authority.
 			</p>
-			<p class="text-neutral-700 leading-relaxed">
+			<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
 				But writing posts takes <strong>time you don't have</strong>. You sit down to write, stare at a blank screen, 
 				and either give up or force out something that doesn't sound like you.
 			</p>
-			<p class="text-neutral-700 leading-relaxed">
+			<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
 				Generic AI tools make it worse—they produce corporate-speak that screams "I used ChatGPT." 
 				Your audience can tell, and it damages your credibility.
 			</p>
@@ -57,13 +57,13 @@
 
 	<!-- The Solution -->
 	<section class="mb-16">
-		<h2 class="text-3xl font-bold text-neutral-900 mb-6">The Solution</h2>
-		<p class="text-lg text-neutral-600 mb-8">
+		<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">The Solution</h2>
+		<p class="text-lg text-neutral-600 dark:text-neutral-400 mb-8">
 			LinkedIn Ghostwriter turns your raw thoughts into polished posts that sound like <em>you</em>—not a robot.
 		</p>
 		
 		<div class="space-y-6">
-			<div class="bg-white border border-neutral-200 rounded-lg p-6">
+			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<div class="flex items-start gap-4">
 					<div class="flex-shrink-0 w-10 h-10 bg-[#fedf19] rounded-lg flex items-center justify-center">
 						<svg class="w-6 h-6 text-[#202020]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -71,8 +71,8 @@
 						</svg>
 					</div>
 					<div>
-						<h3 class="text-xl font-semibold text-neutral-900 mb-2">1. Record a voice note</h3>
-						<p class="text-neutral-600">
+						<h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2">1. Record a voice note</h3>
+						<p class="text-neutral-600 dark:text-neutral-400">
 							Send a voice note via Telegram (or upload audio). Talk naturally—like you're explaining your idea to a friend. 
 							No need to structure it perfectly.
 						</p>
@@ -80,7 +80,7 @@
 				</div>
 			</div>
 
-			<div class="bg-white border border-neutral-200 rounded-lg p-6">
+			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<div class="flex items-start gap-4">
 					<div class="flex-shrink-0 w-10 h-10 bg-[#fedf19] rounded-lg flex items-center justify-center">
 						<svg class="w-6 h-6 text-[#202020]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -88,8 +88,8 @@
 						</svg>
 					</div>
 					<div>
-						<h3 class="text-xl font-semibold text-neutral-900 mb-2">2. AI learns your style</h3>
-						<p class="text-neutral-600">
+						<h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2">2. AI learns your style</h3>
+						<p class="text-neutral-600 dark:text-neutral-400">
 							The agent analyzes your past LinkedIn posts to understand your voice, tone, and writing patterns. 
 							It doesn't just generate generic content—it writes like <em>you</em>.
 						</p>
@@ -97,7 +97,7 @@
 				</div>
 			</div>
 
-			<div class="bg-white border border-neutral-200 rounded-lg p-6">
+			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<div class="flex items-start gap-4">
 					<div class="flex-shrink-0 w-10 h-10 bg-[#fedf19] rounded-lg flex items-center justify-center">
 						<svg class="w-6 h-6 text-[#202020]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -105,8 +105,8 @@
 						</svg>
 					</div>
 					<div>
-						<h3 class="text-xl font-semibold text-neutral-900 mb-2">3. Quality gates ensure it's good</h3>
-						<p class="text-neutral-600">
+						<h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2">3. Quality gates ensure it's good</h3>
+						<p class="text-neutral-600 dark:text-neutral-400">
 							Every post is scored for hook strength, readability, and style match. If it doesn't meet quality thresholds, 
 							the agent regenerates it automatically. You only see the best versions.
 						</p>
@@ -114,7 +114,7 @@
 				</div>
 			</div>
 
-			<div class="bg-white border border-neutral-200 rounded-lg p-6">
+			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<div class="flex items-start gap-4">
 					<div class="flex-shrink-0 w-10 h-10 bg-[#fedf19] rounded-lg flex items-center justify-center">
 						<svg class="w-6 h-6 text-[#202020]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -122,8 +122,8 @@
 						</svg>
 					</div>
 					<div>
-						<h3 class="text-xl font-semibold text-neutral-900 mb-2">4. Review, edit, and post</h3>
-						<p class="text-neutral-600">
+						<h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2">4. Review, edit, and post</h3>
+						<p class="text-neutral-600 dark:text-neutral-400">
 							Get 2-3 variations to choose from. Pick one, make quick edits if needed, and post. 
 							Or schedule it for later—the agent handles that too.
 						</p>
@@ -135,41 +135,41 @@
 
 	<!-- Key Features -->
 	<section class="mb-16">
-		<h2 class="text-3xl font-bold text-neutral-900 mb-6">Key Features</h2>
+		<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Key Features</h2>
 		<div class="grid md:grid-cols-2 gap-6">
-			<div class="bg-white border border-neutral-200 rounded-lg p-6">
-				<h3 class="text-lg font-semibold text-neutral-900 mb-2">Style Learning</h3>
-				<p class="text-neutral-600">
+			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Style Learning</h3>
+				<p class="text-neutral-600 dark:text-neutral-400">
 					Analyzes your past posts to match your unique voice, tone, and writing patterns. No generic AI voice.
 				</p>
 			</div>
-			<div class="bg-white border border-neutral-200 rounded-lg p-6">
-				<h3 class="text-lg font-semibold text-neutral-900 mb-2">Quality Gates</h3>
-				<p class="text-neutral-600">
+			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Quality Gates</h3>
+				<p class="text-neutral-600 dark:text-neutral-400">
 					Every post is scored for hook strength, readability, and authenticity. Bad outputs never reach you.
 				</p>
 			</div>
-			<div class="bg-white border border-neutral-200 rounded-lg p-6">
-				<h3 class="text-lg font-semibold text-neutral-900 mb-2">Multiple Variations</h3>
-				<p class="text-neutral-600">
+			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Multiple Variations</h3>
+				<p class="text-neutral-600 dark:text-neutral-400">
 					Get 2-3 different versions of each post to choose from. Pick the one that resonates most.
 				</p>
 			</div>
-			<div class="bg-white border border-neutral-200 rounded-lg p-6">
-				<h3 class="text-lg font-semibold text-neutral-900 mb-2">Scheduling</h3>
-				<p class="text-neutral-600">
+			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Scheduling</h3>
+				<p class="text-neutral-600 dark:text-neutral-400">
 					Schedule posts for optimal times. Maintain consistency without being glued to LinkedIn.
 				</p>
 			</div>
-			<div class="bg-white border border-neutral-200 rounded-lg p-6">
-				<h3 class="text-lg font-semibold text-neutral-900 mb-2">Telegram Integration</h3>
-				<p class="text-neutral-600">
+			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Telegram Integration</h3>
+				<p class="text-neutral-600 dark:text-neutral-400">
 					Send voice notes directly via Telegram. No app switching, no friction—just record and send.
 				</p>
 			</div>
-			<div class="bg-white border border-neutral-200 rounded-lg p-6">
-				<h3 class="text-lg font-semibold text-neutral-900 mb-2">Production-Grade</h3>
-				<p class="text-neutral-600">
+			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Production-Grade</h3>
+				<p class="text-neutral-600 dark:text-neutral-400">
 					Built with LangGraph, proper error handling, observability, and infrastructure. Not a prototype.
 				</p>
 			</div>
@@ -178,29 +178,29 @@
 
 	<!-- Who It's For -->
 	<section class="mb-16">
-		<h2 class="text-3xl font-bold text-neutral-900 mb-6">Who It's For</h2>
+		<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Who It's For</h2>
 		<div class="space-y-4">
-			<div class="bg-white border border-neutral-200 rounded-lg p-6">
+			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<h3 class="text-lg font-semibold text-neutral-900 mb-2">Solo Founders & Entrepreneurs</h3>
-				<p class="text-neutral-600">
+				<p class="text-neutral-600 dark:text-neutral-400">
 					You're building a product and need to build your brand simultaneously. You have ideas to share but no time to write.
 				</p>
 			</div>
-			<div class="bg-white border border-neutral-200 rounded-lg p-6">
+			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<h3 class="text-lg font-semibold text-neutral-900 mb-2">Consultants & Freelancers</h3>
-				<p class="text-neutral-600">
+				<p class="text-neutral-600 dark:text-neutral-400">
 					Your expertise is valuable, but client work takes priority. You need an easy way to stay visible and attract leads.
 				</p>
 			</div>
-			<div class="bg-white border border-neutral-200 rounded-lg p-6">
+			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<h3 class="text-lg font-semibold text-neutral-900 mb-2">Technical Professionals</h3>
-				<p class="text-neutral-600">
+				<p class="text-neutral-600 dark:text-neutral-400">
 					You have deep knowledge to share but writing isn't your strength. You'd rather talk through ideas than write them.
 				</p>
 			</div>
-			<div class="bg-white border border-neutral-200 rounded-lg p-6">
+			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<h3 class="text-lg font-semibold text-neutral-900 mb-2">Busy Executives</h3>
-				<p class="text-neutral-600">
+				<p class="text-neutral-600 dark:text-neutral-400">
 					You need to maintain thought leadership but your calendar is packed. Voice notes fit into your workflow.
 				</p>
 			</div>
@@ -209,8 +209,8 @@
 
 	<!-- How It's Different -->
 	<section class="mb-16">
-		<h2 class="text-3xl font-bold text-neutral-900 mb-6">How It's Different</h2>
-		<div class="bg-neutral-50 border border-neutral-200 rounded-lg overflow-hidden">
+		<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">How It's Different</h2>
+		<div class="bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg overflow-hidden">
 			<table class="w-full">
 				<thead class="bg-[#202020] text-white">
 					<tr>
@@ -219,31 +219,31 @@
 						<th class="px-6 py-4 text-left font-semibold">LinkedIn Ghostwriter</th>
 					</tr>
 				</thead>
-				<tbody class="divide-y divide-neutral-200">
+				<tbody class="divide-y divide-neutral-200 dark:divide-neutral-700">
 					<tr>
-						<td class="px-6 py-4 font-medium text-neutral-900">Voice Input</td>
-						<td class="px-6 py-4 text-neutral-600">❌ Type everything</td>
-						<td class="px-6 py-4 text-neutral-900">✅ Record voice notes</td>
+						<td class="px-6 py-4 font-medium text-neutral-900 dark:text-neutral-100">Voice Input</td>
+						<td class="px-6 py-4 text-neutral-600 dark:text-neutral-400">❌ Type everything</td>
+						<td class="px-6 py-4 text-neutral-900 dark:text-neutral-100">✅ Record voice notes</td>
 					</tr>
 					<tr>
-						<td class="px-6 py-4 font-medium text-neutral-900">Style Learning</td>
-						<td class="px-6 py-4 text-neutral-600">❌ Generic corporate voice</td>
-						<td class="px-6 py-4 text-neutral-900">✅ Learns your unique style</td>
+						<td class="px-6 py-4 font-medium text-neutral-900 dark:text-neutral-100">Style Learning</td>
+						<td class="px-6 py-4 text-neutral-600 dark:text-neutral-400">❌ Generic corporate voice</td>
+						<td class="px-6 py-4 text-neutral-900 dark:text-neutral-100">✅ Learns your unique style</td>
 					</tr>
 					<tr>
-						<td class="px-6 py-4 font-medium text-neutral-900">Quality Control</td>
-						<td class="px-6 py-4 text-neutral-600">❌ You get what you get</td>
-						<td class="px-6 py-4 text-neutral-900">✅ Automated quality gates</td>
+						<td class="px-6 py-4 font-medium text-neutral-900 dark:text-neutral-100">Quality Control</td>
+						<td class="px-6 py-4 text-neutral-600 dark:text-neutral-400">❌ You get what you get</td>
+						<td class="px-6 py-4 text-neutral-900 dark:text-neutral-100">✅ Automated quality gates</td>
 					</tr>
 					<tr>
-						<td class="px-6 py-4 font-medium text-neutral-900">Scheduling</td>
-						<td class="px-6 py-4 text-neutral-600">❌ Manual posting</td>
-						<td class="px-6 py-4 text-neutral-900">✅ Built-in scheduler</td>
+						<td class="px-6 py-4 font-medium text-neutral-900 dark:text-neutral-100">Scheduling</td>
+						<td class="px-6 py-4 text-neutral-600 dark:text-neutral-400">❌ Manual posting</td>
+						<td class="px-6 py-4 text-neutral-900 dark:text-neutral-100">✅ Built-in scheduler</td>
 					</tr>
 					<tr>
-						<td class="px-6 py-4 font-medium text-neutral-900">Infrastructure</td>
-						<td class="px-6 py-4 text-neutral-600">⚠️ Prototype quality</td>
-						<td class="px-6 py-4 text-neutral-900">✅ Production-grade system</td>
+						<td class="px-6 py-4 font-medium text-neutral-900 dark:text-neutral-100">Infrastructure</td>
+						<td class="px-6 py-4 text-neutral-600 dark:text-neutral-400">⚠️ Prototype quality</td>
+						<td class="px-6 py-4 text-neutral-900 dark:text-neutral-100">✅ Production-grade system</td>
 					</tr>
 				</tbody>
 			</table>
@@ -252,42 +252,42 @@
 
 	<!-- Pricing -->
 	<section class="mb-16">
-		<h2 class="text-3xl font-bold text-neutral-900 mb-6">Pricing</h2>
-		<div class="bg-white border-2 border-[#fedf19] rounded-lg p-8 max-w-md">
+		<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Pricing</h2>
+		<div class="bg-white dark:bg-neutral-800 border-2 border-[#fedf19] rounded-lg p-8 max-w-md">
 			<div class="mb-6">
-				<div class="text-4xl font-bold text-neutral-900 mb-2">$29<span class="text-xl font-normal text-neutral-600">/month</span></div>
-				<p class="text-neutral-600">Simple, transparent pricing. No hidden fees.</p>
+				<div class="text-4xl font-bold text-neutral-900 dark:text-neutral-100 mb-2">$29<span class="text-xl font-normal text-neutral-600 dark:text-neutral-400">/month</span></div>
+				<p class="text-neutral-600 dark:text-neutral-400">Simple, transparent pricing. No hidden fees.</p>
 			</div>
 			<ul class="space-y-3 mb-8">
 				<li class="flex items-start gap-2">
 					<svg class="w-5 h-5 text-[#fe1817] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
 					</svg>
-					<span class="text-neutral-700">Unlimited voice notes</span>
+					<span class="text-neutral-700 dark:text-neutral-400">Unlimited voice notes</span>
 				</li>
 				<li class="flex items-start gap-2">
 					<svg class="w-5 h-5 text-[#fe1817] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
 					</svg>
-					<span class="text-neutral-700">Unlimited post generations</span>
+					<span class="text-neutral-700 dark:text-neutral-400">Unlimited post generations</span>
 				</li>
 				<li class="flex items-start gap-2">
 					<svg class="w-5 h-5 text-[#fe1817] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
 					</svg>
-					<span class="text-neutral-700">Style learning & quality gates</span>
+					<span class="text-neutral-700 dark:text-neutral-400">Style learning & quality gates</span>
 				</li>
 				<li class="flex items-start gap-2">
 					<svg class="w-5 h-5 text-[#fe1817] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
 					</svg>
-					<span class="text-neutral-700">Post scheduling</span>
+					<span class="text-neutral-700 dark:text-neutral-400">Post scheduling</span>
 				</li>
 				<li class="flex items-start gap-2">
 					<svg class="w-5 h-5 text-[#fe1817] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
 					</svg>
-					<span class="text-neutral-700">Telegram integration</span>
+					<span class="text-neutral-700 dark:text-neutral-400">Telegram integration</span>
 				</li>
 			</ul>
 			<button 
@@ -301,60 +301,60 @@
 
 	<!-- FAQ -->
 	<section class="mb-16">
-		<h2 class="text-3xl font-bold text-neutral-900 mb-6">Frequently Asked Questions</h2>
+		<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Frequently Asked Questions</h2>
 		<div class="space-y-4">
-			<details class="bg-white border border-neutral-200 rounded-lg p-6">
-				<summary class="font-semibold text-neutral-900 cursor-pointer">How does the style learning work?</summary>
-				<p class="mt-3 text-neutral-600">
+			<details class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+				<summary class="font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">How does the style learning work?</summary>
+				<p class="mt-3 text-neutral-600 dark:text-neutral-400">
 					The agent analyzes your past LinkedIn posts to identify patterns in your writing—sentence structure, vocabulary, 
 					tone, use of emojis, paragraph length, and more. It builds a style profile that guides post generation. 
 					The more posts you've written, the better it matches your voice.
 				</p>
 			</details>
 
-			<details class="bg-white border border-neutral-200 rounded-lg p-6">
-				<summary class="font-semibold text-neutral-900 cursor-pointer">What if I don't like the generated posts?</summary>
-				<p class="mt-3 text-neutral-600">
+			<details class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+				<summary class="font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">What if I don't like the generated posts?</summary>
+				<p class="mt-3 text-neutral-600 dark:text-neutral-400">
 					You get 2-3 variations for every voice note. If none of them work, you can regenerate with different instructions 
 					or edit them directly. The quality gates ensure you're starting with solid content, but you always have final control.
 				</p>
 			</details>
 
-			<details class="bg-white border border-neutral-200 rounded-lg p-6">
-				<summary class="font-semibold text-neutral-900 cursor-pointer">How long should my voice notes be?</summary>
-				<p class="mt-3 text-neutral-600">
+			<details class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+				<summary class="font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">How long should my voice notes be?</summary>
+				<p class="mt-3 text-neutral-600 dark:text-neutral-400">
 					Anywhere from 30 seconds to 5 minutes works well. Shorter notes work for quick insights or tips. 
 					Longer notes work for stories or detailed explanations. The agent adapts to your input length.
 				</p>
 			</details>
 
-			<details class="bg-white border border-neutral-200 rounded-lg p-6">
-				<summary class="font-semibold text-neutral-900 cursor-pointer">Can I use this for other platforms besides LinkedIn?</summary>
-				<p class="mt-3 text-neutral-600">
+			<details class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+				<summary class="font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">Can I use this for other platforms besides LinkedIn?</summary>
+				<p class="mt-3 text-neutral-600 dark:text-neutral-400">
 					Currently, it's optimized for LinkedIn's format and best practices. Support for Twitter/X and other platforms 
 					may come in the future based on user feedback.
 				</p>
 			</details>
 
-			<details class="bg-white border border-neutral-200 rounded-lg p-6">
-				<summary class="font-semibold text-neutral-900 cursor-pointer">What's the tech stack?</summary>
-				<p class="mt-3 text-neutral-600">
+			<details class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+				<summary class="font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">What's the tech stack?</summary>
+				<p class="mt-3 text-neutral-600 dark:text-neutral-400">
 					Built with LangGraph for agent orchestration, OpenAI's Whisper for transcription, Claude/GPT-4 for generation, 
 					AWS CDK for infrastructure, and proper observability with LangSmith. It's production-grade, not a prototype.
 				</p>
 			</details>
 
-			<details class="bg-white border border-neutral-200 rounded-lg p-6">
-				<summary class="font-semibold text-neutral-900 cursor-pointer">When will it launch?</summary>
-				<p class="mt-3 text-neutral-600">
+			<details class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+				<summary class="font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">When will it launch?</summary>
+				<p class="mt-3 text-neutral-600 dark:text-neutral-400">
 					Currently in active development. Waitlist members will get early access and founding member pricing. 
 					Expected launch: Q1 2026.
 				</p>
 			</details>
 
-			<details class="bg-white border border-neutral-200 rounded-lg p-6">
-				<summary class="font-semibold text-neutral-900 cursor-pointer">Is there a free trial?</summary>
-				<p class="mt-3 text-neutral-600">
+			<details class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+				<summary class="font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">Is there a free trial?</summary>
+				<p class="mt-3 text-neutral-600 dark:text-neutral-400">
 					Yes, all new users will get a 14-day free trial to test the product. No credit card required to start.
 				</p>
 			</details>

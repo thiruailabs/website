@@ -8,16 +8,16 @@
 
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 	<header class="mb-12">
-		<h1 class="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">Consulting</h1>
-		<p class="text-xl text-neutral-600 leading-relaxed">
+		<h1 class="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Consulting</h1>
+		<p class="text-xl text-neutral-600 dark:text-neutral-400 leading-relaxed">
 			Need help shipping agentic AI systems? We help teams design, build, and deploy production-grade LangGraph agents.
 		</p>
 	</header>
 
 	<div class="space-y-12">
 		<section>
-			<h2 class="text-3xl font-bold text-neutral-900 mb-6">What We Do</h2>
-			<div class="space-y-4 text-neutral-700 leading-relaxed">
+			<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">What We Do</h2>
+			<div class="space-y-4 text-neutral-700 dark:text-neutral-400 leading-relaxed">
 				<p>
 					We work with startups and product teams to turn AI agent prototypes into production systems. 
 					Our focus is on the messy middle—the gap between "it works in a notebook" and "it's running reliably in production."
@@ -31,15 +31,15 @@
 		</section>
 
 		<section>
-			<h2 class="text-3xl font-bold text-neutral-900 mb-6">Services</h2>
+			<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Services</h2>
 			<div class="space-y-6">
-				<div class="bg-white border border-neutral-200 rounded-lg p-6">
-					<h3 class="text-xl font-semibold text-neutral-900 mb-3">Architecture Review & Design</h3>
-					<p class="text-neutral-600 mb-4">
+				<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+					<h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-3">Architecture Review & Design</h3>
+					<p class="text-neutral-700 dark:text-neutral-400 mb-4">
 						Review your existing agent architecture or design a new one from scratch. We'll help you choose 
 						the right patterns, avoid common pitfalls, and set up for scalability.
 					</p>
-					<ul class="space-y-2 text-neutral-700">
+					<ul class="space-y-2 text-neutral-700 dark:text-neutral-400">
 						<li class="flex items-start gap-2">
 							<span class="text-[#fe1817] mt-1">→</span>
 							<span>Agent workflow design (LangGraph state machines)</span>
@@ -59,13 +59,13 @@
 					</ul>
 				</div>
 
-				<div class="bg-white border border-neutral-200 rounded-lg p-6">
-					<h3 class="text-xl font-semibold text-neutral-900 mb-3">Implementation Support</h3>
-					<p class="text-neutral-600 mb-4">
+				<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+					<h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-3">Implementation Support</h3>
+					<p class="text-neutral-700 dark:text-neutral-400 mb-4">
 						Hands-on help building your agent system. We can work alongside your team or take ownership 
 						of specific components.
 					</p>
-					<ul class="space-y-2 text-neutral-700">
+					<ul class="space-y-2 text-neutral-700 dark:text-neutral-400">
 						<li class="flex items-start gap-2">
 							<span class="text-[#fe1817] mt-1">→</span>
 							<span>LangGraph agent development</span>
@@ -85,12 +85,12 @@
 					</ul>
 				</div>
 
-				<div class="bg-white border border-neutral-200 rounded-lg p-6">
-					<h3 class="text-xl font-semibold text-neutral-900 mb-3">Production Readiness</h3>
-					<p class="text-neutral-600 mb-4">
+				<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+					<h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-3">Production Readiness</h3>
+					<p class="text-neutral-700 dark:text-neutral-400 mb-4">
 						Get your agent system ready for production with proper observability, error handling, and monitoring.
 					</p>
-					<ul class="space-y-2 text-neutral-700">
+					<ul class="space-y-2 text-neutral-700 dark:text-neutral-400">
 						<li class="flex items-start gap-2">
 							<span class="text-[#fe1817] mt-1">→</span>
 							<span>Observability and logging setup</span>
@@ -113,56 +113,56 @@
 		</section>
 
 		<section>
-			<h2 class="text-3xl font-bold text-neutral-900 mb-6">Who We Work With</h2>
-			<ul class="space-y-3 text-neutral-700">
+			<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Who We Work With</h2>
+			<ul class="space-y-3 text-neutral-700 dark:text-neutral-400">
 				<li class="flex items-start gap-2">
 					<span class="text-[#fe1817] mt-1">→</span>
-					<span><strong class="text-neutral-900">Startups</strong> building AI-first products who need to move fast without breaking things</span>
+					<span><strong class="text-neutral-900 dark:text-neutral-100">Startups</strong> building AI-first products who need to move fast without breaking things</span>
 				</li>
 				<li class="flex items-start gap-2">
 					<span class="text-[#fe1817] mt-1">→</span>
-					<span><strong class="text-neutral-900">Product teams</strong> adding agentic AI capabilities to existing platforms</span>
+					<span><strong class="text-neutral-900 dark:text-neutral-100">Product teams</strong> adding agentic AI capabilities to existing platforms</span>
 				</li>
 				<li class="flex items-start gap-2">
 					<span class="text-[#fe1817] mt-1">→</span>
-					<span><strong class="text-neutral-900">Technical founders</strong> who need a second pair of eyes on their agent architecture</span>
+					<span><strong class="text-neutral-900 dark:text-neutral-100">Technical founders</strong> who need a second pair of eyes on their agent architecture</span>
 				</li>
 				<li class="flex items-start gap-2">
 					<span class="text-[#fe1817] mt-1">→</span>
-					<span><strong class="text-neutral-900">Agencies</strong> delivering AI solutions to clients and need specialized expertise</span>
+					<span><strong class="text-neutral-900 dark:text-neutral-100">Agencies</strong> delivering AI solutions to clients and need specialized expertise</span>
 				</li>
 			</ul>
 		</section>
 
 		<section>
-			<h2 class="text-3xl font-bold text-neutral-900 mb-6">How It Works</h2>
-			<div class="space-y-4 text-neutral-700 leading-relaxed">
+			<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">How It Works</h2>
+			<div class="space-y-4 text-neutral-700 dark:text-neutral-400 leading-relaxed">
 				<p>
-					<strong class="text-neutral-900">1. Discovery call:</strong> We'll discuss your project, challenges, and goals. 
+					<strong class="text-neutral-900 dark:text-neutral-100">1. Discovery call:</strong> We'll discuss your project, challenges, and goals. 
 					We'll assess if we're a good fit and provide initial recommendations.
 				</p>
 				<p>
-					<strong class="text-neutral-900">2. Scope & proposal:</strong> We'll send a clear proposal outlining deliverables, 
+					<strong class="text-neutral-900 dark:text-neutral-100">2. Scope & proposal:</strong> We'll send a clear proposal outlining deliverables, 
 					timeline, and pricing. No surprises.
 				</p>
 				<p>
-					<strong class="text-neutral-900">3. Engagement:</strong> We work together via async communication (Slack, email) 
+					<strong class="text-neutral-900 dark:text-neutral-100">3. Engagement:</strong> We work together via async communication (Slack, email) 
 					and scheduled calls. We provide regular updates and documentation.
 				</p>
 				<p>
-					Most engagements are <strong class="text-neutral-900">project-based</strong> (2-8 weeks) or 
-					<strong class="text-neutral-900">retainer-based</strong> (ongoing support). We're also available for 
-					<strong class="text-neutral-900">one-off architecture reviews</strong> (1-2 days).
+					Most engagements are <strong class="text-neutral-900 dark:text-neutral-100">project-based</strong> (2-8 weeks) or 
+					<strong class="text-neutral-900 dark:text-neutral-100">retainer-based</strong> (ongoing support). We're also available for 
+					<strong class="text-neutral-900 dark:text-neutral-100">one-off architecture reviews</strong> (1-2 days).
 				</p>
 			</div>
 		</section>
 
-		<section class="bg-brand-dark border border-neutral-700 rounded-lg p-8">
-			<h2 class="text-2xl font-bold text-white mb-4">Get in Touch</h2>
-			<p class="text-neutral-300 mb-6">
+		<section class="bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+			<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-4">Get in Touch</h2>
+			<p class="text-neutral-600 dark:text-neutral-400 mb-6">
 				Interested in working together? Send us an email with:
 			</p>
-			<ul class="space-y-2 text-neutral-300 mb-6">
+			<ul class="space-y-2 text-neutral-700 dark:text-neutral-400 mb-6">
 				<li class="flex items-start gap-2">
 					<span class="text-[#fedf19] mt-1">→</span>
 					<span>What you're building</span>
