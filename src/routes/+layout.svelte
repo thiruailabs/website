@@ -60,7 +60,7 @@
 						href="https://nickthiru.dev" 
 						target="_blank"
 						rel="noopener noreferrer"
-						class="inline-flex items-center px-3 py-1.5 bg-[#fe1817] text-white hover:bg-[#fedf19] hover:text-brand-dark text-base font-semibold rounded-md transition-colors"
+						class="inline-flex items-center px-3 py-1.5 bg-[#fe1817] text-white hover:bg-[#202020] hover:text-[#fe1817] dark:hover:bg-[#fedf19] dark:hover:text-brand-dark text-base font-semibold rounded-md transition-colors"
 					>
 						Visit Nick's website
 					</a>

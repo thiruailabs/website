@@ -72,7 +72,7 @@
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-	<section class="py-16 border-t border-neutral-200 dark:border-neutral-700">
+	<section class="py-16">
 		<div class="mb-12 flex items-start justify-between">
 			<div>
 				<h2 class="section-heading text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-3">Products</h2>
@@ -124,7 +124,7 @@
 		</div>
 	</section>
 
-	<section class="py-16 border-t border-neutral-200 dark:border-neutral-700">
+	<section class="py-16">
 		<div class="max-w-3xl mx-auto">
 			<h2 class="section-heading text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-8 text-center">The Approach</h2>
 			
@@ -154,7 +154,7 @@
 	</section>
 
 	<!-- Tech Stack Section -->
-	<section class="py-16 border-t border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900">
+	<section class="py-16 bg-neutral-50 dark:bg-neutral-900">
 		<div class="max-w-5xl mx-auto">
 			<div class="text-center mb-12">
 				<h2 class="section-heading text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-3">Built With Modern AI Infrastructure</h2>
@@ -202,7 +202,7 @@
 	</section>
 
 	<!-- Building in Public Section -->
-	<section class="py-16 border-t border-neutral-200 dark:border-neutral-700">
+	<section class="py-16">
 		<div class="max-w-4xl mx-auto">
 			<div class="text-center mb-12">
 				<h2 class="section-heading text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-3">Building in Public</h2>
@@ -324,7 +324,7 @@
 	</section>
 
 	<!-- Founder Credibility Section -->
-	<section class="py-16 border-t border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900">
+	<section class="py-16 bg-neutral-50 dark:bg-neutral-900">
 		<div class="max-w-4xl mx-auto">
 			<div class="text-center mb-12">
 				<h2 class="section-heading text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-3">About the Founder</h2>
@@ -408,7 +408,7 @@
 	</section>
 
 	<!-- Why Solo Section -->
-	<section class="py-16 border-t border-neutral-200 dark:border-neutral-700">
+	<section class="py-16">
 		<div class="max-w-3xl mx-auto text-center">
 			<h2 class="section-heading text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Why a Solo Studio?</h2>
 			<p class="text-lg text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">

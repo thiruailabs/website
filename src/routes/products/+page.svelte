@@ -16,10 +16,15 @@
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 	<div class="max-w-3xl mb-12">
-		<h1 class="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-[#fedf19] mb-4">Products</h1>
-		<p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed">
-			Building a portfolio of focused AI products that solve real problems. Each product is designed to be production-ready with proper authentication, billing, and infrastructure.
-		</p>
+		<h1 class="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Products</h1>
+		<div class="space-y-4">
+			<p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed">
+				Building a portfolio of focused AI products that solve real problems. Each product is designed to be production-ready with proper authentication, billing, and infrastructure.
+			</p>
+			<p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed">
+				Each product is built with a systems-first mindset: production-ready infrastructure, proper authentication and billing, comprehensive observability, and a focus on solving specific problems exceptionally well rather than being a generic solution.
+			</p>
+		</div>
 	</div>
 
 	<section class="mb-16">
@@ -56,7 +61,7 @@
 					</a>
 					<button 
 						on:click={openWaitlist}
-						class="inline-flex items-center gap-1 px-4 py-2 bg-[#fe1817] text-white font-medium rounded-md hover:bg-[#202020] transition-colors"
+						class="inline-flex items-center gap-1 px-4 py-2 bg-[#fe1817] text-white font-medium rounded-md hover:bg-[#fedf19] hover:text-brand-dark transition-colors"
 					>
 						Join waitlist
 						<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,10 +125,4 @@
 		</div>
 	</section>
 
-	<section class="bg-[#202020] dark:bg-neutral-950 border border-neutral-700 dark:border-neutral-800 rounded-lg p-8 max-w-3xl">
-		<h2 class="text-xl font-semibold text-[#fedf19] dark:text-[#fedf19] mb-3">Product Philosophy</h2>
-		<p class="text-neutral-300 dark:text-neutral-400 leading-relaxed">
-			Each product is built with a systems-first mindset: production-ready infrastructure, proper authentication and billing, comprehensive observability, and a focus on solving specific problems exceptionally well rather than being a generic solution.
-		</p>
-	</section>
 </div>

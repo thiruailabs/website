@@ -8,7 +8,7 @@
 
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 	<header class="mb-12">
-		<h1 class="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Consulting</h1>
+		<h1 class="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Consulting</h1>
 		<p class="text-xl text-neutral-600 dark:text-neutral-400 leading-relaxed">
 			Need help shipping agentic AI systems? We help teams design, build, and deploy production-grade LangGraph agents.
 		</p>
@@ -23,7 +23,7 @@
 					Our focus is on the messy middle—the gap between "it works in a notebook" and "it's running reliably in production."
 				</p>
 				<p>
-					We specialize in <strong class="text-neutral-900">LangGraph-based agentic AI systems</strong> that need to handle 
+					We specialize in <strong class="text-neutral-900 dark:text-neutral-100">LangGraph-based agentic AI systems</strong> that need to handle 
 					real workflows, not just demos. Think multi-step agents with quality gates, state management, error handling, 
 					and observability.
 				</p>
@@ -41,19 +41,19 @@
 					</p>
 					<ul class="space-y-2 text-neutral-700 dark:text-neutral-400">
 						<li class="flex items-start gap-2">
-							<span class="text-[#fe1817] mt-1">→</span>
+							<span class="text-[#fe1817]">→</span>
 							<span>Agent workflow design (LangGraph state machines)</span>
 						</li>
 						<li class="flex items-start gap-2">
-							<span class="text-[#fe1817] mt-1">→</span>
+							<span class="text-[#fe1817]">→</span>
 							<span>Prompt engineering strategy</span>
 						</li>
 						<li class="flex items-start gap-2">
-							<span class="text-[#fe1817] mt-1">→</span>
+							<span class="text-[#fe1817]">→</span>
 							<span>Quality gate implementation</span>
 						</li>
 						<li class="flex items-start gap-2">
-							<span class="text-[#fe1817] mt-1">→</span>
+							<span class="text-[#fe1817]">→</span>
 							<span>Infrastructure planning (AWS CDK, serverless)</span>
 						</li>
 					</ul>
@@ -67,19 +67,19 @@
 					</p>
 					<ul class="space-y-2 text-neutral-700 dark:text-neutral-400">
 						<li class="flex items-start gap-2">
-							<span class="text-[#fe1817] mt-1">→</span>
+							<span class="text-[#fe1817]">→</span>
 							<span>LangGraph agent development</span>
 						</li>
 						<li class="flex items-start gap-2">
-							<span class="text-[#fe1817] mt-1">→</span>
+							<span class="text-[#fe1817]">→</span>
 							<span>Integration with existing systems (APIs, databases)</span>
 						</li>
 						<li class="flex items-start gap-2">
-							<span class="text-[#fe1817] mt-1">→</span>
+							<span class="text-[#fe1817]">→</span>
 							<span>Testing and quality validation</span>
 						</li>
 						<li class="flex items-start gap-2">
-							<span class="text-[#fe1817] mt-1">→</span>
+							<span class="text-[#fe1817]">→</span>
 							<span>Deployment and CI/CD setup</span>
 						</li>
 					</ul>
@@ -92,19 +92,19 @@
 					</p>
 					<ul class="space-y-2 text-neutral-700 dark:text-neutral-400">
 						<li class="flex items-start gap-2">
-							<span class="text-[#fe1817] mt-1">→</span>
+							<span class="text-[#fe1817]">→</span>
 							<span>Observability and logging setup</span>
 						</li>
 						<li class="flex items-start gap-2">
-							<span class="text-[#fe1817] mt-1">→</span>
+							<span class="text-[#fe1817]">→</span>
 							<span>Error handling and retry strategies</span>
 						</li>
 						<li class="flex items-start gap-2">
-							<span class="text-[#fe1817] mt-1">→</span>
+							<span class="text-[#fe1817]">→</span>
 							<span>Performance optimization</span>
 						</li>
 						<li class="flex items-start gap-2">
-							<span class="text-[#fe1817] mt-1">→</span>
+							<span class="text-[#fe1817]">→</span>
 							<span>Cost monitoring and optimization</span>
 						</li>
 					</ul>
@@ -116,19 +116,19 @@
 			<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Who We Work With</h2>
 			<ul class="space-y-3 text-neutral-700 dark:text-neutral-400">
 				<li class="flex items-start gap-2">
-					<span class="text-[#fe1817] mt-1">→</span>
+					<span class="text-[#fe1817]">→</span>
 					<span><strong class="text-neutral-900 dark:text-neutral-100">Startups</strong> building AI-first products who need to move fast without breaking things</span>
 				</li>
 				<li class="flex items-start gap-2">
-					<span class="text-[#fe1817] mt-1">→</span>
+					<span class="text-[#fe1817]">→</span>
 					<span><strong class="text-neutral-900 dark:text-neutral-100">Product teams</strong> adding agentic AI capabilities to existing platforms</span>
 				</li>
 				<li class="flex items-start gap-2">
-					<span class="text-[#fe1817] mt-1">→</span>
+					<span class="text-[#fe1817]">→</span>
 					<span><strong class="text-neutral-900 dark:text-neutral-100">Technical founders</strong> who need a second pair of eyes on their agent architecture</span>
 				</li>
 				<li class="flex items-start gap-2">
-					<span class="text-[#fe1817] mt-1">→</span>
+					<span class="text-[#fe1817]">→</span>
 					<span><strong class="text-neutral-900 dark:text-neutral-100">Agencies</strong> delivering AI solutions to clients and need specialized expertise</span>
 				</li>
 			</ul>
@@ -157,22 +157,28 @@
 			</div>
 		</section>
 
-		<section class="bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+		<section class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 			<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-4">Get in Touch</h2>
 			<p class="text-neutral-600 dark:text-neutral-400 mb-6">
 				Interested in working together? Send us an email with:
 			</p>
 			<ul class="space-y-2 text-neutral-700 dark:text-neutral-400 mb-6">
 				<li class="flex items-start gap-2">
-					<span class="text-[#fedf19] mt-1">→</span>
+					<svg class="w-5 h-5 text-neutral-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+					</svg>
 					<span>What you're building</span>
 				</li>
 				<li class="flex items-start gap-2">
-					<span class="text-[#fedf19] mt-1">→</span>
+					<svg class="w-5 h-5 text-neutral-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+					</svg>
 					<span>Where you're stuck or what help you need</span>
 				</li>
 				<li class="flex items-start gap-2">
-					<span class="text-[#fedf19] mt-1">→</span>
+					<svg class="w-5 h-5 text-neutral-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+					</svg>
 					<span>Your timeline and budget range</span>
 				</li>
 			</ul>
