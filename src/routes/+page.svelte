@@ -1,3 +1,8 @@
+<script>
+	import AboutTheFounder from "$lib/components/AboutTheFounder.svelte";
+	import WhySoloStudio from "$lib/components/WhySoloStudio.svelte";
+</script>
+
 <svelte:head>
 	<title>Thiru AI Labs - AI Systems Studio</title>
 </svelte:head>
@@ -290,7 +295,7 @@
 	</section>
 
 	<!-- Founder Credibility Section -->
-	<section class="py-16 bg-neutral-50 dark:bg-neutral-900">
+	<!-- <section class="py-16 bg-neutral-50 dark:bg-neutral-900">
 		<div class="max-w-4xl mx-auto">
 			<div class="text-center mb-12">
 				<h2 class="section-heading text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-3">About the Founder</h2>
@@ -306,19 +311,19 @@
 						<h3 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">Nick Thiru</h3>
 						<div class="space-y-4 text-neutral-600 dark:text-neutral-400">
 							<p>
-								High-ranking corporate executive-turned software engineer with deep expertise in building production AI systems. Now focused on agentic AI workflows, LLM orchestration, and scalable infrastructure.
+								A high-ranking corporate executive-turned software engineer with deep expertise in building production AI systems. Now focused on agentic AI workflows, LLM orchestration, and scalable infrastructure.
 							</p>
 							<p>
 								Previously built full-stack web applications at scale. Now building focused AI products as a solo founder, applying enterprise-grade engineering practices to SaaS products and systems.
 							</p>
 							<div class="flex flex-wrap gap-3 mt-6">
 								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">AI Systems Architecture</span>
+                                <span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">Full-Stack</span>
 								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">LangGraph & Agents</span>
 								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">AWS Infrastructure</span>
 								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">Sveltekit Frontend</span>
-								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">Full-Stack Web</span>
 								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">Production Engineering</span>
-								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">Business Administration</span>
+								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">Business Management</span>
 							</div>
 						</div>
 						<div class="mt-6 flex gap-5">
@@ -371,10 +376,11 @@
 				</div>
 			</div>
 		</div>
-	</section>
-
+	</section> -->
+    <AboutTheFounder />
+    
 	<!-- Why Solo Section -->
-	<section class="py-16">
+	<!-- <section class="py-16">
 		<div class="max-w-3xl mx-auto text-center">
 			<h2 class="section-heading text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Why a Solo Studio?</h2>
 			<p class="text-lg text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
@@ -392,5 +398,6 @@
 				</svg>
 			</a>
 		</div>
-	</section>
+	</section> -->
+    <WhySoloStudio />
 </div>
