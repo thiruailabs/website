@@ -20,7 +20,7 @@
 </svelte:head>
 
 <div class="min-h-screen flex flex-col bg-neutral-50 dark:bg-neutral-900">
-	<header class="sticky top-0 z-50 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800">
+	<header class="sticky top-0 z-50 bg-neutral-50/90 dark:bg-neutral-900/90 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800">
 		<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="flex justify-between items-center h-16">
 				<a href="/" class="flex items-center hover:opacity-90 transition-opacity">
@@ -66,37 +66,37 @@
 		{@render children()}
 	</main>
 
-	<footer class="bg-[#202020] dark:bg-neutral-950 mt-16">
+	<footer class="bg-neutral-50 dark:bg-neutral-900 mt-16 border-t border-neutral-200 dark:border-neutral-800">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 			<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
 				<div class="md:col-span-2">
 					<h3 class="text-lg font-semibold text-[#fe1817] mb-2">Thiru AI Labs</h3>
-					<p class="text-sm text-neutral-400 dark:text-neutral-500 max-w-md">
+					<p class="text-sm text-neutral-600 dark:text-neutral-400 max-w-md">
 						A solo AI systems studio building production-grade, agentic AI SaaS products and systems.
 					</p>
 				</div>
 				
 				<div>
-					<h4 class="text-sm font-semibold text-white dark:text-neutral-200 mb-3">Navigation</h4>
+					<h4 class="text-sm font-semibold text-brand-dark dark:text-neutral-200 mb-3">Navigation</h4>
 					<ul class="space-y-2">
-						<li><a href="/about" class="text-sm text-neutral-400 dark:text-neutral-500 hover:text-[#fe1817] transition-colors">About</a></li>
-						<li><a href="/products" class="text-sm text-neutral-400 dark:text-neutral-500 hover:text-[#fe1817] transition-colors">Products</a></li>
-						<li><a href="/consult" class="text-sm text-neutral-400 dark:text-neutral-500 hover:text-[#fe1817] transition-colors">Consult</a></li>
-						<li><a href="/contact" class="text-sm text-neutral-400 dark:text-neutral-500 hover:text-[#fe1817] transition-colors">Contact</a></li>
+						<li><a href="/about" class="text-sm text-neutral-600 dark:text-neutral-400 hover:text-[#fe1817] dark:hover:text-[#fe1817] transition-colors">About</a></li>
+						<li><a href="/products" class="text-sm text-neutral-600 dark:text-neutral-400 hover:text-[#fe1817] dark:hover:text-[#fe1817] transition-colors">Products</a></li>
+						<li><a href="/consult" class="text-sm text-neutral-600 dark:text-neutral-400 hover:text-[#fe1817] dark:hover:text-[#fe1817] transition-colors">Consult</a></li>
+						<li><a href="/contact" class="text-sm text-neutral-600 dark:text-neutral-400 hover:text-[#fe1817] dark:hover:text-[#fe1817] transition-colors">Contact</a></li>
 					</ul>
 				</div>
 				
 				<div>
-					<h4 class="text-sm font-semibold text-white dark:text-neutral-200 mb-3">Legal</h4>
+					<h4 class="text-sm font-semibold text-brand-dark dark:text-neutral-200 mb-3">Legal</h4>
 					<ul class="space-y-2">
-						<li><a href="/legal/privacy" class="text-sm text-neutral-400 dark:text-neutral-500 hover:text-[#fe1817] transition-colors">Privacy</a></li>
-						<li><a href="/legal/terms" class="text-sm text-neutral-400 dark:text-neutral-500 hover:text-[#fe1817] transition-colors">Terms</a></li>
+						<li><a href="/legal/privacy" class="text-sm text-neutral-600 dark:text-neutral-400 hover:text-[#fe1817] dark:hover:text-[#fe1817] transition-colors">Privacy</a></li>
+						<li><a href="/legal/terms" class="text-sm text-neutral-600 dark:text-neutral-400 hover:text-[#fe1817] dark:hover:text-[#fe1817] transition-colors">Terms</a></li>
 					</ul>
 				</div>
 			</div>
 			
-			<div class="mt-8 pt-8 border-t border-neutral-700 dark:border-neutral-800">
-				<p class="text-sm text-neutral-500 dark:text-neutral-600 text-center">
+			<div class="mt-8 pt-8 border-t border-neutral-200 dark:border-neutral-800">
+				<p class="text-sm text-neutral-500 dark:text-neutral-500 text-center">
 					© {new Date().getFullYear()} Thiru AI Labs. All rights reserved.
 				</p>
 			</div>

@@ -278,7 +278,7 @@
 					href="https://nickthiru.dev/writing" 
 					target="_blank"
 					rel="noopener noreferrer"
-					class="inline-flex items-center gap-2 px-6 py-3 bg-brand-dark text-white dark:bg-neutral-100 dark:text-brand-dark font-medium rounded-lg hover:bg-[#fe1817] transition-colors"
+					class="inline-flex items-center gap-2 px-6 py-3 bg-brand-dark text-white font-medium rounded-lg hover:bg-[#fe1817] transition-colors"
 				>
 					Read the articles
 					<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
