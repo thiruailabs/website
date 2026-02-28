@@ -18,10 +18,9 @@
 </script>
 
 <button
-  type="button"
+  class="p-2 rounded-full text-brand-dark dark:text-neutral-300 hover:text-[#fe1817] dark:hover:text-[#fe1817] hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
   onclick={toggleTheme}
-  class="p-2 text-[#202020] dark:text-neutral-200 hover:text-[#fe1817] dark:hover:text-[#fedf19] transition-colors rounded-lg hover:bg-[#fedf19] dark:hover:bg-neutral-800"
-  aria-label="Toggle theme"
+  aria-label="Toggle dark mode"
   title={currentTheme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
 >
   {#if currentTheme === 'dark'}

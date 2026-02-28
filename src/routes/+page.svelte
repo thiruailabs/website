@@ -2,69 +2,35 @@
 	<title>Thiru AI Labs - AI Systems Studio</title>
 </svelte:head>
 
-<!-- Hero Section - Split Design -->
-<section class="grid md:grid-cols-2 min-h-[400px]">
-	<!-- Left Side - Dark with Live Status Indicator -->
-	<div class="bg-brand-dark dark:bg-neutral-950 hidden md:flex items-center justify-center">
-		<div class="text-center px-8">
-			<!-- Pulse indicator -->
-			<div class="flex items-center justify-center gap-3 mb-4">
-				<span class="relative flex h-3 w-3">
-					<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#fe1817] opacity-75"></span>
-					<span class="relative inline-flex rounded-full h-3 w-3 bg-[#fe1817]"></span>
-				</span>
-				<span class="text-[#fe1817] dark:text-[#fedf19] text-sm font-semibold uppercase tracking-wider">Currently Building</span>
-			</div>
-			<!-- Product name -->
-			<h3 class="text-white dark:text-neutral-100 text-2xl md:text-3xl font-bold mb-2">LinkedIn Ghostwriter Agent</h3>
-			<p class="text-neutral-300 dark:text-neutral-400 text-sm max-w-xs mx-auto">AI that turns voice notes into LinkedIn posts that sound authentically like you</p>
-		</div>
+<!-- Hero Section - Unified Corporate Design -->
+<section class="relative min-h-[65vh] flex items-center justify-center overflow-hidden bg-white dark:bg-neutral-950 py-16 lg:py-24">
+	<!-- Subtle Background Effects -->
+	<div class="absolute inset-0 overflow-hidden pointer-events-none">
+		<div class="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.02)_1px,transparent_1px)] dark:bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_10%,transparent_100%)]"></div>
 	</div>
-	
-	<!-- Right Side - Dark with Logo and CTAs -->
-	<div class="bg-brand-dark dark:bg-neutral-950 px-8 py-12 md:px-20 lg:px-32 flex flex-col justify-center items-center text-center">
-		<!-- Full Logo with rounded corners -->
-		<div class="mb-6">
-			<img src="/logo.png" alt="Thiru AI Labs" class="h-32 md:h-36 lg:h-40 rounded-xl" />
+
+	<div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+		<!-- Full Logo Integration -->
+		<div class="mb-10 w-full max-w-[320px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[650px]">
+			<!-- We use logo.png because logo-with-bg.svg has a yellow background baked in, which we want to avoid for a clean look -->
+			<img src="/logo.png" alt="Thiru AI Labs Logo" class="w-full h-auto rounded-2xl shadow-sm dark:shadow-none border border-neutral-100 dark:border-neutral-800" />
 		</div>
-		
-		<p class="text-neutral-300 dark:text-neutral-400 text-lg md:text-xl leading-relaxed mb-3 max-w-lg">
-			A solo AI systems studio building production-grade, agentic AI systems and SaaS products. 
-		</p>
 
-		<p class="text-neutral-300 dark:text-neutral-400 text-md md:text-xl leading-relaxed mb-1 max-w-lg">
-			<a href="https://nickthiru.dev/writing/what-are-ai-agents" target="_blank" rel="noopener noreferrer" class="text-[#fedf19] hover:underline inline-flex items-center gap-1">
-          What are AI agents and agentic AI systems, anyway? →
-			</a>
-		</p>
+		<!-- Main Value Prop as H1 -->
+		<h1 class="text-xl md:text-2xl lg:text-3xl text-neutral-700 dark:text-neutral-300 max-w-3xl mx-auto mb-12 leading-snug font-light tracking-tight">
+			A solo AI systems studio building production-grade, agentic AI SaaS products and systems for the real world.
+		</h1>
 
-		<p class="text-neutral-300 text-md md:text-xl leading-relaxed mb-6 max-w-lg">
-			<a href="https://nickthiru.dev/writing/why-building-solo" target="_blank" rel="noopener noreferrer" class="text-[#fedf19] hover:underline inline-flex items-center gap-1">
-				And why a <i>solo</i> studio? →
+		<!-- Secondary Links -->
+		<div class="flex flex-col sm:flex-row gap-6 sm:gap-8 items-center justify-center text-base md:text-lg text-neutral-600 dark:text-neutral-400">
+			<a href="https://nickthiru.dev/writing/what-are-ai-agents" target="_blank" rel="noopener noreferrer" class="hover:text-[#fe1817] dark:hover:text-[#fe1817] transition-colors flex items-center gap-1.5 font-medium">
+				What are AI agents, anyway?
+				<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
 			</a>
-		</p>
-		
-		<!-- CTAs with rounded borders -->
-		<div class="flex flex-col sm:flex-row gap-4">
-			<a 
-				href="/products" 
-				class="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-white text-white font-medium rounded-full hover:bg-[#fe1817] hover:text-brand-white transition-all group"
-			>
-				Explore products
-				<svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-				</svg>
-			</a>
-			<a 
-				href="https://nickthiru.dev/writing" 
-				target="_blank"
-				rel="noopener noreferrer"
-				class="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-white text-white font-medium rounded-full hover:bg-[#fe1817] hover:text-brand-white transition-all group"
-			>
-				Read Nick's writing
-				<svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-				</svg>
+			<span class="hidden sm:inline text-neutral-300 dark:text-neutral-700">•</span>
+			<a href="https://nickthiru.dev/writing/why-building-solo" target="_blank" rel="noopener noreferrer" class="hover:text-[#fe1817] dark:hover:text-[#fe1817] transition-colors flex items-center gap-1.5 font-medium">
+				And why a solo studio?
+				<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
 			</a>
 		</div>
 	</div>

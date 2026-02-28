@@ -20,7 +20,7 @@
 </svelte:head>
 
 <div class="min-h-screen flex flex-col bg-neutral-50 dark:bg-neutral-900">
-	<header class="sticky top-0 z-50 bg-[#fedf19]/95 dark:bg-neutral-800/95 backdrop-blur-sm shadow-sm">
+	<header class="sticky top-0 z-50 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800">
 		<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="flex justify-between items-center h-16">
 				<a href="/" class="flex items-center hover:opacity-90 transition-opacity">
@@ -55,14 +55,6 @@
 						class:!text-[#fe1817]={$page.url.pathname === '/contact'}
 					>
 						Contact
-					</a>
-					<a 
-						href="https://nickthiru.dev" 
-						target="_blank"
-						rel="noopener noreferrer"
-						class="inline-flex items-center px-3 py-1.5 bg-[#fe1817] text-white hover:bg-[#202020] hover:text-[#fe1817] dark:hover:bg-[#fedf19] dark:hover:text-brand-dark text-base font-semibold rounded-md transition-colors"
-					>
-						Visit Nick's website
 					</a>
 					<ThemeToggle />
 				</div>
