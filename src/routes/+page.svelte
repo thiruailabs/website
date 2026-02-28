@@ -343,7 +343,7 @@
 								High-ranking corporate executive-turned software engineer with deep expertise in building production AI systems. Now focused on agentic AI workflows, LLM orchestration, and scalable infrastructure.
 							</p>
 							<p>
-								Previously built systems at scale. Now building focused AI products as a solo founder, applying enterprise-grade engineering practices to SaaS products and systems.
+								Previously built full-stack web applications at scale. Now building focused AI products as a solo founder, applying enterprise-grade engineering practices to SaaS products and systems.
 							</p>
 							<div class="flex flex-wrap gap-3 mt-6">
 								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">AI Systems Architecture</span>
