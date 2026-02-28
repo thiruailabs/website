@@ -184,7 +184,7 @@
 			</ul>
 			<a 
 				href="mailto:contact@thiruailabs.com" 
-				class="inline-flex items-center gap-2 px-6 py-3 bg-[#fe1817] text-white font-semibold rounded-md hover:bg-[#fedf19] hover:text-brand-dark transition-colors"
+				class="inline-flex items-center gap-2 px-6 py-3 bg-[#fe1817] text-white font-semibold rounded-md hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors"
 			>
 				Email us: contact@thiruailabs.com
 			</a>
