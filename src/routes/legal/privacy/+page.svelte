@@ -39,7 +39,7 @@
 					<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed mb-3">
 						We use the information we collect or receive to:
 					</p>
-					<ul class="list-disc list-inside space-y-2 text-neutral-700 dark:text-neutral-400">
+					<ul class="list-disc pl-5 space-y-2 text-neutral-700 dark:text-neutral-400">
 						<li>Provide, operate, and maintain our products and services</li>
 						<li>Improve, personalize, and expand our products and services</li>
 						<li>Understand and analyze how you use our products and services</li>
@@ -69,7 +69,7 @@
 					<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed mb-3">
 						Depending on your location, you may have certain rights regarding your personal information, including:
 					</p>
-					<ul class="list-disc list-inside space-y-2 text-neutral-700 dark:text-neutral-400">
+					<ul class="list-disc pl-5 space-y-2 text-neutral-700 dark:text-neutral-400">
 						<li>The right to access your personal information</li>
 						<li>The right to correct inaccurate or incomplete information</li>
 						<li>The right to delete your personal information</li>

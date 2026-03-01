@@ -21,7 +21,7 @@
 					<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed mb-3">
 						Permission is granted to temporarily access our services for personal, non-commercial use only. This is the grant of a license, not a transfer of title, and under this license you may not:
 					</p>
-					<ul class="list-disc list-inside space-y-2 text-neutral-700 dark:text-neutral-400">
+					<ul class="list-disc pl-5 space-y-2 text-neutral-700 dark:text-neutral-400">
 						<li>Modify or copy the materials</li>
 						<li>Use the materials for any commercial purpose or public display</li>
 						<li>Attempt to decompile or reverse engineer any software contained in our services</li>
@@ -49,7 +49,7 @@
 					<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed mb-3">
 						You may not use our services:
 					</p>
-					<ul class="list-disc list-inside space-y-2 text-neutral-700 dark:text-neutral-400">
+					<ul class="list-disc pl-5 space-y-2 text-neutral-700 dark:text-neutral-400">
 						<li>In any way that violates any applicable law or regulation</li>
 						<li>To exploit, harm, or attempt to exploit or harm minors in any way</li>
 						<li>To transmit any advertising or promotional material without our prior written consent</li>

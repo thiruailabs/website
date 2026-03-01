@@ -57,19 +57,19 @@
 					<div class="flex gap-3 mt-auto">
 						<a 
 							href="/products/linkedin-ghostwriter" 
-							class="inline-flex items-center gap-1 px-4 py-2 bg-[#202020] dark:bg-neutral-700 text-white font-medium rounded-md hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors"
+							class="inline-flex flex-1 justify-center items-center gap-1 px-4 py-2 bg-[#202020] dark:bg-neutral-700 text-white font-medium rounded-md hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors text-center"
 						>
 							Learn more
-							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
 							</svg>
 						</a>
 						<button 
 							on:click={openWaitlist}
-							class="inline-flex items-center gap-1 px-4 py-2 bg-[#fe1817] text-white font-medium rounded-md hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors"
+							class="inline-flex flex-1 justify-center items-center gap-1 px-4 py-2 bg-[#fe1817] text-white font-medium rounded-md hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors text-center"
 						>
 							Join waitlist
-							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
 							</svg>
 						</button>
