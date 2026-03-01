@@ -1,15 +1,11 @@
 <script>
 	import WaitlistModal from '$lib/components/WaitlistModal.svelte';
 	import ProductCard from '$lib/components/ProductCard.svelte';
-	
+
 	let isWaitlistOpen = false;
-	
+
 	function openWaitlist() {
 		isWaitlistOpen = true;
-	}
-	
-	function closeWaitlist() {
-		isWaitlistOpen = false;
 	}
 </script>
 
@@ -138,7 +134,3 @@
 	</section>
 
 </div>
-
-{#if isWaitlistOpen}
-	<WaitlistModal onClose={closeWaitlist} />
-{/if}
