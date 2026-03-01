@@ -45,20 +45,20 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
 	<section class="py-16">
-		<div class="mb-12 flex items-start justify-between">
-			<div>
-				<h2 class="section-heading text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-3">Products</h2>
-				<p class="text-lg text-neutral-600 dark:text-neutral-400">Building focused AI workflows for real-world problems</p>
+		<div class="mb-12">
+			<div class="flex items-center justify-between mb-3 gap-4">
+				<h2 class="section-heading text-3xl font-bold text-neutral-900 dark:text-[#fedf19]">Products</h2>
+				<a 
+					href="/products" 
+					class="inline-flex items-center gap-1 text-brand-dark dark:text-neutral-300 hover:text-[#fe1817] font-medium transition-colors shrink-0 whitespace-nowrap"
+				>
+					View all
+					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+					</svg>
+				</a>
 			</div>
-			<a 
-				href="/products" 
-				class="inline-flex items-center gap-1 text-brand-dark dark:text-neutral-300 hover:text-[#fe1817] font-medium transition-colors mt-1"
-			>
-				View all
-				<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-				</svg>
-			</a>
+			<p class="text-lg text-neutral-600 dark:text-neutral-400">Building focused AI workflows for real-world problems</p>
 		</div>
 		
 		<div class="grid md:grid-cols-2 gap-6 items-stretch">

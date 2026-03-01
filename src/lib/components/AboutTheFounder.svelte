@@ -6,7 +6,7 @@
 			</div>
 
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-8 md:p-10">
-				<div class="flex flex-col md:flex-row gap-8 items-start">
+				<div class="flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
 					<div class="shrink-0">
 						<img src="/founder-image.jpeg" alt="Nick Thiru" class="w-32 h-32 rounded-lg object-cover object-top" />
 					</div>
@@ -19,22 +19,22 @@
 							<p>
 								Previously built full-stack web applications at scale. Now building focused AI products as a solo founder, applying enterprise-grade engineering practices to SaaS products and systems.
 							</p>
-							<div class="flex flex-wrap gap-3 mt-6">
-								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">AI Systems Architecture</span>
-                                <span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">Full-Stack</span>
-								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">LangGraph & Agents</span>
-								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">AWS Infrastructure</span>
-								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">Sveltekit Frontend</span>
-								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">Production Engineering</span>
-								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium rounded-full">Business Management</span>
+							<div class="flex flex-wrap justify-center md:justify-start gap-2.5 mt-6">
+								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-xs sm:text-sm font-medium rounded-full whitespace-nowrap">AI Systems Architecture</span>
+                                <span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-xs sm:text-sm font-medium rounded-full whitespace-nowrap">Full-Stack</span>
+								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-xs sm:text-sm font-medium rounded-full whitespace-nowrap">LangGraph & Agents</span>
+								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-xs sm:text-sm font-medium rounded-full whitespace-nowrap">AWS Infrastructure</span>
+								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-xs sm:text-sm font-medium rounded-full whitespace-nowrap">Sveltekit Frontend</span>
+								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-xs sm:text-sm font-medium rounded-full whitespace-nowrap">Production Engineering</span>
+								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-xs sm:text-sm font-medium rounded-full whitespace-nowrap">Business Management</span>
 							</div>
 						</div>
-						<div class="mt-6 flex gap-5">
+						<div class="mt-8 flex flex-wrap justify-center md:justify-start gap-4 sm:gap-5">
 							<a 
 								href="https://nickthiru.dev" 
 								target="_blank"
 								rel="noopener noreferrer"
-								class="inline-flex items-center gap-1 text-brand-dark dark:text-neutral-300 hover:text-[#fe1817] font-medium transition-colors"
+								class="inline-flex items-center gap-1 text-brand-dark dark:text-neutral-300 hover:text-[#fe1817] font-medium transition-colors text-sm sm:text-base"
 							>
 								Personal website
 								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -45,7 +45,7 @@
 								href="https://linkedin.com/in/nick-thiru" 
 								target="_blank"
 								rel="noopener noreferrer"
-								class="inline-flex items-center gap-1 text-brand-dark dark:text-neutral-300 hover:text-[#fe1817] font-medium transition-colors"
+								class="inline-flex items-center gap-1 text-brand-dark dark:text-neutral-300 hover:text-[#fe1817] font-medium transition-colors text-sm sm:text-base"
 							>
 								LinkedIn
 								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,7 +56,7 @@
 								href="https://twitter.com/nickthiru" 
 								target="_blank"
 								rel="noopener noreferrer"
-								class="inline-flex items-center gap-1 text-brand-dark dark:text-neutral-300 hover:text-[#fe1817] font-medium transition-colors"
+								class="inline-flex items-center gap-1 text-brand-dark dark:text-neutral-300 hover:text-[#fe1817] font-medium transition-colors text-sm sm:text-base"
 							>
 								Twitter/X
 								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -67,7 +67,7 @@
 								href="https://github.com/nickthiru" 
 								target="_blank"
 								rel="noopener noreferrer"
-								class="inline-flex items-center gap-1 text-brand-dark dark:text-neutral-300 hover:text-[#fe1817] font-medium transition-colors"
+								class="inline-flex items-center gap-1 text-brand-dark dark:text-neutral-300 hover:text-[#fe1817] font-medium transition-colors text-sm sm:text-base"
 							>
 								GitHub
 								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
