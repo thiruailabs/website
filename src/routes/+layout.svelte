@@ -9,7 +9,7 @@
 	
 	let { children } = $props();
 
-	let mobileMenuOpen = false;
+	let mobileMenuOpen = $state(false);
 
 	function toggleMenu() {
 		mobileMenuOpen = !mobileMenuOpen;
