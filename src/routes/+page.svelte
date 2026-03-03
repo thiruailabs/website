@@ -17,14 +17,14 @@
 
 	<div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
 		<!-- Full Logo Integration -->
-		<div class="mb-10 w-full max-w-[320px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[650px]">
+		<div class="mb-10 w-full max-w-[320px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[550px]">
 			<!-- We use logo.png because logo-with-bg.svg has a yellow background baked in, which we want to avoid for a clean look -->
 			<img src="/logo.png" alt="Thiru AI Labs Logo" class="w-full h-auto rounded-2xl shadow-sm dark:shadow-none border border-neutral-100 dark:border-neutral-800" />
 		</div>
 
 		<!-- Main Value Prop as H1 -->
-		<h1 class="text-xl md:text-2xl lg:text-3xl text-neutral-700 dark:text-neutral-300 max-w-3xl mx-auto mb-12 leading-snug font-light tracking-tight">
-			A solo AI systems studio building production-grade, agentic AI SaaS products and systems for the real world.
+		<h1 class="text-lg md:text-xl lg:text-2xl text-neutral-700 dark:text-neutral-300 max-w-3xl mx-auto mb-12 leading-snug font-light tracking-tight">
+			A solo AI systems studio building full-stack, agentic AI SaaS products and bespoke systems—secure, data-isolated, reliable, and production-grade—for the real world.
 		</h1>
 
 		<!-- Secondary Links -->
