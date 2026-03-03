@@ -65,7 +65,6 @@
 			<ProductCard 
 				title="LinkedIn Ghostwriter Agent"
 				status="Building"
-				interactive={true}
 			>
 				<p>
 					AI that turns voice notes into LinkedIn posts that sound authentically like you. Captures ideas on-the-go and learns your unique style over time.

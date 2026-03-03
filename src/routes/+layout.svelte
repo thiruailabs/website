@@ -174,7 +174,7 @@
 							</svg>
 						</a>
 						<a
-							href="https://github.com/nickthiru"
+							href="https://github.com/thiruailabs"
 							target="_blank"
 							rel="noopener noreferrer"
 							class="text-neutral-600 dark:text-neutral-400 hover:text-[#fe1817] transition-colors"

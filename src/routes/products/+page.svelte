@@ -37,7 +37,6 @@
 				status="Building"
 				padding="p-8"
 				titleSize="text-2xl"
-				interactive={true}
 			>
 				<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
 					Turn voice notes into authentic LinkedIn posts. Style learning, quality gates, and scheduling built-in.
