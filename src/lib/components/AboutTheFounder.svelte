@@ -14,7 +14,7 @@
 						<h3 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">Nick Thiru</h3>
 						<div class="space-y-4 text-neutral-600 dark:text-neutral-400">
 							<p>
-								A high-ranking corporate executive-turned software engineer with deep expertise in building production AI systems. Now focused on agentic AI workflows, LLM orchestration, and scalable infrastructure.
+								A corporate executive-turned software engineer, with deep expertise in building production AI systems. Now focused on agentic AI workflows, LLM orchestration, and scalable infrastructure.
 							</p>
 							<p>
 								Previously built full-stack web applications at scale. Now building focused AI products as a solo founder, applying enterprise-grade engineering practices to SaaS products and systems.
