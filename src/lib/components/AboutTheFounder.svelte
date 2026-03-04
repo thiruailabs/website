@@ -14,10 +14,10 @@
 						<h3 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">Nick Thiru</h3>
 						<div class="space-y-4 text-neutral-600 dark:text-neutral-400">
 							<p>
-								A corporate executive-turned software engineer, with deep expertise in building production AI systems. Now focused on agentic AI workflows, LLM orchestration, and scalable infrastructure.
+								A senior corporate executive-turned software engineer. Previously built full-stack web applications for enterprise clients. Now focused on agentic AI workflows, LLM orchestration, and production-grade AI systems—applying enterprise-level engineering practices to purpose-built AI products and SaaS systems as a solo founder.
 							</p>
 							<p>
-								Previously built full-stack web applications at scale. Now building focused AI products as a solo founder, applying enterprise-grade engineering practices to SaaS products and systems.
+								I also share my hard-won lessons and expertise—across engineering, product, and business—on my blog.
 							</p>
 							<div class="flex flex-wrap justify-center md:justify-start gap-2.5 mt-6">
 								<span class="px-3 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-xs sm:text-sm font-medium rounded-full whitespace-nowrap">AI Systems Architecture</span>
@@ -36,7 +36,7 @@
 								rel="noopener noreferrer"
 								class="inline-flex items-center gap-1 text-brand-dark dark:text-neutral-300 hover:text-[#fe1817] font-medium transition-colors text-sm sm:text-base"
 							>
-								Personal website
+								Personal website & blog
 								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
 								</svg>

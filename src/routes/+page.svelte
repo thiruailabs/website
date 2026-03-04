@@ -84,7 +84,6 @@
 				status="Idea"
 				statusBg="bg-brand-dark dark:bg-neutral-700"
 				statusText="text-white dark:text-neutral-200"
-				interactive={true}
 			>
 				<p>
 					Exploring new opportunities in agentic AI automation and specialized AI workflows for knowledge workers.
