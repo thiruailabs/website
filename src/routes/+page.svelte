@@ -58,7 +58,7 @@
 					</svg>
 				</a>
 			</div>
-			<p class="text-lg text-neutral-600 dark:text-neutral-400">Building focused AI workflows for real-world problems</p>
+			<p class="text-lg text-neutral-600 dark:text-neutral-400">Designing autonomous workflows for practical use cases</p>
 		</div>
 		
 		<div class="grid md:grid-cols-2 gap-6 items-stretch">
@@ -106,23 +106,23 @@
 			
 			<div class="space-y-6">
 				<div class="bg-white border dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 rounded-lg p-6 border-l-4 border-l-[#fe1817] dark:border-l-[#fe1817]">
-					<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Systems-First Approach</h3>
+					<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Architected for Longevity</h3>
 					<p class="text-neutral-600 dark:text-neutral-400">
-						Every product is built as a complete system with proper architecture, not just a prototype or demo. Production-ready from day one with scalable infrastructure and clean code.
+						Every solution is designed with proper architecture, not just patched together for a demo. Built from day one with maintainability and clean code in mind.
 					</p>
 				</div>
 				
 				<div class="bg-white border dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 rounded-lg p-6 border-l-4 border-l-[#fedf19] dark:border-l-[#fedf19]">
-					<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Production Focus</h3>
+					<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Engineering Rigor</h3>
 					<p class="text-neutral-600 dark:text-neutral-400">
-						Authentication, billing, observability, and infrastructure are first-class concerns from day one. No shortcuts, no technical debt, no "we'll fix it later."
+						Enterprise-grade security, privacy, and deep observability are first-class concerns. No shortcuts, no technical debt, no 'we'll fix it later.'
 					</p>
 				</div>
 				
 				<div class="bg-white border dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 rounded-lg p-6 border-l-4 border-l-brand-dark dark:border-l-neutral-100">
-					<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Small, Focused Workflows</h3>
+					<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Purpose-Built Agents</h3>
 					<p class="text-neutral-600 dark:text-neutral-400">
-						Building specialized AI agents for specific tasks, not generic chatbots that try to do everything. Each product solves one problem exceptionally well.
+						Developing specialized AI for specific tasks, not generic chatbots that try to do everything. Each application executes its designated goal exceptionally well.
 					</p>
 				</div>
 			</div>
@@ -133,8 +133,8 @@
 	<section class="py-16 bg-neutral-50 dark:bg-neutral-900">
 		<div class="max-w-5xl mx-auto">
 			<div class="text-center mb-12">
-				<h2 class="section-heading text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-3">Built With Modern AI Infrastructure</h2>
-				<p class="text-lg text-neutral-600 dark:text-neutral-400">Production-grade stack for reliable, scalable AI systems</p>
+				<h2 class="section-heading text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-3">Powered by Modern Tech Stacks</h2>
+				<p class="text-lg text-neutral-600 dark:text-neutral-400">The technical foundation behind resilient, high-performance applications</p>
 			</div>
 			
 			<div class="grid md:grid-cols-3 gap-8">
@@ -168,12 +168,6 @@
 					<p class="text-sm text-neutral-600 dark:text-neutral-400 mb-3">SvelteKit, TypeScript, TailwindCSS for modern UX</p>
 				</div>
 			</div>
-
-			<div class="mt-8 text-center">
-				<p class="text-md text-neutral-500 dark:text-neutral-400">
-					Every component chosen for production reliability, not just developer convenience
-				</p>
-			</div>
 		</div>
 	</section>
 
@@ -196,7 +190,7 @@
 						<div>
 							<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Business & Operations</h3>
 							<p class="text-sm text-neutral-600 dark:text-neutral-400">
-								Practical insights on pricing, distribution, building in public, and running a portfolio of AI products as a solo founder.
+								Actionable strategies on pricing, distribution, building in public, and running a portfolio of AI products as a solo founder.
 							</p>
 						</div>
 					</div>
