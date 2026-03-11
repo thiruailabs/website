@@ -18,7 +18,7 @@ Thiru AI Labs was born from a simple observation: most AI tools today are built 
 </p>
 
 <p>
-Before returning to software engineering to specialize in AI architecture, the founder, Nick Thiru, spent over a decade in executive leadership—managing corporate turnarounds, restructuring supply chains, and overseeing high-stakes daily operations. This firsthand experience revealed a critical gap in the market: real businesses do not need fragile "AI wrappers" or flashy demos. They require reliable systems that can withstand actual operational stress.
+Before returning to software engineering and eventually specializing in AI architecture, the founder, Nick Thiru, spent over a decade in executive leadership—managing corporate turnarounds, restructuring supply chains, and overseeing high-stakes daily operations. This firsthand experience revealed a critical gap in the market: real businesses do not need fragile "AI wrappers" or flashy demos. They require reliable systems that can withstand actual operational stress.
 </p>
 
 <p>
