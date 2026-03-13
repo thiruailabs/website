@@ -4,7 +4,7 @@
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 	<div class="max-w-2xl mx-auto">
-		<h1 class="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Get in Touch</h1>
+		<h1 class="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Get in Touch</h1>
 		
 		<div class="space-y-8">
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-8">

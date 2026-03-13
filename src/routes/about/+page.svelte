@@ -9,9 +9,9 @@ import WhySoloStudio from "$lib/components/WhySoloStudio.svelte";
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 <div class="max-w-3xl mx-auto">
-<h1 class="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">The Story Behind the Studio</h1>
+<h1 class="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">The Story Behind the Studio</h1>
 
-<div class="prose prose-lg max-w-none">
+<div class="prose max-w-none">
 <div class="space-y-6 text-neutral-700 dark:text-neutral-400 leading-relaxed">
 <p>
 Thiru AI Labs was born from a simple observation: most AI tools today are built by developers who have never operated a business at scale.

@@ -17,13 +17,10 @@
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 	<div class="max-w-3xl mb-16">
-		<h1 class="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Products</h1>
-		<div class="prose prose-lg max-w-none">
-			<p class="text-xl text-neutral-700 dark:text-neutral-300 leading-relaxed mb-6">
-				Building a portfolio of focused AI products that solve real problems. Each product is designed to be production-ready with proper authentication, billing, and infrastructure.
-			</p>
+		<h1 class="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Products</h1>
+		<div class="max-w-none">
 			<p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed">
-				Each product is built with a systems-first mindset: production-ready infrastructure, proper authentication and billing, comprehensive observability, and a focus on solving specific problems exceptionally well rather than being a generic solution.
+				A growing portfolio of specialized AI applications and autonomous workflows, designed to solve concrete business bottlenecks rather than act as generic chatbots.
 			</p>
 		</div>
 	</div>

@@ -26,15 +26,6 @@
 			Turn voice notes into authentic LinkedIn posts. Style learning, quality gates, and scheduling built-in. 
 			For founders who want to post consistently without sounding like corporate AI.
 		</p>
-		<button 
-			on:click={openWaitlist}
-			class="inline-flex items-center gap-2 px-6 py-3 bg-[#fe1817] text-white font-semibold rounded-md hover:bg-[#202020] transition-colors text-lg"
-		>
-			Join the waitlist
-			<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-			</svg>
-		</button>
 	</div>
 
 	<!-- The Problem -->
@@ -181,25 +172,25 @@
 		<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Who It's For</h2>
 		<div class="space-y-4">
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-				<h3 class="text-lg font-semibold text-neutral-900 mb-2">Solo Founders & Entrepreneurs</h3>
+				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Solo Founders & Entrepreneurs</h3>
 				<p class="text-neutral-600 dark:text-neutral-400">
 					You're building a product and need to build your brand simultaneously. You have ideas to share but no time to write.
 				</p>
 			</div>
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-				<h3 class="text-lg font-semibold text-neutral-900 mb-2">Consultants & Freelancers</h3>
+				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Consultants & Freelancers</h3>
 				<p class="text-neutral-600 dark:text-neutral-400">
 					Your expertise is valuable, but client work takes priority. You need an easy way to stay visible and attract leads.
 				</p>
 			</div>
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-				<h3 class="text-lg font-semibold text-neutral-900 mb-2">Technical Professionals</h3>
+				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Technical Professionals</h3>
 				<p class="text-neutral-600 dark:text-neutral-400">
 					You have deep knowledge to share but writing isn't your strength. You'd rather talk through ideas than write them.
 				</p>
 			</div>
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-				<h3 class="text-lg font-semibold text-neutral-900 mb-2">Busy Executives</h3>
+				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Busy Executives</h3>
 				<p class="text-neutral-600 dark:text-neutral-400">
 					You need to maintain thought leadership but your calendar is packed. Voice notes fit into your workflow.
 				</p>
@@ -292,7 +283,7 @@
 			</ul>
 			<button 
 				on:click={openWaitlist}
-				class="w-full px-6 py-3 bg-[#fe1817] text-white font-semibold rounded-md hover:bg-[#202020] transition-colors"
+				class="w-full px-6 py-3 bg-[#fe1817] text-white font-semibold rounded-md hover:bg-[#fedf19] hover:text-[#202020] transition-colors"
 			>
 				Join the waitlist
 			</button>

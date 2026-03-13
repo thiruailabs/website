@@ -8,15 +8,15 @@
 
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 	<header class="mb-12">
-		<h1 class="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Consulting</h1>
-		<p class="text-xl text-neutral-600 dark:text-neutral-400 leading-relaxed">
-			Need help shipping agentic AI systems? We help teams design, build, and deploy production-grade LangGraph agents.
+		<h1 class="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Consulting</h1>
+		<p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed">
+			We help product teams design, build, and deploy production-grade LangGraph agents.
 		</p>
 	</header>
 
 	<div class="space-y-12">
 		<section>
-			<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">What We Do</h2>
+			<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">What We Do</h2>
 			<div class="space-y-4 text-neutral-700 dark:text-neutral-400 leading-relaxed">
 				<p>
 					We work with startups and product teams to turn AI agent prototypes into production systems. 
@@ -31,7 +31,7 @@
 		</section>
 
 		<section>
-			<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Services</h2>
+			<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Services</h2>
 			<div class="space-y-6">
 				<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 					<h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-3">Architecture Review & Design</h3>
@@ -113,7 +113,7 @@
 		</section>
 
 		<section>
-			<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Who We Work With</h2>
+			<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Who We Work With</h2>
 			<ul class="space-y-3 text-neutral-700 dark:text-neutral-400">
 				<li class="flex items-start gap-2">
 					<span class="text-[#fe1817]">→</span>
@@ -135,7 +135,7 @@
 		</section>
 
 		<section>
-			<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">How It Works</h2>
+			<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">How It Works</h2>
 			<div class="space-y-4 text-neutral-700 dark:text-neutral-400 leading-relaxed">
 				<p>
 					<strong class="text-neutral-900 dark:text-neutral-100">1. Discovery call:</strong> We'll discuss your project, challenges, and goals. 
