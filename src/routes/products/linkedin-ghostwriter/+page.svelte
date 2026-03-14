@@ -21,8 +21,8 @@
 		<div class="flex items-center gap-3 mb-4">
 			<span class="px-3 py-1 bg-[#fedf19] text-[#202020] text-xs font-semibold rounded-full">Building Now</span>
 		</div>
-		<h1 class="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">LinkedIn Ghostwriter</h1>
-		<p class="text-xl text-neutral-600 dark:text-neutral-400 leading-relaxed mb-8">
+		<h1 class="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">LinkedIn Ghostwriter</h1>
+		<p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed mb-8">
 			Turn voice notes into authentic LinkedIn posts. Style learning, quality gates, and scheduling built-in. 
 			For founders who want to post consistently without sounding like corporate AI.
 		</p>
@@ -30,7 +30,7 @@
 
 	<!-- The Problem -->
 	<section class="mb-16">
-		<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">The Problem</h2>
+		<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">The Problem</h2>
 		<div class="bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-8 space-y-4">
 			<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
 				You know you should post on LinkedIn consistently. It's how you build your brand, attract clients, and establish authority.
@@ -48,7 +48,7 @@
 
 	<!-- The Solution -->
 	<section class="mb-16">
-		<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">The Solution</h2>
+		<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">The Solution</h2>
 		<p class="text-lg text-neutral-600 dark:text-neutral-400 mb-8">
 			LinkedIn Ghostwriter turns your raw thoughts into polished posts that sound like <em>you</em>—not a robot.
 		</p>
@@ -126,7 +126,7 @@
 
 	<!-- Key Features -->
 	<section class="mb-16">
-		<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Key Features</h2>
+		<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Key Features</h2>
 		<div class="grid md:grid-cols-2 gap-6">
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Style Learning</h3>
@@ -169,7 +169,7 @@
 
 	<!-- Who It's For -->
 	<section class="mb-16">
-		<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Who It's For</h2>
+		<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Who It's For</h2>
 		<div class="space-y-4">
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Solo Founders & Entrepreneurs</h3>
@@ -200,7 +200,7 @@
 
 	<!-- How It's Different -->
 	<section class="mb-16">
-		<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">How It's Different</h2>
+		<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">How It's Different</h2>
 		<div class="bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg overflow-hidden">
 			<table class="w-full">
 				<thead class="bg-[#202020] text-white">
@@ -243,10 +243,10 @@
 
 	<!-- Pricing -->
 	<section class="mb-16">
-		<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Pricing</h2>
+		<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Pricing</h2>
 		<div class="bg-white dark:bg-neutral-800 border-2 border-[#fedf19] rounded-lg p-8 max-w-md">
 			<div class="mb-6">
-				<div class="text-4xl font-bold text-neutral-900 dark:text-neutral-100 mb-2">$29<span class="text-xl font-normal text-neutral-600 dark:text-neutral-400">/month</span></div>
+				<div class="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-2">$29<span class="text-lg font-normal text-neutral-600 dark:text-neutral-400">/month</span></div>
 				<p class="text-neutral-600 dark:text-neutral-400">Simple, transparent pricing. No hidden fees.</p>
 			</div>
 			<ul class="space-y-3 mb-8">
@@ -281,71 +281,111 @@
 					<span class="text-neutral-700 dark:text-neutral-400">Telegram integration</span>
 				</li>
 			</ul>
-			<button 
-				on:click={openWaitlist}
-				class="w-full px-6 py-3 bg-[#fe1817] text-white font-semibold rounded-md hover:bg-[#fedf19] hover:text-[#202020] transition-colors"
-			>
-				Join the waitlist
-			</button>
+			<div class="flex justify-center mt-8">
+				<button 
+					on:click={openWaitlist}
+					class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 bg-[#fe1817] text-white font-semibold rounded-md hover:bg-[#fedf19] hover:text-[#202020] transition-colors"
+				>
+					Join the waitlist
+					<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+					</svg>
+				</button>
+			</div>
 		</div>
 	</section>
 
 	<!-- FAQ -->
 	<section class="mb-16">
-		<h2 class="text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Frequently Asked Questions</h2>
+		<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Frequently Asked Questions</h2>
 		<div class="space-y-4">
-			<details class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-				<summary class="font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">How does the style learning work?</summary>
-				<p class="mt-3 text-neutral-600 dark:text-neutral-400">
+			<details class="group bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6 [&_summary::-webkit-details-marker]:hidden">
+				<summary class="flex items-center justify-between font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">
+					<span>How does the style learning work?</span>
+					<span class="transition duration-300 group-open:-rotate-180">
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+					</span>
+				</summary>
+				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
 					The agent analyzes your past LinkedIn posts to identify patterns in your writing—sentence structure, vocabulary, 
 					tone, use of emojis, paragraph length, and more. It builds a style profile that guides post generation. 
 					The more posts you've written, the better it matches your voice.
 				</p>
 			</details>
 
-			<details class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-				<summary class="font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">What if I don't like the generated posts?</summary>
-				<p class="mt-3 text-neutral-600 dark:text-neutral-400">
+			<details class="group bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6 [&_summary::-webkit-details-marker]:hidden">
+				<summary class="flex items-center justify-between font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">
+					<span>What if I don't like the generated posts?</span>
+					<span class="transition duration-300 group-open:-rotate-180">
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+					</span>
+				</summary>
+				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
 					You get 2-3 variations for every voice note. If none of them work, you can regenerate with different instructions 
 					or edit them directly. The quality gates ensure you're starting with solid content, but you always have final control.
 				</p>
 			</details>
 
-			<details class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-				<summary class="font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">How long should my voice notes be?</summary>
-				<p class="mt-3 text-neutral-600 dark:text-neutral-400">
+			<details class="group bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6 [&_summary::-webkit-details-marker]:hidden">
+				<summary class="flex items-center justify-between font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">
+					<span>How long should my voice notes be?</span>
+					<span class="transition duration-300 group-open:-rotate-180">
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+					</span>
+				</summary>
+				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
 					Anywhere from 30 seconds to 5 minutes works well. Shorter notes work for quick insights or tips. 
 					Longer notes work for stories or detailed explanations. The agent adapts to your input length.
 				</p>
 			</details>
 
-			<details class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-				<summary class="font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">Can I use this for other platforms besides LinkedIn?</summary>
-				<p class="mt-3 text-neutral-600 dark:text-neutral-400">
+			<details class="group bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6 [&_summary::-webkit-details-marker]:hidden">
+				<summary class="flex items-center justify-between font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">
+					<span>Can I use this for other platforms besides LinkedIn?</span>
+					<span class="transition duration-300 group-open:-rotate-180">
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+					</span>
+				</summary>
+				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
 					Currently, it's optimized for LinkedIn's format and best practices. Support for Twitter/X and other platforms 
 					may come in the future based on user feedback.
 				</p>
 			</details>
 
-			<details class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-				<summary class="font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">What's the tech stack?</summary>
-				<p class="mt-3 text-neutral-600 dark:text-neutral-400">
+			<details class="group bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6 [&_summary::-webkit-details-marker]:hidden">
+				<summary class="flex items-center justify-between font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">
+					<span>What's the tech stack?</span>
+					<span class="transition duration-300 group-open:-rotate-180">
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+					</span>
+				</summary>
+				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
 					Built with LangGraph for agent orchestration, OpenAI's Whisper for transcription, Claude/GPT-4 for generation, 
 					AWS CDK for infrastructure, and proper observability with LangSmith. It's production-grade, not a prototype.
 				</p>
 			</details>
 
-			<details class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-				<summary class="font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">When will it launch?</summary>
-				<p class="mt-3 text-neutral-600 dark:text-neutral-400">
+			<details class="group bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6 [&_summary::-webkit-details-marker]:hidden">
+				<summary class="flex items-center justify-between font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">
+					<span>When will it launch?</span>
+					<span class="transition duration-300 group-open:-rotate-180">
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+					</span>
+				</summary>
+				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
 					Currently in active development. Waitlist members will get early access and founding member pricing. 
 					Expected launch: Q1 2026.
 				</p>
 			</details>
 
-			<details class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-				<summary class="font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">Is there a free trial?</summary>
-				<p class="mt-3 text-neutral-600 dark:text-neutral-400">
+			<details class="group bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6 [&_summary::-webkit-details-marker]:hidden">
+				<summary class="flex items-center justify-between font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">
+					<span>Is there a free trial?</span>
+					<span class="transition duration-300 group-open:-rotate-180">
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+					</span>
+				</summary>
+				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
 					Yes, all new users will get a 14-day free trial to test the product. No credit card required to start.
 				</p>
 			</details>
@@ -353,20 +393,20 @@
 	</section>
 
 	<!-- Final CTA -->
-	<section class="bg-[#202020] border border-neutral-700 rounded-lg p-12 text-center">
-		<h2 class="text-3xl font-bold text-white mb-4">Ready to post consistently without the pain?</h2>
-		<p class="text-xl text-neutral-300 mb-8 max-w-2xl mx-auto">
+	<section class="bg-neutral-50 dark:bg-[#202020] border border-neutral-200 dark:border-neutral-700 rounded-lg p-12 text-center">
+		<h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-4">Ready to post consistently without the pain?</h2>
+		<p class="text-lg text-neutral-600 dark:text-neutral-300 mb-8 max-w-2xl mx-auto">
 			Join the waitlist to get early access, founding member pricing, and updates on the build.
 		</p>
 		<button 
 			on:click={openWaitlist}
-			class="inline-flex items-center gap-2 px-8 py-4 bg-[#fe1817] text-white font-semibold rounded-md hover:bg-[#fedf19] hover:text-[#202020] transition-colors text-lg"
+			class="inline-flex items-center gap-2 px-6 py-3 bg-[#fe1817] text-white font-semibold rounded-md hover:bg-[#fedf19] hover:text-[#202020] transition-colors"
 		>
 			Join the waitlist
 			<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
 			</svg>
 		</button>
-		<p class="text-sm text-neutral-400 mt-4">No spam. Unsubscribe anytime.</p>
+		<p class="text-base text-neutral-600 dark:text-neutral-300 mt-4">No spam. Unsubscribe anytime.</p>
 	</section>
 </div>
