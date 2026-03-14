@@ -35,7 +35,12 @@
 			</a>
 			<span class="hidden sm:inline text-neutral-300 dark:text-neutral-700">•</span>
 			<a href="https://nickthiru.dev/writing/why-building-solo" target="_blank" rel="noopener noreferrer" class="hover:text-[#fe1817] dark:hover:text-[#fe1817] transition-colors flex items-center gap-1.5 font-medium">
-				And why a solo studio?
+				Why a solo studio?
+				<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+			</a>
+			<span class="hidden sm:inline text-neutral-300 dark:text-neutral-700">•</span>
+			<a href="https://nickthiru.dev/writing/why-i-use-code-vs-no-code" target="_blank" rel="noopener noreferrer" class="hover:text-[#fe1817] dark:hover:text-[#fe1817] transition-colors flex items-center gap-1.5 font-medium">
+				And why we use code, not no-code?
 				<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
 			</a>
 		</div>
