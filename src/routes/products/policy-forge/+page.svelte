@@ -502,7 +502,7 @@
   <!-- ============================================
        PRICING
        ============================================ -->
-  <section class="mb-16">
+  <!-- <section class="mb-16">
     <h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">
       Pricing
     </h2>
@@ -570,7 +570,7 @@
       </div>
     </div>
 
-  </section>
+  </section> -->
 
 
   <!-- ============================================

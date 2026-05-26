@@ -99,8 +99,7 @@
         titleSize="text-2xl"
       >
         <p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
-          Operational intelligence platform. Unified dashboard across Slack, GitHub, Jira, and more.
-          One place to see: alerts, incidents, PRs, deployments, and team signals. Single source of truth for ops.
+          SMB operators will be able to run their entire business with the operational intelligence previously available only to enterprises with dedicated finance, support, engineering, and operations teams.
         </p>
         
         <div>
@@ -184,7 +183,7 @@
        UPCOMING IDEAS SECTION
        ============================================ -->
 	<section class="mb-16">
-		<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">
+		<h2 id="secure-stack" class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">
 			Long-Term Vision: SecureStack
 		</h2>
 		

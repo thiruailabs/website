@@ -309,7 +309,7 @@
 	</section>
 
 	<!-- Pricing -->
-	<section class="mb-16">
+	<!-- <section class="mb-16">
 		<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Pricing</h2>
 		<div class="bg-white dark:bg-neutral-800 border-2 border-[#fedf19] rounded-lg p-8 max-w-md">
 			<div class="mb-6">
@@ -372,7 +372,7 @@
 				</button>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- FAQ -->
 	<section class="mb-16">
