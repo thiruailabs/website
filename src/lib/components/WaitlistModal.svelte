@@ -2,10 +2,10 @@
 	interface Props {
 		isOpen: boolean;
 		productName?: string;
-		tag?: string;
+		tag: string;
 	}
 	
-	let { isOpen = $bindable(false), productName = "LinkedIn Ghostwriter Agent", tag = "ghostwriter_waitlist" }: Props = $props();
+	let { isOpen = $bindable(false), productName = "Thiru AI Labs", tag }: Props = $props();
 	
 	let email = $state('');
 	let firstName = $state('');

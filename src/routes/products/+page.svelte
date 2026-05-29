@@ -4,9 +4,11 @@
 
   let isWaitlistOpen = false;
   let selectedProduct = '';
+  let selectedTag = '';
 
-  function openWaitlist(productName) {
+  function openWaitlist(productName, tag) {
     selectedProduct = productName;
+    selectedTag = tag;
     isWaitlistOpen = true;
   }
 </script>
@@ -15,9 +17,10 @@
   <title>Products - Thiru AI Labs</title>
 </svelte:head>
 
-<WaitlistModal 
-  bind:isOpen={isWaitlistOpen} 
-  productName={selectedProduct || 'Thiru AI Labs'} 
+<WaitlistModal
+  bind:isOpen={isWaitlistOpen}
+  productName={selectedProduct || 'Thiru AI Labs'}
+  tag={selectedTag}
 />
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -78,8 +81,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </a>
-            <button 
-              on:click={() => openWaitlist('Social Engagement Radar')}
+            <button
+              on:click={() => openWaitlist('Social Engagement Radar', 'social_engagement_radar_waitlist')}
               class="inline-flex flex-1 justify-center items-center gap-1 px-4 py-2 bg-[#fe1817] text-white font-medium rounded-md hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors text-center"
             >
               Join waitlist
@@ -122,8 +125,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </a>
-            <button 
-              on:click={() => openWaitlist('OpsPilot')}
+            <button
+              on:click={() => openWaitlist('OpsPilot', 'ops_pilot_waitlist')}
               class="inline-flex flex-1 justify-center items-center gap-1 px-4 py-2 bg-[#fe1817] text-white font-medium rounded-md hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors text-center"
             >
               Join waitlist
@@ -163,8 +166,8 @@
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
 							</svg>
 						</a>
-						<button 
-							on:click={() => openWaitlist('PolicyForge')}
+						<button
+							on:click={() => openWaitlist('PolicyForge', 'policy_forge_waitlist')}
 							class="inline-flex flex-1 justify-center items-center gap-1 px-4 py-2 bg-[#fe1817] text-white font-medium rounded-md hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors text-center"
 						>
 							Join waitlist

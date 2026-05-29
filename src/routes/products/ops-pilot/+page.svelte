@@ -13,7 +13,7 @@
 	<meta name="description" content="Run your entire business with enterprise-grade operational intelligence. Unified view across finance, billing, support, and monitoring. AI agents that detect risks, automate workflows, and surface growth opportunities. Data isolation guaranteed." />
 </svelte:head>
 
-<WaitlistModal bind:isOpen={isWaitlistOpen} productName="OpsPilot" />
+<WaitlistModal bind:isOpen={isWaitlistOpen} productName="OpsPilot" tag="ops_pilot_waitlist" />
 
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 	<!-- Hero Section -->
