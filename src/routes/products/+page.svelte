@@ -242,7 +242,7 @@
 				<div class="mb-8">
 					<div class="flex items-center gap-3 mb-4">
 						<div class="h-8 w-8 rounded-full bg-[#fe1817] text-white flex items-center justify-center text-sm font-bold">2</div>
-						<h4 class="text-sm font-semibold text-neutral-700 dark:text-neutral-300">Phase 2: Comprehensive Compliance (Q2 2027)</h4>
+						<h4 class="text-sm font-semibold text-neutral-700 dark:text-neutral-300">Phase 2: Comprehensive Compliance (Q1 2027)</h4>
 					</div>
 					
 					<div class="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-6 space-y-3 ml-11">
@@ -262,7 +262,7 @@
 				<div class="mb-8">
 					<div class="flex items-center gap-3 mb-4">
 						<div class="h-8 w-8 rounded-full bg-[#fe1817] text-white flex items-center justify-center text-sm font-bold">3</div>
-						<h4 class="text-sm font-semibold text-neutral-700 dark:text-neutral-300">Phase 3: Platform Expansion (2027+)</h4>
+					<h4 class="text-sm font-semibold text-neutral-700 dark:text-neutral-300">Phase 3: Platform Expansion (Q2 2027)</h4>
 					</div>
 					
 					<div class="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-6 space-y-3 ml-11">
@@ -306,12 +306,12 @@
 				<!-- Build in Public CTA -->
 				<div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-6">
 					<p class="text-sm text-blue-900 dark:text-blue-100">
-						<strong>Follow the build journey:</strong> I ship in public on 
-						<a href="https://linkedin.com" target="_blank" class="underline hover:no-underline font-semibold">
+						<strong>Follow the build journey:</strong> We ship in public on 
+						<a href="https://www.linkedin.com/in/nick-thiru" target="_blank" class="underline hover:no-underline font-semibold">
 							LinkedIn
 						</a>
 						{' '}and 
-						<a href="https://x.com" target="_blank" class="underline hover:no-underline font-semibold">
+						<a href="https://x.com/nickthiru" target="_blank" class="underline hover:no-underline font-semibold">
 							X/Twitter
 						</a>
 						{' '}— see exactly how this product evolves.
@@ -321,7 +321,7 @@
 				{#snippet footer()}
 					<div class="space-y-2">
 						<p class="text-sm text-neutral-500 dark:text-neutral-400 italic">
-							<strong>Timeline:</strong> PolicyForge (Q3 2026) → CipherScan (Q4 2026) → ComplianceQ (Q2 2027)
+							<strong>Timeline:</strong> PolicyForge (Q3 2026) → CipherScan (Q4 2026) → ComplianceQ (Q1 2027)
 						</p>
 						<p class="text-sm text-neutral-500 dark:text-neutral-400 italic">
 							ThreatBrief & VendorShield follow based on customer feedback and market response.

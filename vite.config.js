@@ -6,6 +6,14 @@ import { sveltekit } from '@sveltejs/kit/vite';
 export default defineConfig({
 	plugins: [tailwindcss(), sveltekit()],
 
+	server: {
+		allowedHosts: [
+			'localhost',
+			'127.0.0.1',
+			'lunchroom-ladybug-appliance.ngrok-free.dev'
+		]
+	},
+
 	test: {
 		expect: { requireAssertions: true },
 
@@ -22,7 +30,7 @@ export default defineConfig({
 						instances: [{ browser: 'chromium', headless: true }]
 					},
 
-					include: ['src/**/*.svelte.{test,spec}.{js,ts}'],
+					include: ['test/**/*.svelte.{test,spec}.{js,ts}'],
 					exclude: ['src/lib/server/**']
 				}
 			},
@@ -33,7 +41,7 @@ export default defineConfig({
 				test: {
 					name: 'server',
 					environment: 'node',
-					include: ['src/**/*.{test,spec}.{js,ts}'],
+					include: ['test/**/*.{test,spec}.{js,ts}'],
 					exclude: ['src/**/*.svelte.{test,spec}.{js,ts}']
 				}
 			}

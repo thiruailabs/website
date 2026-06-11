@@ -11,6 +11,7 @@
 	let firstName = $state('');
 	let status = $state<'idle' | 'loading' | 'success' | 'error'>('idle');
 	let errorMessage = $state('');
+	let successMessage = $state('');
 	
 	function closeModal() {
 		isOpen = false;
@@ -20,6 +21,7 @@
 				status = 'idle';
 				email = '';
 				firstName = '';
+				successMessage = '';
 			}, 300);
 		}
 	}
@@ -29,26 +31,31 @@
 			closeModal();
 		}
 	}
-	
+
 	async function handleSubmit(e: Event) {
 		e.preventDefault();
 		status = 'loading';
 		errorMessage = '';
 
 		try {
-			const tags = tag ? [tag] : [];
-			const metadata = firstName ? { first_name: firstName } : {};
-			const response = await fetch('/api/subscribe', {
+			const metadata = {
+				...(firstName ? { first_name: firstName } : {}),
+				pending_waitlists: tag
+			};
+			
+			const response = await fetch('/api/join-waitlist', {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({ email, tags, metadata })
+				body: JSON.stringify({ email, metadata })
 			});
 
+			const result = await response.json();
+
 			if (!response.ok) {
-				const data = await response.json().catch(() => ({ error: 'Failed to subscribe' }));
-				throw new Error(data.error || 'Failed to subscribe');
+				throw new Error(result.error || 'Failed to join waitlist');
 			}
 
+			successMessage = result.message || "You've been added to the waitlist!";
 			status = 'success';
 			email = '';
 			firstName = '';
@@ -90,9 +97,8 @@
 						<svg class="w-16 h-16 mx-auto mb-4 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
 						</svg>
-						<h3 class="text-xl font-bold text-neutral-900 mb-2">You're on the list!</h3>
 						<p class="text-neutral-700 mb-4">
-							Check your inbox for a confirmation email. We'll send you early access details soon.
+							{successMessage}
 						</p>
 						<button 
 							onclick={closeModal}
