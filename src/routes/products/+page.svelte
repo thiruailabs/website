@@ -4,11 +4,11 @@
 
   let isWaitlistOpen = false;
   let selectedProduct = '';
-  let selectedTag = '';
+  let selectedProductId = '';
 
-  function openWaitlist(productName, tag) {
+  function openWaitlist(productName, productId) {
     selectedProduct = productName;
-    selectedTag = tag;
+    selectedProductId = productId;
     isWaitlistOpen = true;
   }
 </script>
@@ -20,7 +20,7 @@
 <WaitlistModal
   bind:isOpen={isWaitlistOpen}
   productName={selectedProduct || 'Thiru AI Labs'}
-  tag={selectedTag}
+  productId={selectedProductId}
 />
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -82,7 +82,7 @@
               </svg>
             </a>
             <button
-              on:click={() => openWaitlist('Social Engagement Radar', 'social_engagement_radar_waitlist')}
+              on:click={() => openWaitlist('Social Engagement Radar', 'social_engagement_radar')}
               class="inline-flex flex-1 justify-center items-center gap-1 px-4 py-2 bg-[#fe1817] text-white font-medium rounded-md hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors text-center"
             >
               Join waitlist
@@ -126,7 +126,7 @@
               </svg>
             </a>
             <button
-              on:click={() => openWaitlist('OpsPilot', 'ops_pilot_waitlist')}
+              on:click={() => openWaitlist('OpsPilot', 'ops_pilot')}
               class="inline-flex flex-1 justify-center items-center gap-1 px-4 py-2 bg-[#fe1817] text-white font-medium rounded-md hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors text-center"
             >
               Join waitlist
@@ -167,7 +167,7 @@
 							</svg>
 						</a>
 						<button
-							on:click={() => openWaitlist('PolicyForge', 'policy_forge_waitlist')}
+							on:click={() => openWaitlist('PolicyForge', 'policyforge')}
 							class="inline-flex flex-1 justify-center items-center gap-1 px-4 py-2 bg-[#fe1817] text-white font-medium rounded-md hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors text-center"
 						>
 							Join waitlist

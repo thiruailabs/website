@@ -1,41 +1,36 @@
 /**
- * Waitlist tag configuration and utilities
- * Canonical tags match the values set in Buttondown dashboard
+ * Waitlist configuration for Brevo integration
+ * Maps product IDs to Brevo boolean contact attributes
  */
 
-export const WAITLIST_TAGS = {
-  OPS_PILOT: "ops_pilot_waitlist",
-  SOCIAL_ENGAGEMENT_RADAR: "social_engagement_radar_waitlist",
-  POLICY_FORGE: "policy_forge_waitlist",
+/**
+ * Product ID to Brevo boolean attribute name mapping
+ */
+export const PRODUCT_ATTR_MAP = {
+  ops_pilot: "WAITLIST_OPSPILOT",
+  social_engagement_radar: "WAITLIST_SOCIAL_ENGAGEMENT_RADAR",
+  policyforge: "WAITLIST_POLICYFORGE",
 } as const;
 
 /**
- * Map tag values to friendly product labels (for email display)
+ * Product ID to friendly label mapping
  */
-export const WAITLIST_TAG_TO_LABEL: Record<string, string> = {
-  [WAITLIST_TAGS.OPS_PILOT]: "OpsPilot",
-  [WAITLIST_TAGS.SOCIAL_ENGAGEMENT_RADAR]: "Social Engagement Radar",
-  [WAITLIST_TAGS.POLICY_FORGE]: "PolicyForge",
+export const PRODUCT_LABELS: Record<string, string> = {
+  ops_pilot: "OpsPilot",
+  social_engagement_radar: "Social Engagement Radar",
+  policyforge: "PolicyForge",
 } as const;
 
 /**
- * Validate whether a tag is a known waitlist tag
+ * Get the Brevo boolean attribute name for a product ID
  */
-export function isValidWaitlistTag(tag: string): boolean {
-  return Object.values(WAITLIST_TAGS).includes(tag as any);
+export function getProductAttribute(productId: string): string | undefined {
+  return PRODUCT_ATTR_MAP[productId as keyof typeof PRODUCT_ATTR_MAP];
 }
 
 /**
- * Convert a tag to its user-friendly label
- * Falls back to the tag itself if not found in mapping
+ * Get the friendly label for a product ID
  */
-export function tagToLabel(tag: string): string {
-  return WAITLIST_TAG_TO_LABEL[tag] || tag;
-}
-
-/**
- * Convert multiple tags to their labels
- */
-export function tagsToLabels(tags: string[]): string[] {
-  return tags.map(tagToLabel).filter((label) => label.length > 0);
+export function getProductLabel(productId: string): string {
+  return PRODUCT_LABELS[productId as keyof typeof PRODUCT_LABELS] || productId;
 }

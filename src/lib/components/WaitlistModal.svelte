@@ -2,10 +2,10 @@
 	interface Props {
 		isOpen: boolean;
 		productName?: string;
-		tag: string;
+		productId: string;
 	}
 	
-	let { isOpen = $bindable(false), productName = "Thiru AI Labs", tag }: Props = $props();
+	let { isOpen = $bindable(false), productName = "Thiru AI Labs", productId }: Props = $props();
 	
 	let email = $state('');
 	let firstName = $state('');
@@ -38,15 +38,14 @@
 		errorMessage = '';
 
 		try {
-			const metadata = {
-				...(firstName ? { first_name: firstName } : {}),
-				pending_waitlists: tag
-			};
-			
 			const response = await fetch('/api/join-waitlist', {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({ email, metadata })
+				body: JSON.stringify({ 
+					email, 
+					product_id: productId,
+					first_name: firstName 
+				})
 			});
 
 			const result = await response.json();

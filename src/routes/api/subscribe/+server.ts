@@ -1,58 +1,45 @@
+/**
+ * POST /api/subscribe - Newsletter subscription via Brevo DOI
+ * Creates a double opt-in contact, Brevo sends confirmation email
+ */
 import { json } from "@sveltejs/kit";
 import { env } from "$env/dynamic/private";
 import type { RequestHandler } from "./$types";
+import { brevoClient } from "$lib/server/brevo";
+import { handleBrevoError } from "$lib/server/brevo-errors";
+import { BREVO_LIST_IDS } from "$lib/config/brevo-lists";
+import { BREVO_TEMPLATE_IDS } from "$lib/config/brevo-email-templates";
 
 export const POST: RequestHandler = async ({ request }) => {
-  const { email, tags, metadata } = await request.json();
+  const { email, first_name } = await request.json();
 
   if (!email || typeof email !== "string") {
     return json({ error: "Email is required" }, { status: 400 });
   }
 
-  const apiKey = env.BUTTONDOWN_API_KEY;
-  if (!apiKey) {
-    console.error("BUTTONDOWN_API_KEY is not set");
-    return json(
-      { error: "Newsletter service not configured" },
-      { status: 500 }
-    );
-  }
-
   try {
-    const requestBody: {
-      email_address: string;
-      tags: string[];
-      metadata?: Record<string, string>;
-    } = {
-      email_address: email,
-      tags: tags || [],
-    };
-
-    if (metadata && Object.keys(metadata).length > 0) {
-      requestBody.metadata = metadata;
-    }
-
-    const response = await fetch("https://api.buttondown.com/v1/subscribers", {
-      method: "POST",
-      headers: {
-        Authorization: `Token ${apiKey}`,
-        "Content-Type": "application/json",
+    // Create DOI contact - Brevo sends confirmation email automatically
+    await brevoClient.contacts.createDoiContact({
+      email,
+      includeListIds: [BREVO_LIST_IDS.newsletter_subs],
+      templateId: BREVO_TEMPLATE_IDS.newsletter_verify,
+      redirectionUrl: `${env.PUBLIC_URL || "https://yoursite.com"}/newsletter/confirmed`,
+      attributes: {
+        FIRSTNAME: first_name || "",
       },
-      body: JSON.stringify(requestBody),
     });
 
-    if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}));
-      console.error("Buttondown API error:", response.status, errorData);
-      const errorMessage =
-        errorData.detail || errorData.error || "Failed to subscribe";
-      return json({ error: errorMessage }, { status: response.status });
-    }
-
-    const data = await response.json();
-    return json({ success: true, data });
+    return json(
+      {
+        success: true,
+        message:
+          "Please check your email to confirm your subscription.",
+      },
+      { status: 201 },
+    );
   } catch (error) {
-    console.error("Subscription error:", error);
-    return json({ error: "Failed to subscribe" }, { status: 500 });
+    const { statusCode, message } = handleBrevoError(error);
+    console.error("Newsletter subscribe error:", error);
+    return json({ error: message }, { status: statusCode });
   }
 };

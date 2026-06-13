@@ -1,218 +1,139 @@
+/**
+ * POST /api/join-waitlist - Join product waitlist via Brevo
+ *
+ * Flow:
+ * 1. If contact doesn't exist → create DOI contact (newsletter signup)
+ * 2. If contact exists but not confirmed → set boolean waitlist attribute
+ * 3. If contact is confirmed → set boolean attribute + send waitlist email
+ */
 import { json } from "@sveltejs/kit";
 import { env } from "$env/dynamic/private";
 import type { RequestHandler } from "./$types";
-import { parseList, serializeList, union } from "$lib/utils/metadata";
-import { sendWaitlistAcknowledgementEmail } from "$lib/server/send-waitlist-email";
-import { WAITLIST_TAG_TO_LABEL } from "$lib/config/waitlists";
+import { brevoClient } from "$lib/server/brevo";
+import { handleBrevoError } from "$lib/server/brevo-errors";
+import { BREVO_LIST_IDS } from "$lib/config/brevo-lists";
+import { BREVO_TEMPLATE_IDS } from "$lib/config/brevo-email-templates";
+import { getProductAttribute, getProductLabel } from "$lib/config/waitlists";
 
 export const POST: RequestHandler = async ({ request }) => {
-  const { email, metadata } = await request.json();
+  const { email, product_id, first_name } = await request.json();
 
   if (!email || typeof email !== "string") {
     return json({ error: "Email is required" }, { status: 400 });
   }
 
-  const apiKey = env.BUTTONDOWN_API_KEY;
-  if (!apiKey) {
-    return json(
-      { error: "Newsletter service not configured" },
-      { status: 500 }
-    );
+  if (!product_id || typeof product_id !== "string") {
+    return json({ error: "Product ID is required" }, { status: 400 });
+  }
+
+  const productAttr = getProductAttribute(product_id);
+  if (!productAttr) {
+    return json({ error: `Unknown product: ${product_id}` }, { status: 400 });
   }
 
   try {
-    // Extract the waitlist tag from metadata
-    const newPendingTag = metadata?.pending_waitlists;
-    if (!newPendingTag || typeof newPendingTag !== "string") {
-      return json(
-        { error: "No waitlist tag provided" },
-        { status: 400 }
-      );
+    // Try to get existing contact
+    let contact: any = null;
+    try {
+      contact = await brevoClient.contacts.getContactInfo({
+        identifier: email,
+      });
+    } catch {
+      // Contact doesn't exist - will create below
     }
 
-    // 1) Retrieve subscriber by email
-    const getResponse = await fetch(
-      `https://api.buttondown.com/v1/subscribers/${email}`,
-      {
-        method: "GET",
-        headers: {
-          Authorization: `Token ${apiKey}`,
-          "Content-Type": "application/json",
+    // Case A: Contact doesn't exist → create DOI contact with waitlist attribute
+    if (!contact) {
+      await brevoClient.contacts.createDoiContact({
+        email,
+        includeListIds: [BREVO_LIST_IDS.newsletter_subs],
+        templateId: BREVO_TEMPLATE_IDS.newsletter_verify,
+        redirectionUrl: `${env.PUBLIC_URL || "https://yoursite.com"}/newsletter/confirmed`,
+        attributes: {
+          FIRSTNAME: first_name || "",
+          [productAttr]: true, // Set waitlist boolean immediately
         },
-      }
-    );
-
-    let subscriber = null;
-    if (getResponse.ok) {
-      subscriber = await getResponse.json();
-    }
-
-    // 2) Case A: Subscriber does NOT exist
-    if (!subscriber) {
-      const productName = WAITLIST_TAG_TO_LABEL[newPendingTag] || newPendingTag;
-      // Only include metadata fields with actual values - Buttondown may reject empty strings
-      const newMetadata: Record<string, string> = {
-        pending_waitlists: newPendingTag,
-        waitlist_product: productName,
-      };
-      if (metadata?.first_name) {
-        newMetadata.first_name = metadata.first_name;
-      }
-
-      const createResponse = await fetch(
-        "https://api.buttondown.com/v1/subscribers",
-        {
-          method: "POST",
-          headers: {
-            Authorization: `Token ${apiKey}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            email_address: email,
-            tags: [],
-            metadata: newMetadata,
-          }),
-        }
-      );
-
-      if (!createResponse.ok) {
-        const errorData = await createResponse.json().catch(() => ({}));
-        console.error("[join-waitlist] Buttondown create error:", {
-          status: createResponse.status,
-          statusText: createResponse.statusText,
-          errorData: JSON.stringify(errorData),
-          requestBody: JSON.stringify({
-            email_address: email,
-            tags: [],
-            metadata: newMetadata,
-          }),
-        });
-        // Buttondown error format: { code, detail, metadata } or { error }
-        const errorMessage = errorData.detail || errorData.error || "Failed to create subscriber";
-        return json(
-          { error: errorMessage },
-          { status: createResponse.status }
-        );
-      }
-
-      return json({
-        success: true,
-        message:
-          "Please check your email to confirm your subscription. Once confirmed, you'll be added to the waitlist.",
       });
+
+      return json(
+        {
+          success: true,
+          message:
+            "Please check your email to confirm your subscription. Once confirmed, you'll be added to the waitlist.",
+        },
+        { status: 201 },
+      );
     }
 
-    // 3) Case B & C: Subscriber EXISTS
-    const isConfirmed = subscriber.type === "regular";
-    let updatedMetadata = { ...subscriber.metadata };
+    // Check if contact is confirmed via DOI
+    const isConfirmed = contact.attributes?.DOUBLE_OPT_IN === true;
 
+    // Case B: Not confirmed yet → set boolean attribute, wait for DOI
     if (!isConfirmed) {
-      // Case B: Not confirmed yet → store in pending_waitlists
-      const currentPending = parseList(
-        updatedMetadata.pending_waitlists || ""
-      );
-      updatedMetadata.pending_waitlists = serializeList(
-        union(currentPending, [newPendingTag])
-      );
-      // Set waitlist_product for the most recent pending tag
-      const productName = WAITLIST_TAG_TO_LABEL[newPendingTag] || newPendingTag;
-      updatedMetadata.waitlist_product = productName;
-
-      // Update subscriber with new pending metadata
-      const patchResponse = await fetch(
-        `https://api.buttondown.com/v1/subscribers/${subscriber.id}`,
-        {
-          method: "PATCH",
-          headers: {
-            Authorization: `Token ${apiKey}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ metadata: updatedMetadata }),
-        }
-      );
-
-      if (!patchResponse.ok) {
-        const errorData = await patchResponse.json().catch(() => ({}));
-        // Buttondown error format: { code, detail, metadata } or { error }
-        const errorMessage = errorData.detail || errorData.error || "Failed to update subscriber";
-        return json(
-          { error: errorMessage },
-          { status: patchResponse.status }
-        );
-      }
-
-      return json({
-        success: true,
-        message:
-          "Please confirm your email subscription. Once confirmed, you'll be added to the waitlist.",
+      // Update contact to set the waitlist boolean attribute
+      await brevoClient.contacts.updateContact({
+        identifier: email,
+        attributes: {
+          FIRSTNAME: first_name || contact.attributes?.FIRSTNAME || "",
+          [productAttr]: true,
+        },
       });
-    } else {
-      // Case C: Already confirmed  
-      const currentAckSent = parseList(  
-        updatedMetadata.waitlist_ack_sent || ""  
-      );  
 
-      // CHECK: is this tag already acknowledged?  
-      if (currentAckSent.includes(newPendingTag)) {  
-        return json({  
-          success: true,  
-          message: "No worries, you're already on this list!",  
-        });  
-      }  
-
-      // If not, proceed with tag union + email send
-      const currentTags = subscriber.tags || [];
-      const updatedTags = union(currentTags, [newPendingTag]);
-      updatedMetadata.waitlist_ack_sent = serializeList(
-        union(currentAckSent, [newPendingTag])
-      );
-      // Set waitlist_product for the email template
-      const productName = WAITLIST_TAG_TO_LABEL[newPendingTag] || newPendingTag;
-      updatedMetadata.waitlist_product = productName;
-
-      // Update tags and metadata
-      const patchResponse = await fetch(
-        `https://api.buttondown.com/v1/subscribers/${subscriber.id}`,
+      return json(
         {
-          method: "PATCH",
-          headers: {
-            Authorization: `Token ${apiKey}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            tags: updatedTags,
-            metadata: updatedMetadata,
-          }),
-        }
+          success: true,
+          message:
+            "You're already confirming your email. Once done, you'll be added to the waitlist.",
+          status: "pending_doi",
+        },
+        { status: 200 },
       );
+    }
 
-      if (!patchResponse.ok) {
-        const errorData = await patchResponse.json().catch(() => ({}));
-        // Buttondown error format: { code, detail, metadata } or { error }
-        const errorMessage = errorData.detail || errorData.error || "Failed to update subscriber";
-        return json(
-          { error: errorMessage },
-          { status: patchResponse.status }
-        );
-      }
-
-      // Send acknowledgement email immediately for confirmed subscriber
-      try {
-        await sendWaitlistAcknowledgementEmail(email, apiKey);
-      } catch (emailError) {
-        console.error("Failed to send acknowledgement email:", emailError);
-        // Don't fail the whole request if email send fails
-      }
-
-      return json({
-        success: true,
-        message: "You've been added to the waitlist!",
+    // Case C: Already confirmed → add to waitlist list + send email
+    // Add to product waitlist
+    const productListId =
+      BREVO_LIST_IDS[`waitlist_${product_id}` as keyof typeof BREVO_LIST_IDS];
+    if (productListId) {
+      await brevoClient.contacts.addContactToList({
+        listId: productListId,
+        body: { emails: [email] },
       });
     }
+
+    // Ensure boolean attribute is set (idempotent)
+    await brevoClient.contacts.updateContact({
+      identifier: email,
+      attributes: {
+        [productAttr]: true,
+      },
+    });
+
+    // Send waitlist confirmation email using consolidated template
+    await brevoClient.transactionalEmails.sendTransacEmail({
+      templateId: BREVO_TEMPLATE_IDS.waitlist_joined,
+      to: [{ email }],
+      params: {
+        first_name: contact.attributes?.FIRSTNAME || "there",
+        // Set boolean params for template conditionals
+        joined_ops_pilot: productAttr === "WAITLIST_OPSPILOT",
+        joined_social_engagement_radar:
+          productAttr === "WAITLIST_SOCIAL_ENGAGEMENT_RADAR",
+        joined_policyforge: productAttr === "WAITLIST_POLICYFORGE",
+      },
+    });
+
+    return json(
+      {
+        success: true,
+        message: "You've joined the waitlist!",
+        status: "notified",
+      },
+      { status: 201 },
+    );
   } catch (error) {
-    console.error("Join waitlist error:", error);
-    return json({ error: "Failed to process request" }, { status: 500 });
+    const { statusCode, message } = handleBrevoError(error);
+    console.error("Waitlist join error:", error);
+    return json({ error: message }, { status: statusCode });
   }
 };
-
-

@@ -13,7 +13,7 @@
 	<meta name="description" content="Discover high-value conversations on X and LinkedIn early. AI-powered conversation scoring, personalized reply angle generation, and human-approved publishing. Build your presence through meaningful engagement." />
 </svelte:head>
 
-<WaitlistModal bind:isOpen={isWaitlistOpen} productName="Social Engagement Radar" tag="social_engagement_radar_waitlist" />
+<WaitlistModal bind:isOpen={isWaitlistOpen} productName="Social Engagement Radar" productId="social_engagement_radar" />
 
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 	<!-- Hero Section -->
