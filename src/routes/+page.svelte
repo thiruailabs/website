@@ -1,7 +1,11 @@
-<script>
+<script lang="ts">
 	import AboutTheFounder from "$lib/components/AboutTheFounder.svelte";
 	import WhySoloStudio from "$lib/components/WhySoloStudio.svelte";
 	import ProductCard from "$lib/components/ProductCard.svelte";
+	import { getFeaturedProducts } from "$lib/config/products";
+	import type { Product } from "$lib/config/products";
+
+	const featuredProducts: Product[] = getFeaturedProducts(4);
 </script>
 
 <svelte:head>
@@ -66,43 +70,31 @@
 			<p class="text-lg text-neutral-600 dark:text-neutral-400">Designing autonomous workflows for practical use cases</p>
 		</div>
 		
-		<div class="grid md:grid-cols-2 gap-6 items-stretch">
-			<ProductCard 
-				title="LinkedIn Ghostwriter Agent"
-				status="Building"
-			>
-				<p>
-					AI that turns voice notes into LinkedIn posts that sound authentically like you. Captures ideas on-the-go and learns your unique style over time.
-				</p>
-				{#snippet footer()}
-					<a href="/products/linkedin-ghostwriter" class="inline-flex items-center gap-1 text-brand-dark dark:text-neutral-300 font-medium hover:text-[#fe1817] hover:gap-2 transition-all mt-auto">
-						Learn more
-						<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-						</svg>
-					</a>
-				{/snippet}
-			</ProductCard>
+		{#if featuredProducts.length > 0}
+			<div class="grid md:grid-cols-2 gap-6 items-stretch">
+				{#each featuredProducts as product}
+					<ProductCard {product}>
+						<p>{product.shortDescription}</p>
+						
+						<div>
+							<h4 class="text-sm font-semibold text-neutral-700 dark:text-neutral-300 mb-1">Who it's for</h4>
+							<p class="text-neutral-600 dark:text-neutral-400">{product.targetAudience}</p>
+						</div>
 
-			<ProductCard 
-				title="More Products Coming"
-				status="Idea"
-				statusBg="bg-brand-dark dark:bg-neutral-700"
-				statusText="text-white dark:text-neutral-200"
-			>
-				<p>
-					Exploring new opportunities in agentic AI automation and specialized AI workflows for knowledge workers.
-				</p>
-				{#snippet footer()}
-					<a href="/products" class="inline-flex items-center gap-1 text-brand-dark dark:text-neutral-300 font-medium hover:text-[#fe1817] hover:gap-2 transition-all mt-auto">
-						View roadmap
-						<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-						</svg>
-					</a>
-				{/snippet}
-			</ProductCard>
-		</div>
+						{#snippet footer()}
+							<a href="/products/{product.slug}" class="inline-flex items-center gap-1 text-brand-dark dark:text-neutral-300 font-medium hover:text-[#fe1817] hover:gap-2 transition-all mt-auto">
+								Learn more
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+								</svg>
+							</a>
+						{/snippet}
+					</ProductCard>
+				{/each}
+			</div>
+		{:else}
+			<p class="text-neutral-600 dark:text-neutral-400">Products coming soon.</p>
+		{/if}
 	</section>
 
 	<section class="py-16">
