@@ -61,13 +61,15 @@ The script creates:
 
 - **Contact attributes** (boolean: `WAITLIST_OPSPILOT`, `WAITLIST_SOCIAL_ENGAGEMENT_RADAR`, `WAITLIST_POLICYFORGE`)
 - **Lists** (newsletter subscribers + per-product waitlists)
-- **Email templates** (DOI confirmation, welcome, waitlist joined)
+- **Email templates** (DOI confirmation, welcome, waitlist joined) — skip with `CREATE_TEMPLATES=false`
 - **Webhooks** (if `PUBLIC_URL` and/or `BREVO_WEBHOOK_DEV_URL` are set)
 
 After running, copy the output IDs into:
 
 - `src/lib/config/brevo-lists.ts`
 - `src/lib/config/brevo-email-templates.ts`
+
+**Skip template creation:** If you've manually created templates in Brevo, set `CREATE_TEMPLATES=false` to skip. You'll need to manually set the template IDs in `brevo-email-templates.ts`.
 
 For detailed setup instructions, see [`docs/join-waitlist-implementation.md`](docs/join-waitlist-implementation.md).
 

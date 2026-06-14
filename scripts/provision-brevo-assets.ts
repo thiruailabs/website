@@ -77,6 +77,9 @@ const BREVO_WEBHOOK_SECRET = process.env.BREVO_WEBHOOK_SECRET;
 const BREVO_WEBHOOK_DEV_URL = process.env.BREVO_WEBHOOK_DEV_URL;
 const PUBLIC_URL = process.env.PUBLIC_URL;
 
+// Set to "false" to skip template creation (if you've manually created them in Brevo)
+const CREATE_TEMPLATES = process.env.CREATE_TEMPLATES !== "false";
+
 const WEBHOOK_DEFINITIONS: Array<{
   name: string;
   url: string;
@@ -147,6 +150,18 @@ async function provisionLists(): Promise<Record<string, number>> {
 
 async function provisionTemplates(): Promise<Record<string, number>> {
   console.log("\n─── Email Templates ───");
+
+  if (!CREATE_TEMPLATES) {
+    console.log("⚠️  Template creation skipped (CREATE_TEMPLATES=false)");
+    console.log("   Manually create templates in Brevo dashboard, then set IDs in:");
+    console.log("   src/lib/config/brevo-email-templates.ts");
+    return {
+      newsletter_verify: 0, // Set manually in config
+      welcome: 0,
+      waitlist_joined: 0,
+    };
+  }
+
   const existing = await brevoClient.transactionalEmails.getSmtpTemplates();
   const templateIds: Record<string, number> = {};
 

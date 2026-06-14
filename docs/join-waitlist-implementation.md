@@ -401,6 +401,14 @@ The script performs a **defensive check**:
 - If an asset exists, it logs the ID and skips creation
 - If an asset doesn't exist, it creates it and logs the ID
 
+**Skip template creation:** If you've manually created email templates in Brevo, set `CREATE_TEMPLATES=false` to skip template creation:
+
+```bash
+CREATE_TEMPLATES=false npx tsx scripts/provision-brevo-assets.ts
+```
+
+When skipped, the script outputs placeholder IDs (`0`) — you'll need to manually set the real template IDs in `brevo-email-templates.ts`.
+
 **Output example (with webhooks):**
 
 ```
@@ -440,6 +448,22 @@ export const BREVO_TEMPLATE_IDS = { ... } as const;
 // Verify webhooks in Brevo dashboard → Settings → Webhooks
 
 ✅ Provisioning complete!
+```
+
+**Output example (with CREATE_TEMPLATES=false):**
+
+```
+─── Email Templates ───
+⚠️  Template creation skipped (CREATE_TEMPLATES=false)
+   Manually create templates in Brevo dashboard, then set IDs in:
+   src/lib/config/brevo-email-templates.ts
+
+// website/src/lib/config/brevo-email-templates.ts
+export const BREVO_TEMPLATE_IDS = {
+  "newsletter_verify": 0,
+  "welcome": 0,
+  "waitlist_joined": 0
+} as const;
 ```
 
 **Output example (without webhooks — manual setup required):**
