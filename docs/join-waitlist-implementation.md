@@ -401,13 +401,13 @@ The script performs a **defensive check**:
 - If an asset exists, it logs the ID and skips creation
 - If an asset doesn't exist, it creates it and logs the ID
 
-**Skip template creation:** If you've manually created email templates in Brevo, set `CREATE_TEMPLATES=false` to skip template creation:
+**Skip creation:** If you've manually created assets in Brevo, set the corresponding flag to skip:
 
 ```bash
-CREATE_TEMPLATES=false npx tsx scripts/provision-brevo-assets.ts
+CREATE_ATTRIBUTES=false CREATE_LISTS=false CREATE_TEMPLATES=false CREATE_WEBHOOKS=false npx tsx scripts/provision-brevo-assets.ts
 ```
 
-When skipped, the script outputs placeholder IDs (`0`) — you'll need to manually set the real template IDs in `brevo-email-templates.ts`.
+When skipped, the script outputs placeholder IDs (`0`) — you'll need to manually set the real IDs in the config files.
 
 **Output example (with webhooks):**
 
@@ -450,6 +450,32 @@ export const BREVO_TEMPLATE_IDS = { ... } as const;
 ✅ Provisioning complete!
 ```
 
+**Output example (with CREATE_ATTRIBUTES=false):**
+
+```
+─── Contact Attributes ───
+⚠️  Attribute creation skipped (CREATE_ATTRIBUTES=false)
+   Manually create attributes in Brevo dashboard:
+   WAITLIST_OPSPILOT, WAITLIST_SOCIAL_ENGAGEMENT_RADAR, WAITLIST_POLICYFORGE (boolean type)
+```
+
+**Output example (with CREATE_LISTS=false):**
+
+```
+─── Lists ───
+⚠️  List creation skipped (CREATE_LISTS=false)
+   Manually create lists in Brevo dashboard, then set IDs in:
+   src/lib/config/brevo-lists.ts
+
+// website/src/lib/config/brevo-lists.ts
+export const BREVO_LIST_IDS = {
+  "newsletter_subs": 0,
+  "waitlist_ops_pilot": 0,
+  "waitlist_social_engagement_radar": 0,
+  "waitlist_policyforge": 0
+} as const;
+```
+
 **Output example (with CREATE_TEMPLATES=false):**
 
 ```
@@ -466,18 +492,23 @@ export const BREVO_TEMPLATE_IDS = {
 } as const;
 ```
 
-**Output example (without webhooks — manual setup required):**
+**Output example (with CREATE_WEBHOOKS=false):**
+
+```
+─── Webhooks ───
+⚠️  Webhook creation skipped (CREATE_WEBHOOKS=false)
+   Manually create webhooks in Brevo dashboard, then configure:
+   - URL: https://yoursite.com/api/brevo/webhook
+   - Event: listAddition (marketing webhook)
+   - Authentication: Bearer token (BREVO_WEBHOOK_SECRET)
+```
+
+**Output example (without webhook URLs configured):**
 
 ```
 ─── Webhooks ───
 ⚠️  No webhook URLs configured — skipping webhook creation
    Set BREVO_WEBHOOK_DEV_URL and/or PUBLIC_URL in .env to create webhooks
-
-⚠️  No webhooks created — manual setup required:
-   1. Set BREVO_WEBHOOK_SECRET in .env
-   2. Set PUBLIC_URL (and optionally BREVO_WEBHOOK_DEV_URL) in .env
-   3. Re-run: npx tsx scripts/provision-brevo-assets.ts
-   OR create webhooks manually in Brevo dashboard → Settings → Webhooks
 ```
 
 ### Step 3: Update Config Files

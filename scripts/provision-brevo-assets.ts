@@ -80,6 +80,15 @@ const PUBLIC_URL = process.env.PUBLIC_URL;
 // Set to "false" to skip template creation (if you've manually created them in Brevo)
 const CREATE_TEMPLATES = process.env.CREATE_TEMPLATES !== "false";
 
+// Set to "false" to skip webhook creation (if you've manually created them in Brevo)
+const CREATE_WEBHOOKS = process.env.CREATE_WEBHOOKS !== "false";
+
+// Set to "false" to skip attribute creation (if you've manually created them in Brevo)
+const CREATE_ATTRIBUTES = process.env.CREATE_ATTRIBUTES !== "false";
+
+// Set to "false" to skip list creation (if you've manually created them in Brevo)
+const CREATE_LISTS = process.env.CREATE_LISTS !== "false";
+
 const WEBHOOK_DEFINITIONS: Array<{
   name: string;
   url: string;
@@ -106,6 +115,14 @@ if (PUBLIC_URL) {
 
 async function provisionAttributes() {
   console.log("\n─── Contact Attributes ───");
+
+  if (!CREATE_ATTRIBUTES) {
+    console.log("⚠️  Attribute creation skipped (CREATE_ATTRIBUTES=false)");
+    console.log("   Manually create attributes in Brevo dashboard:");
+    console.log("   WAITLIST_OPSPILOT, WAITLIST_SOCIAL_ENGAGEMENT_RADAR, WAITLIST_POLICYFORGE (boolean type)");
+    return;
+  }
+
   const existing = await brevoClient.contacts.getAttributes();
   const existingNames = new Set(
     (existing.attributes || []).map((a: any) => a.name),
@@ -127,6 +144,19 @@ async function provisionAttributes() {
 
 async function provisionLists(): Promise<Record<string, number>> {
   console.log("\n─── Lists ───");
+
+  if (!CREATE_LISTS) {
+    console.log("⚠️  List creation skipped (CREATE_LISTS=false)");
+    console.log("   Manually create lists in Brevo dashboard, then set IDs in:");
+    console.log("   src/lib/config/brevo-lists.ts");
+    return {
+      newsletter_subs: 0,
+      waitlist_ops_pilot: 0,
+      waitlist_social_engagement_radar: 0,
+      waitlist_policyforge: 0,
+    };
+  }
+
   const existing = await brevoClient.contacts.getLists();
   const listIds: Record<string, number> = {};
 
@@ -191,6 +221,15 @@ async function provisionTemplates(): Promise<Record<string, number>> {
 
 async function provisionWebhooks(): Promise<Record<string, number>> {
   console.log("\n─── Webhooks ───");
+
+  if (!CREATE_WEBHOOKS) {
+    console.log("⚠️  Webhook creation skipped (CREATE_WEBHOOKS=false)");
+    console.log("   Manually create webhooks in Brevo dashboard, then configure:");
+    console.log("   - URL: https://yoursite.com/api/brevo/webhook");
+    console.log("   - Event: listAddition (marketing webhook)");
+    console.log("   - Authentication: Bearer token (BREVO_WEBHOOK_SECRET)");
+    return {};
+  }
 
   if (!BREVO_WEBHOOK_SECRET) {
     console.log("⚠️  BREVO_WEBHOOK_SECRET not set — skipping webhook creation");

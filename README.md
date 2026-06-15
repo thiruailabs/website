@@ -59,17 +59,22 @@ BREVO_API_KEY=xxx BREVO_WEBHOOK_SECRET=xxx PUBLIC_URL=https://yoursite.com npx t
 
 The script creates:
 
-- **Contact attributes** (boolean: `WAITLIST_OPSPILOT`, `WAITLIST_SOCIAL_ENGAGEMENT_RADAR`, `WAITLIST_POLICYFORGE`)
-- **Lists** (newsletter subscribers + per-product waitlists)
+- **Contact attributes** (boolean: `WAITLIST_OPSPILOT`, `WAITLIST_SOCIAL_ENGAGEMENT_RADAR`, `WAITLIST_POLICYFORGE`) — skip with `CREATE_ATTRIBUTES=false`
+- **Lists** (newsletter subscribers + per-product waitlists) — skip with `CREATE_LISTS=false`
 - **Email templates** (DOI confirmation, welcome, waitlist joined) — skip with `CREATE_TEMPLATES=false`
-- **Webhooks** (if `PUBLIC_URL` and/or `BREVO_WEBHOOK_DEV_URL` are set)
+- **Webhooks** (if `PUBLIC_URL` and/or `BREVO_WEBHOOK_DEV_URL` are set) — skip with `CREATE_WEBHOOKS=false`
 
 After running, copy the output IDs into:
 
 - `src/lib/config/brevo-lists.ts`
 - `src/lib/config/brevo-email-templates.ts`
 
-**Skip template creation:** If you've manually created templates in Brevo, set `CREATE_TEMPLATES=false` to skip. You'll need to manually set the template IDs in `brevo-email-templates.ts`.
+**Skip creation:**
+
+- Attributes: set `CREATE_ATTRIBUTES=false` if you've manually created them in Brevo
+- Lists: set `CREATE_LISTS=false` if you've manually created them in Brevo
+- Templates: set `CREATE_TEMPLATES=false` if you've manually created them in Brevo
+- Webhooks: set `CREATE_WEBHOOKS=false` if you've manually created them in Brevo
 
 For detailed setup instructions, see [`docs/join-waitlist-implementation.md`](docs/join-waitlist-implementation.md).
 
