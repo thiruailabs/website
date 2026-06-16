@@ -17,13 +17,17 @@ export const POST: RequestHandler = async ({ request }) => {
     return json({ error: "Email is required" }, { status: 400 });
   }
 
+  const redirectUrl = `${env.PUBLIC_URL || "https://yoursite.com"}/newsletter/confirmed`;
+  console.log("Subscribe: PUBLIC_URL:", env.PUBLIC_URL);
+  console.log("Subscribe: Redirect URL:", redirectUrl);
+
   try {
     // Create DOI contact - Brevo sends confirmation email automatically
     await brevoClient.contacts.createDoiContact({
       email,
       includeListIds: [BREVO_LIST_IDS.newsletter_subs],
       templateId: BREVO_TEMPLATE_IDS.newsletter_verify,
-      redirectionUrl: `${env.PUBLIC_URL || "https://yoursite.com"}/newsletter/confirmed`,
+      redirectionUrl: redirectUrl,
       attributes: {
         FIRSTNAME: first_name || "",
       },

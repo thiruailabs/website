@@ -8,6 +8,7 @@ export default defineConfig({
 
 	server: {
 		allowedHosts: [
+			'thiruailabs.com',
 			'localhost',
 			'127.0.0.1',
 			'lunchroom-ladybug-appliance.ngrok-free.dev'

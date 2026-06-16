@@ -26,10 +26,10 @@ let {
 } = $props();
 
 // If a product object is provided, use its properties
-const displayTitle = product ? product.title : title;
-const displayStatus = product ? product.status : status;
-const displayStatusBg = product && product.statusBg ? product.statusBg : statusBg;
-const displayStatusText = product && product.statusText ? product.statusText : statusText;
+let displayTitle = $derived(product ? product.title : title);
+let displayStatus = $derived(product ? product.status : status);
+let displayStatusBg = $derived(product && product.statusBg ? product.statusBg : statusBg);
+let displayStatusText = $derived(product && product.statusText ? product.statusText : statusText);
 </script>
 
 <div class="flex flex-col h-full bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg {padding} {faded ? 'opacity-75' : ''}">

@@ -54,7 +54,7 @@ Before the newsletter and waitlist features work, you need to provision Brevo as
 
 ```sh
 cd website
-BREVO_API_KEY=xxx BREVO_WEBHOOK_SECRET=xxx PUBLIC_URL=https://yoursite.com npx tsx scripts/provision-brevo-assets.ts
+npx tsx scripts/provision-brevo-assets.ts
 ```
 
 The script creates:

@@ -6,9 +6,14 @@
  * NOT called on every app startup — this is a migration/setup task.
  */
 /// <reference types="node" />
+import { config } from "dotenv";
+import { resolve } from "node:path";
 import { BrevoClient } from "@getbrevo/brevo";
 
-// Load env manually for script execution
+// Load .env file from the current working directory
+config({ path: resolve(process.cwd(), ".env") });
+
+// Load env for script execution
 const BREVO_API_KEY = process.env.BREVO_API_KEY;
 if (!BREVO_API_KEY) {
   console.error("BREVO_API_KEY not set in environment");
