@@ -41,20 +41,13 @@ export const POST: RequestHandler = async ({ request }) => {
 
   console.log("Webhook: Processing list_addition event");
   console.log("Webhook: list_id from payload:", payload.list_id, "(type:", typeof payload.list_id, ")");
-  console.log("Webhook: expected list_id:", BREVO_LIST_IDS.newsletter_subs);
 
-  // Check if this is newsletter_subs list
   // Brevo sends list_id as an array: [11]
   const payloadListId = Array.isArray(payload.list_id)
     ? payload.list_id[0]
     : payload.list_id;
 
   console.log("Webhook: resolved list_id:", payloadListId);
-
-  if (Number(payloadListId) !== BREVO_LIST_IDS.newsletter_subs) {
-    console.log("Webhook: Not our newsletter list, ignoring");
-    return json({ success: true }); // Not our newsletter list
-  }
 
   const { email } = payload;
   console.log("Webhook: Processing email:", email);
@@ -83,6 +76,18 @@ export const POST: RequestHandler = async ({ request }) => {
 
     console.log("Webhook: Joined waitlists:", joinedWaitlists);
 
+    // Always send welcome email first
+    console.log("Webhook: Sending welcome email");
+    const welcomeResult = await brevoClient.transactionalEmails.sendTransacEmail({
+      templateId: BREVO_TEMPLATE_IDS.welcome,
+      to: [{ email }],
+      params: {
+        first_name: attrs?.FIRSTNAME || "there",
+      },
+    });
+    console.log("Webhook: Welcome email sent, messageId:", welcomeResult.messageId);
+
+    // If waitlists are joined, also send waitlist email
     if (joinedWaitlists.length > 0) {
       console.log("Webhook: Sending waitlist joined email");
       // Add to product lists
@@ -106,7 +111,7 @@ export const POST: RequestHandler = async ({ request }) => {
       }
 
       // Send consolidated notification email with boolean params
-      const emailResult = await brevoClient.transactionalEmails.sendTransacEmail({
+      const waitlistResult = await brevoClient.transactionalEmails.sendTransacEmail({
         templateId: BREVO_TEMPLATE_IDS.waitlist_joined,
         to: [{ email }],
         params: {
@@ -116,19 +121,7 @@ export const POST: RequestHandler = async ({ request }) => {
           joined_policyforge: !!attrs?.WAITLIST_POLICYFORGE,
         },
       });
-      console.log("Webhook: Waitlist email sent, messageId:", emailResult.messageId);
-    } else {
-      console.log("Webhook: No waitlists joined, sending welcome email");
-      // No waitlists joined — just newsletter confirmation
-      // Send welcome email
-      const emailResult = await brevoClient.transactionalEmails.sendTransacEmail({
-        templateId: BREVO_TEMPLATE_IDS.welcome,
-        to: [{ email }],
-        params: {
-          first_name: attrs?.FIRSTNAME || "there",
-        },
-      });
-      console.log("Webhook: Welcome email sent, messageId:", emailResult.messageId);
+      console.log("Webhook: Waitlist email sent, messageId:", waitlistResult.messageId);
     }
 
     return json({ success: true }, { status: 200 });
