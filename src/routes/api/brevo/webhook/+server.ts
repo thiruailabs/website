@@ -76,16 +76,19 @@ export const POST: RequestHandler = async ({ request }) => {
 
     console.log("Webhook: Joined waitlists:", joinedWaitlists);
 
-    // Always send welcome email first
-    console.log("Webhook: Sending welcome email");
-    const welcomeResult = await brevoClient.transactionalEmails.sendTransacEmail({
-      templateId: BREVO_TEMPLATE_IDS.welcome,
-      to: [{ email }],
-      params: {
-        first_name: attrs?.FIRSTNAME || "there",
-      },
-    });
-    console.log("Webhook: Welcome email sent, messageId:", welcomeResult.messageId);
+    // Only send welcome email when this is the newsletter_subs list confirmation
+    // (not when adding to waitlist lists, which also triggers the webhook)
+    if (Number(payloadListId) === BREVO_LIST_IDS.newsletter_subs) {
+      console.log("Webhook: Sending welcome email");
+      const welcomeResult = await brevoClient.transactionalEmails.sendTransacEmail({
+        templateId: BREVO_TEMPLATE_IDS.welcome,
+        to: [{ email }],
+        params: {
+          first_name: attrs?.FIRSTNAME || "there",
+        },
+      });
+      console.log("Webhook: Welcome email sent, messageId:", welcomeResult.messageId);
+    }
 
     // If waitlists are joined, also send waitlist email
     if (joinedWaitlists.length > 0) {
