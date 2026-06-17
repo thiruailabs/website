@@ -72,6 +72,7 @@ const ATTRIBUTE_DEFINITIONS = [
   "WAITLIST_OPSPILOT",
   "WAITLIST_SOCIAL_ENGAGEMENT_RADAR",
   "WAITLIST_POLICYFORGE",
+  "WELCOME_SENT",
 ];
 
 // ─── Webhook Definitions ────────────────────────────────────────────────────
