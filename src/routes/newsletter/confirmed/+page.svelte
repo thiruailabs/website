@@ -47,24 +47,12 @@
   </div>
 
   <div class="flex flex-col gap-4 sm:flex-row sm:justify-center">
-    <!-- <a
-      href="https://www.nickthiru.dev/writing"
-      class="rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-700"
-    >
-      Read the Blog
-    </a> -->
     <a
       href="https://www.nickthiru.dev/writing"
       class="rounded-lg px-6 py-3 font-medium bg-[#fe1817] text-white font-medium rounded-md hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors text-center"
     >
       Read the Blog
     </a>
-    <!-- <button
-      on:click={() => goto("/products")}
-      class="rounded-lg border border-gray-300 px-6 py-3 font-medium transition hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-800"
-    >
-      View Products
-    </button> -->
     <button
       on:click={() => goto("/products")}
       class="rounded-lg px-6 py-3 font-medium bg-[#202020] dark:bg-neutral-700 text-white font-medium hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors text-center"
