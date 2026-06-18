@@ -76,31 +76,10 @@ export const POST: RequestHandler = async ({ request }) => {
 
     console.log("Webhook: Joined waitlists:", joinedWaitlists);
 
-    // Only send welcome email when this is the newsletter_subs list confirmation
-    // (not when adding to waitlist lists, which also triggers the webhook)
-    // Also check WELCOME_SENT to prevent duplicate sends from Brevo retries
-    if (Number(payloadListId) === BREVO_LIST_IDS.newsletter_subs && !attrs?.WELCOME_SENT) {
-      console.log("Webhook: Sending welcome email");
-      const welcomeResult = await brevoClient.transactionalEmails.sendTransacEmail({
-        templateId: BREVO_TEMPLATE_IDS.welcome,
-        to: [{ email }],
-        params: {
-          first_name: attrs?.FIRSTNAME || "there",
-        },
-      });
-      console.log("Webhook: Welcome email sent, messageId:", welcomeResult.messageId);
-
-      // Mark as sent to prevent duplicate sends on Brevo retry
-      await brevoClient.contacts.updateContact({
-        identifier: email,
-        attributes: { WELCOME_SENT: true },
-      });
-    } else if (Number(payloadListId) === BREVO_LIST_IDS.newsletter_subs && attrs?.WELCOME_SENT) {
-      console.log("Webhook: Welcome email already sent (WELCOME_SENT=true), skipping");
-    }
-
     // Only process waitlist logic when this is the newsletter_subs confirmation
     // (not when adding to product waitlist lists, which also triggers list_addition)
+    // Welcome email is handled by the nickthiru-dev webhook - this webhook only
+    // handles waitlist-related emails to avoid duplicates when both webhooks fire.
     if (Number(payloadListId) === BREVO_LIST_IDS.newsletter_subs && joinedWaitlists.length > 0) {
       console.log("Webhook: Sending waitlist joined email");
       // Add to product lists
