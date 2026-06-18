@@ -99,8 +99,9 @@ export const POST: RequestHandler = async ({ request }) => {
       console.log("Webhook: Welcome email already sent (WELCOME_SENT=true), skipping");
     }
 
-    // If waitlists are joined, also send waitlist email
-    if (joinedWaitlists.length > 0) {
+    // Only process waitlist logic when this is the newsletter_subs confirmation
+    // (not when adding to product waitlist lists, which also triggers list_addition)
+    if (Number(payloadListId) === BREVO_LIST_IDS.newsletter_subs && joinedWaitlists.length > 0) {
       console.log("Webhook: Sending waitlist joined email");
       // Add to product lists
       if (attrs?.WAITLIST_OPSPILOT) {
