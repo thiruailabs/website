@@ -25,7 +25,7 @@
 
   <h1 class="mb-4 text-3xl font-bold">Email Confirmed!</h1>
   <p class="mb-8 text-lg text-gray-600 dark:text-gray-400">
-    Thank you for confirming your email. You're now subscribed to the Thiru AI Labs newsletter.
+    Thank you for confirming your email. You're now subscribed to the <em>Nick Thiru Dev Notes</em> newsletter.
   </p>
 
   <div class="mb-12 space-y-4 text-left">
@@ -47,15 +47,27 @@
   </div>
 
   <div class="flex flex-col gap-4 sm:flex-row sm:justify-center">
-    <a
+    <!-- <a
       href="https://www.nickthiru.dev/writing"
       class="rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-700"
     >
       Read the Blog
+    </a> -->
+    <a
+      href="https://www.nickthiru.dev/writing"
+      class="rounded-lg px-6 py-3 font-medium bg-[#fe1817] text-white font-medium rounded-md hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors text-center"
+    >
+      Read the Blog
     </a>
-    <button
+    <!-- <button
       on:click={() => goto("/products")}
       class="rounded-lg border border-gray-300 px-6 py-3 font-medium transition hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-800"
+    >
+      View Products
+    </button> -->
+    <button
+      on:click={() => goto("/products")}
+      class="rounded-lg px-6 py-3 font-medium bg-[#202020] dark:bg-neutral-700 text-white font-medium hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors text-center"
     >
       View Products
     </button>
