@@ -25,7 +25,7 @@
 
   <h1 class="mb-4 text-3xl font-bold">Email Confirmed!</h1>
   <p class="mb-8 text-lg text-gray-600 dark:text-gray-400">
-    Thank you for confirming your email. You're now subscribed to the <em>Nick Thiru Dev Notes</em> newsletter.
+    Thank you for confirming your email. You're now subscribed to the <br><em>Nick Thiru Dev Notes</em> newsletter.
   </p>
 
   <div class="mb-12 space-y-4 text-left">
