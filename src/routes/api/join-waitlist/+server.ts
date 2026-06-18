@@ -7,7 +7,6 @@
  * 3. If contact is confirmed → set boolean attribute + send waitlist email
  */
 import { json } from "@sveltejs/kit";
-import { env } from "$env/dynamic/private";
 import type { RequestHandler } from "./$types";
 import { brevoClient } from "$lib/server/brevo";
 import { handleBrevoError } from "$lib/server/brevo-errors";
@@ -48,7 +47,7 @@ export const POST: RequestHandler = async ({ request }) => {
         email,
         includeListIds: [BREVO_LIST_IDS.newsletter_subs],
         templateId: BREVO_TEMPLATE_IDS.newsletter_verify,
-        redirectionUrl: `${env.PUBLIC_URL || "https://yoursite.com"}/newsletter/confirmed`,
+        redirectionUrl: `https://www.thiruailabs.com/newsletter/confirmed`,
         attributes: {
           FIRSTNAME: first_name || "",
           [productAttr]: true, // Set waitlist boolean immediately
