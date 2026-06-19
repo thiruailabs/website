@@ -37,6 +37,7 @@ export const POST: RequestHandler = async ({ request }) => {
       contact = await brevoClient.contacts.getContactInfo({
         identifier: email,
       });
+      console.log("Existing contact:", contact);
     } catch {
       // Contact doesn't exist - will create below
     }
