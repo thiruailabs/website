@@ -65,7 +65,8 @@ export const POST: RequestHandler = async ({ request }) => {
     }
 
     // Check if contact is confirmed via DOI
-    const isConfirmed = contact.attributes?.DOUBLE_OPT_IN === true;
+    // Brevo returns "Yes" (string) for confirmed contacts, not boolean true
+    const isConfirmed = contact.attributes?.DOUBLE_OPT_IN === "Yes";
 
     // Case B: Not confirmed yet → set boolean attribute, wait for DOI
     if (!isConfirmed) {
@@ -82,7 +83,7 @@ export const POST: RequestHandler = async ({ request }) => {
         {
           success: true,
           message:
-            "You're already confirming your email. Once done, you'll be added to the waitlist.",
+            "Please confirm your email. Once done, you'll be added to the waitlist.",
           status: "pending_doi",
         },
         { status: 200 },
@@ -90,9 +91,41 @@ export const POST: RequestHandler = async ({ request }) => {
     }
 
     // Case C: Already confirmed → add to waitlist list + send email
-    // Add to product waitlist
+
+    // Determine the first_name to use:
+    // - If contact has no FIRSTNAME set (empty string or missing), use the provided first_name
+    // - Otherwise, keep the existing FIRSTNAME
+    const existingFirstName = contact.attributes?.FIRSTNAME || "";
+    const effectiveFirstName = existingFirstName === "" ? (first_name || "") : existingFirstName;
+
+    // Update contact if FIRSTNAME was missing and a new one was provided
+    if (existingFirstName === "" && first_name) {
+      await brevoClient.contacts.updateContact({
+        identifier: email,
+        attributes: {
+          FIRSTNAME: first_name,
+        },
+      });
+    }
+
+    // Check if already on the product waitlist list
     const productListId =
       BREVO_LIST_IDS[`waitlist_${product_id}` as keyof typeof BREVO_LIST_IDS];
+    const alreadyOnList = productListId && contact.listIds?.includes(productListId);
+
+    if (alreadyOnList) {
+      // Already joined - no email sent
+      return json(
+        {
+          success: true,
+          message: `No worries! You've already joined the waitlist for ${getProductLabel(product_id)}.`,
+          status: "already_joined",
+        },
+        { status: 200 },
+      );
+    }
+
+    // Add to product waitlist
     if (productListId) {
       await brevoClient.contacts.addContactToList({
         listId: productListId,
@@ -113,7 +146,7 @@ export const POST: RequestHandler = async ({ request }) => {
       templateId: BREVO_TEMPLATE_IDS.waitlist_joined,
       to: [{ email }],
       params: {
-        first_name: contact.attributes?.FIRSTNAME || "there",
+        first_name: effectiveFirstName || "there",
         // Set boolean params for template conditionals
         joined_ops_pilot: productAttr === "WAITLIST_OPSPILOT",
         joined_social_engagement_radar:

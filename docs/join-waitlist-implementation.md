@@ -128,17 +128,21 @@ POST /api/join-waitlist
 
 #### Case B: Existing, Not Confirmed
 
-- Contact exists but `DOUBLE_OPT_IN !== true`
+- Contact exists but `DOUBLE_OPT_IN !== "Yes"` (Brevo returns `"Yes"` as a string, not boolean `true`)
 - Updates contact to set the product boolean attribute to `true` (idempotent)
-- Returns: "You're already confirming your email. Once done, you'll be added to the waitlist."
+- Updates `FIRSTNAME` if provided and contact doesn't have one
+- Returns: "Please confirm your email. Once done, you'll be added to the waitlist."
 
 #### Case C: Existing, Confirmed
 
-- Contact exists with `DOUBLE_OPT_IN === true`
-- Adds contact to the product-specific waitlist list
-- Sets the product boolean attribute to `true` (idempotent)
-- Sends waitlist email using the consolidated template with `{% if %}` conditionals
-- Returns: "You've joined the waitlist!"
+- Contact exists with `DOUBLE_OPT_IN === "Yes"`
+- **FIRSTNAME handling**: If contact has no `FIRSTNAME` set (empty string or missing), updates it with the provided `first_name`. Otherwise, keeps the existing `FIRSTNAME`.
+- **Already joined check**: Checks if contact is already on the product waitlist list via `contact.listIds.includes(productListId)`. If already on the list, returns "No worries! You've already joined the waitlist for {product}." without sending a duplicate email.
+- If not already on the list:
+  - Adds contact to the product-specific waitlist list
+  - Sets the product boolean attribute to `true` (idempotent)
+  - Sends waitlist email using the consolidated template with `{% if %}` conditionals
+  - Returns: "You've joined the waitlist!"
 
 ### 3. Brevo Webhook (`src/routes/api/brevo/webhook/+server.ts`)
 
@@ -351,11 +355,9 @@ We'll notify you as soon as we launch!
 ### Scenario D: Already Joined Waitlist
 
 1. User clicks "Join waitlist" for a product they're already on
-2. Backend sets boolean attribute (already `true`, no change)
-3. Sends waitlist email (template shows the product)
-4. Returns: "You've joined the waitlist!"
-
-**Note:** Unlike the Buttondown implementation, there is no explicit "already on this waitlist" check. The boolean attribute approach is idempotent — setting `true` when already `true` is a no-op.
+2. Backend checks `contact.listIds` and finds the contact is already on the product waitlist list
+3. Returns: "No worries! You've already joined the waitlist for {product}."
+4. **No email sent** — avoids duplicate notification
 
 ## Environment Variables
 
