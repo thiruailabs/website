@@ -22,12 +22,14 @@ The join waitlist feature allows visitors to express interest in a product befor
 │  ┌──────────────────────────────────────────────────────────────────┐  │
 │  │                   Deferred Confirmation Flow                      │  │
 │  │                                                                   │  │
-│  │  User confirms email ──> Brevo webhook ──> /api/brevo/webhook    │  │
+│  │  User confirms email ──> Brevo webhooks (both fire)               │  │
 │  │                         (listAddition event)                      │  │
 │  │                                                │                  │  │
-│  │                                                ▼                  │  │
-│  │                                    sendTransacEmail (waitlist or  │  │
-│  │                                     welcome template)             │  │
+│  │                    ┌───────────────────────────┤                  │  │
+│  │                    ▼                           ▼                  │  │
+│  │           nickthiru-dev webhook        thiru-ai-labs webhook      │  │
+│  │           (sends welcome email)        (sends waitlist email      │  │
+│  │                                     if contact has waitlist attrs)│  │
 │  └──────────────────────────────────────────────────────────────────┘  │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
@@ -142,6 +144,13 @@ POST /api/join-waitlist
 
 Handles `listAddition` events from Brevo when a user confirms their email via DOI.
 
+**Two-Webhook Architecture:**
+
+Both thiru-ai-labs and nickthiru.dev have webhooks configured to listen to `list_addition` events on the shared `newsletter_subs` list (ID 11). When a contact confirms their DOI email, **both webhooks fire**. To avoid duplicate welcome emails:
+
+- **nickthiru-dev webhook** handles the welcome email for all newsletter subscribers
+- **thiru-ai-labs webhook** only handles waitlist-related emails (when the contact has waitlist boolean attributes set)
+
 **Security:**
 
 - Verifies Bearer token using `BREVO_WEBHOOK_SECRET` environment variable
@@ -158,14 +167,14 @@ Body: { "event": "listAddition", "list_id": 123, "email": "user@example.com" }
 
 1. Verify Bearer token
 2. Parse payload, extract event type
-3. Only process `listAddition` events for the `newsletter_subs` list
+3. Only process `list_addition` events for the `newsletter_subs` list
 4. Fetch contact to read boolean attributes (webhook payload doesn't include them)
 5. Check which waitlist boolean attributes are set (`WAITLIST_OPSPILOT`, `WAITLIST_SOCIAL_ENGAGEMENT_RADAR`, `WAITLIST_POLICYFORGE`)
 6. If waitlists are pending:
    - Add contact to each product's waitlist list
    - Send consolidated waitlist email with `{% if %}` conditionals for each product
 7. If no waitlists pending:
-   - Send welcome email
+   - Do nothing (welcome email is handled by the nickthiru-dev webhook)
 
 ### 4. Brevo SDK Client (`src/lib/server/brevo.ts`)
 
@@ -284,7 +293,7 @@ export const BREVO_TEMPLATE_IDS = {
 
 ### Template #2: "Welcome Email"
 
-- **Trigger:** Sent by webhook handler when user confirms DOI but has no pending waitlist joins
+- **Trigger:** Sent by the **nickthiru-dev webhook** when user confirms DOI (not by thiru-ai-labs webhook)
 - **Variables:** `{{contact.FIRSTNAME}}` (fallback handled in backend)
 
 ### Template #3: "Waitlist Joined" (Consolidated)
@@ -538,18 +547,28 @@ export const BREVO_TEMPLATE_IDS = {
 
 ### Step 4: Configure Brevo Webhook
 
+**Two-Webhook Architecture:**
+
+Both thiru-ai-labs and nickthiru.dev share the same `newsletter_subs` list (ID 11). Each project has its own webhook configured in Brevo:
+
+| Webhook           | Purpose                                   | URL                                             |
+| ----------------- | ----------------------------------------- | ----------------------------------------------- |
+| **nickthiru-dev** | Sends welcome email for all subscribers   | `https://nickthiru.dev/api/brevo/webhook`       |
+| **thiru-ai-labs** | Sends waitlist email for waitlist joiners | `https://www.thiruailabs.com/api/brevo/webhook` |
+
+Both webhooks listen to `list_addition` events on the `newsletter_subs` list. When a contact confirms their DOI email, **both webhooks fire**. The thiru-ai-labs webhook only sends emails when the contact has waitlist boolean attributes set, avoiding duplicate welcome emails.
+
 **Option A: Automated (Recommended)**
 
 If you set `PUBLIC_URL` (and optionally `BREVO_WEBHOOK_DEV_URL`) before running the provisioning script, webhooks are created automatically with Bearer token authentication.
 
-**Two-Webhook Strategy:**
+**Development Webhook (Optional):**
 
 | Webhook         | Purpose                 | URL Source                         |
 | --------------- | ----------------------- | ---------------------------------- |
 | **Development** | Local testing via ngrok | `BREVO_WEBHOOK_DEV_URL` (optional) |
-| **Production**  | Live deployment         | `PUBLIC_URL` (required)            |
 
-Both webhooks use the same `BREVO_WEBHOOK_SECRET` for Bearer token authentication. Brevo delivers events to both, so you can test locally without affecting production.
+Both development and production webhooks use the same `BREVO_WEBHOOK_SECRET` for Bearer token authentication. Brevo delivers events to both, so you can test locally without affecting production.
 
 **Option B: Manual (Fallback)**
 
@@ -558,7 +577,7 @@ If automated webhook creation fails or you prefer manual control:
 1. Go to Brevo dashboard → Settings → Webhooks
 2. Create a new **Marketing Webhook**
 3. Configure:
-   - **URL:** `https://yoursite.com/api/brevo/webhook`
+   - **URL:** `https://www.thiruailabs.com/api/brevo/webhook`
    - **Event:** `listAddition` (contact added to list)
    - **Authentication:** Bearer token (set to your `BREVO_WEBHOOK_SECRET`)
 4. Save and test

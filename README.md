@@ -8,7 +8,7 @@ This is the company front door, providing:
 
 - Clean, credible home for the Thiru AI Labs brand
 - Product directory showcasing current and upcoming AI products (OpsPilot, Social Engagement Radar, PolicyForge)
-- Newsletter signup via Brevo Double Opt-In (DOI)
+- Newsletter signup via Brevo Double Opt-In (DOI) (shared with nickthiru.dev)
 - Waitlist management for pre-launch products
 - Links to the founder's publishing hub at [nickthiru.dev](https://nickthiru.dev)
 
@@ -243,11 +243,13 @@ This site is configured for deployment on Vercel:
 
 After deployment, create the Brevo webhook:
 
-- **URL**: `https://yoursite.com/api/brevo/webhook`
+- **URL**: `https://www.thiruailabs.com/api/brevo/webhook`
 - **Event**: `listAddition` (marketing webhook)
 - **Authentication**: Bearer token (set to your `BREVO_WEBHOOK_SECRET`)
 
 Alternatively, run the provisioning script with `PUBLIC_URL` set to create the webhook automatically.
+
+**Note:** This webhook shares the `newsletter_subs` list with the nickthiru.dev webhook. The thiru-ai-labs webhook only sends waitlist-related emails (when contacts have waitlist boolean attributes set), while the nickthiru.dev webhook handles welcome emails for all newsletter subscribers.
 
 ## Documentation
 
