@@ -67,7 +67,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
     // Check if contact is confirmed via DOI
     // Brevo returns "Yes" (string) for confirmed contacts, not boolean true
-    const isConfirmed = contact.attributes?.s["DOUBLE_OPT-IN"] === "1";
+    const isConfirmed = contact.attributes?.["DOUBLE_OPT-IN"] === "1";
 
     // Case B: Not confirmed yet → set boolean attribute, wait for DOI
     if (!isConfirmed) {
