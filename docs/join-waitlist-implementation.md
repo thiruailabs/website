@@ -105,8 +105,8 @@ POST /api/join-waitlist
                ▼                   ▼                   ▼
       ┌──────────────┐    ┌──────────────┐    ┌──────────────────┐
       │ Not found    │    │ Found,       │    │ Found,           │
-      │ (Case A)     │    │ DOUBLE_OPT   │    │ DOUBLE_OPT_IN    │
-      │              │    │ _IN != true  │    │ == true          │
+      │ (Case A)     │    │ DOUBLE_OPT   │    │ DOUBLE_OPT-IN    │
+      │              │    │ -IN != "1"   │    │ == "1"           │
       │              │    │ (Case B)     │    │ (Case C)         │
       └──────┬───────┘    └──────┬───────┘    └────────┬─────────┘
              │                   │                     │
@@ -128,14 +128,14 @@ POST /api/join-waitlist
 
 #### Case B: Existing, Not Confirmed
 
-- Contact exists but `DOUBLE_OPT_IN !== "Yes"` (Brevo returns `"Yes"` as a string, not boolean `true`)
+- Contact exists but `contact.attributes?.["DOUBLE_OPT-IN"] !== "1"` (Brevo returns `"1"` as a string for confirmed contacts, note the hyphen in the attribute name)
 - Updates contact to set the product boolean attribute to `true` (idempotent)
 - Updates `FIRSTNAME` if provided and contact doesn't have one
 - Returns: "Please confirm your email. Once done, you'll be added to the waitlist."
 
 #### Case C: Existing, Confirmed
 
-- Contact exists with `DOUBLE_OPT_IN === "Yes"`
+- Contact exists with `contact.attributes?.["DOUBLE_OPT-IN"] === "1"`
 - **FIRSTNAME handling**: If contact has no `FIRSTNAME` set (empty string or missing), updates it with the provided `first_name`. Otherwise, keeps the existing `FIRSTNAME`.
 - **Already joined check**: Checks if contact is already on the product waitlist list via `contact.listIds.includes(productListId)`. If already on the list, returns "No worries! You've already joined the waitlist for {product}." without sending a duplicate email.
 - If not already on the list:
