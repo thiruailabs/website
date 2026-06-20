@@ -59,6 +59,8 @@
 4. Confirmed contact joins already-joined waitlist → no duplicate email
 5. Webhook receives `list_id` as array `[11]` → handled correctly
 6. Webhook receives `DOUBLE_OPT-IN` as `"1"` → confirmed check passes
+7. **Cross-site duplicate prevention**: Contact exists via thiru-ai-labs waitlist → tries to subscribe via nickthiru.dev → returns "already subscribed" (Case C)
+8. **Cross-site unconfirmed**: Contact started DOI via thiru-ai-labs waitlist → tries to subscribe via nickthiru.dev → returns "check existing email" (Case B)
 
 ### Tier 3: Visual/UI Testing (Low-Medium ROI, Low Effort)
 
@@ -131,8 +133,8 @@ For your use case (personal/business websites with critical lead generation flow
 **Rationale:**
 
 - Your sites are content-heavy but functionally focused (2-3 critical API endpoints)
-- Brevo integration is the highest-risk area (as evidenced by the bugs found)
-- Manual testing of the 6 scenarios is sufficient for now
+- Brevo integration is the highest-risk area (as evidenced by the bugs found: DOUBLE_OPT_IN attribute name, two-webhook architecture, cross-site duplicate prevention)
+- Manual testing of the 8 scenarios (including cross-site flows) is sufficient for now
 - Unit/integration tests will catch regressions when you make changes
 
 **When to add E2E:**
