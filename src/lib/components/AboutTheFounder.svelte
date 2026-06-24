@@ -14,7 +14,7 @@
 						<h3 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">Nick Thiru</h3>
 						<div class="space-y-4 text-neutral-600 dark:text-neutral-400">
 							<p>
-								A senior corporate executive-turned software engineer. Now a solo founder. Previously building full-stack web applications for enterprise clients, and now focused on agentic AI workflows, LLM orchestration, and production-grade AI systems—applying enterprise-level engineering practices to purpose-built AI products and systems. 
+								A senior corporate executive-turned software engineer. Now a solo founder. Previously building full-stack web applications for enterprise clients, and now focusing on agentic AI workflows, LLM orchestration, and production-grade AI systems—applying enterprise-level engineering practices to purpose-built AI products and systems. 
 							</p>
 							<p>
 								I also share my hard-won lessons and expertise—across engineering, product, and business—on my blog.
