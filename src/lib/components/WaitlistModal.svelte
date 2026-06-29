@@ -151,12 +151,25 @@
 							/>
 						</div>
 						
-						<button 
+						<!-- <button 
 							type="submit" 
 							disabled={status === 'loading'}
 							class="w-full px-6 py-3 bg-[#fe1817] text-white font-medium rounded-md hover:bg-brand-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
 						>
 							{status === 'loading' ? 'Joining...' : 'Join Waitlist'}
+						</button> -->
+						<button 
+							type="submit" 
+							disabled={status === 'loading'}
+							class="w-full px-6 py-3 bg-[#fe1817] text-white font-medium rounded-md hover:bg-brand-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+						>
+							{#if status === 'loading'}
+								<span class="inline-flex items-center">
+									Joining<span class="loading-dots inline-block w-6 text-left"></span>
+								</span>
+							{:else}
+								Join Waitlist
+							{/if}
 						</button>
 					</form>
 					
