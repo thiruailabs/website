@@ -499,6 +499,29 @@
     </div>
   </section>
 
+  <!-- Follow the Build -->
+	<section class="mb-16 mx-4 sm:mx-6 lg:mx-10">
+		<div class="bg-neutral-50 dark:bg-[#202020] border-4 border-neutral-200 dark:border-neutral-700 rounded-lg p-12 text-center">
+			<h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-4">Want to see how PolicyForge gets built?</h2>
+			<p class="text-lg text-neutral-600 dark:text-neutral-300 mb-8 max-w-2xl mx-auto">
+				PolicyForge is being built in public. Every architectural decision, engineering challenge, 
+				and product direction gets documented and shared — so you can follow the journey from 
+				idea to production.
+			</p>
+			<a
+				href="https://nickthiru.dev/writing?series=policy-forge"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="inline-flex items-center gap-2 px-6 py-3 bg-[#fedf19] text-[#202020] font-semibold rounded-md hover:bg-[#fe1817] hover:text-white transition-colors"
+			>
+				Read the PolicyForge series
+				<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+				</svg>
+			</a>
+		</div>
+	</section>
+
   <!-- ============================================
        PRICING
        ============================================ -->
@@ -738,7 +761,7 @@
   <!-- ============================================
        FINAL CTA
        ============================================ -->
-  <section class="bg-neutral-50 dark:bg-[#202020] border border-neutral-200 dark:border-neutral-700 rounded-lg p-12 text-center">
+  <section class="bg-neutral-50 dark:bg-[#202020] border-4 border-neutral-200 dark:border-neutral-700 rounded-lg mx-4 sm:mx-6 lg:mx-10 p-12 text-center">
     <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-4">
       Your insurance deadline is in 17 days. PolicyForge gets you compliant in 1.
     </h2>
