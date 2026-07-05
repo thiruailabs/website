@@ -28,7 +28,7 @@
 
 		<!-- Main Value Prop as H1 -->
 		<h1 class="text-lg md:text-xl lg:text-2xl text-neutral-700 dark:text-neutral-300 max-w-3xl mx-auto mb-12 leading-snug font-light tracking-tight">
-			A solo AI systems studio building full-stack, agentic AI SaaS products and bespoke systems—secure, data-isolated, reliable, and production-grade—for the real world.
+			A solo AI systems studio building full-stack, agentic AI SaaS products and bespoke systems — secure, data-isolated, reliable, and production-grade — for the real world.
 		</h1>
 
 		<!-- Secondary Links -->
@@ -173,7 +173,7 @@
 		<div class="max-w-4xl mx-auto">
 			<div class="text-center mb-12">
 				<h2 class="section-heading text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-3">Building in Public</h2>
-				<p class="text-lg text-neutral-600 dark:text-neutral-400">Transparent development, real learnings, authentic progress</p>
+				<p class="text-lg text-neutral-600 dark:text-neutral-400">Transparent development, real learnings, authentic progress — shared publicly via the blog</p>
 			</div>
 
 			<div class="grid md:grid-cols-2 gap-6">
@@ -281,10 +281,8 @@
 					rel="noopener noreferrer"
 					class="inline-flex items-center gap-2 px-6 py-3 bg-brand-dark text-white dark:bg-neutral-100 dark:text-brand-dark font-medium rounded-lg hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors"
 				>
-					Read the articles
-					<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-					</svg>
+					Read the blog
+					<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
 				</a>
 			</div>
 		</div>

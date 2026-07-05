@@ -32,7 +32,7 @@
   <!-- ============================================
        PAGE HEADER
        ============================================ -->
-  <div class="max-w-3xl mb-16">
+  <div class="mb-16">
     <h1 class="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">
       Products
     </h1>
