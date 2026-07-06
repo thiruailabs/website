@@ -54,11 +54,22 @@
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
       {#each products as product}
         <ProductCard {product} padding="p-8" titleSize="text-2xl">
-          <p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
-            {product.shortDescription}
-          </p>
+          <!-- Title section - min-h reserves space for longest title (2 lines) -->
+          {#snippet titleSlot()}
+            <div class="min-h-[4rem]">
+              <h3 class="text-2xl font-semibold text-neutral-900 dark:text-neutral-100">{product.title}</h3>
+            </div>
+          {/snippet}
+
+          <!-- Description section - min-h reserves space for longest description -->
+          <div class="min-h-[10rem] mb-6">
+            <p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
+              {product.shortDescription}
+            </p>
+          </div>
           
-          <div>
+          <!-- Who it's for section - min-h reserves space for longest audience text -->
+          <div class="min-h-[6rem]">
             <h4 class="text-sm font-semibold text-neutral-700 dark:text-neutral-300 mb-1">
               Who it's for
             </h4>
@@ -69,8 +80,8 @@
 
           {#snippet footer()}
             <div class="flex gap-3 mt-auto">
-              <a 
-                href="/products/{product.slug}" 
+              <a
+                href="/products/{product.slug}"
                 class="inline-flex flex-1 justify-center items-center gap-1 px-4 py-2 bg-[#202020] dark:bg-neutral-700 text-white font-medium rounded-md hover:bg-[#fedf19] hover:text-[#fe1817] transition-colors text-center"
               >
                 Learn more
