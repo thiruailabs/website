@@ -33,7 +33,7 @@ export const products: Product[] = [
 		title: 'OpsPilot',
 		status: 'Building',
 		shortDescription: 'SMB operators will be able to run their entire business with the operational intelligence previously available only to enterprises with dedicated finance, support, engineering, and operations teams.',
-		targetAudience: 'Engineering leaders and ops teams managing fast-growing companies (20–200 people)',
+		targetAudience: 'Business leaders and ops teams managing fast-growing companies (20–200 people)',
 		waitlistId: 'ops_pilot',
 		order: 2,
 		featured: true
@@ -79,7 +79,7 @@ export const secureStackVision: PlatformVision = {
 	status: 'Platform Vision',
 	statusBg: 'bg-[#202020] dark:bg-neutral-700',
 	statusText: 'text-white',
-	description: 'A modular AI-native cybersecurity compliance platform for SMBs and the defense industry supply chain at large. Each product reinforces the others, building a coherent story: <strong>"We assessed our gaps, generated policies, scanned our codebase for crypto vulnerabilities, and had everything organized for our auditor in 4 weeks—using one integrated platform."</strong>',
+	description: 'A modular AI-native cybersecurity compliance platform for SMBs and the defense industry supply chain at large. Each product reinforces the others, building a coherent story: <strong>"We assessed our gaps, generated policies, scanned our codebase for crypto vulnerabilities, and had everything organized for our auditor in 4 weeks — using one integrated platform."</strong>',
 	phases: [
 		{
 			number: 1,
@@ -87,7 +87,7 @@ export const secureStackVision: PlatformVision = {
 			items: [
 				{
 					name: 'PolicyForge',
-					description: 'Generate and manage security policies aligned to SOC 2, ISO 27001, HIPAA, NIST, CMMC. Fastest to build, global revenue, feeds everything downstream.'
+					description: 'Generate and manage security policies aligned to SOC 2, ISO 27001, HIPAA, NIST, CMMC. Feeds everything downstream in SecureStack.'
 				},
 				{
 					name: 'CipherScan',
@@ -120,8 +120,8 @@ export const secureStackVision: PlatformVision = {
 			]
 		}
 	],
-	strategicFit: 'Designed for cybersecurity-regulated SMBs (healthcare, fintech, defense tech, SaaS) and DoD-adjacent partners. Each product solves a specific bottleneck; together they form a complete security + compliance platform that competes with Drata, Vanta, and enterprise GRC tools—but at SMB pricing and speed.',
-	differentiator: 'Built by a founder shipping modern UX instead of enterprise bloat. Every recommendation is auditable and cited—not black-box scoring. Developed transparently in public so you see exactly what you\'re getting.',
+	strategicFit: 'Designed for cybersecurity-regulated SMBs (healthcare, fintech, defense tech, SaaS) and National Department of Defence-adjacent partners. Each product solves a specific bottleneck; together they form a complete security + compliance platform that competes with Drata, Vanta, and enterprise GRC tools — but at SMB pricing and speed.',
+	differentiator: 'Built by a founder shipping modern UX instead of enterprise bloat. Every recommendation is auditable and cited — not black-box scoring. Developed transparently in public so you see exactly what you\'re getting.',
 	timeline: 'PolicyForge (Q3 2026) → CipherScan (Q4 2026) → ComplianceQ (Q1 2027)',
 	timelineNote: 'ThreatBrief & VendorShield follow based on customer feedback and market response.'
 };

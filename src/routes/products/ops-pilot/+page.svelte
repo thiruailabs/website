@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>OpsPilot - Operational Intelligence for Solo Founders - Thiru AI Labs</title>
+	<title>OpsPilot - Business Operational Tools and Intelligence for SMBs - Thiru AI Labs</title>
 	<meta name="description" content="Run your entire business with enterprise-grade operational intelligence. Unified view across finance, billing, support, and monitoring. AI agents that detect risks, automate workflows, and surface growth opportunities. Data isolation guaranteed." />
 </svelte:head>
 
@@ -23,8 +23,8 @@
 		</div>
 		<h1 class="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">OpsPilot</h1>
 		<p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed mb-8">
-			Unified operational intelligence for solo founders and small teams. See your entire business at a glance. 
-			AI agents that detect risks, automate workflows, and surface growth opportunities — with your data completely isolated.
+			Unified business operational tools and intelligence platform for solo founders, micro teams, and SMBs. See your entire business at a glance. 
+			AI agents that detect risks, automate workflows, and surface growth opportunities — with your data completely isolated and private.
 		</p>
 	</div>
 
@@ -37,14 +37,14 @@
 				But you're doing it with the operational infrastructure of a side project.
 			</p>
 			<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
-				Your data lives in five to ten disconnected tools—QuickBooks, Stripe, Intercom, AWS, HubSpot. 
+				Your data lives in five to ten disconnected tools — QuickBooks, Stripe, Intercom, AWS, HubSpot. 
 				To answer a simple question like "which customers have declined usage AND have overdue invoices AND unresolved support tickets," 
 				you have to manually check each tool, correlate the data in your head, and hope you didn't miss anyone.
 			</p>
 			<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
 				Meanwhile, <strong>10–15 hours per week</strong> disappear into operational administration: 
 				gathering data, checking status dashboards, reconciling accounts, triaging support tickets, 
-				monitoring service health. Hours that should go to product, growth, and customers—but instead go to 
+				monitoring service health. Hours that should go to product, growth, and customers — but instead go to 
 				keeping the lights on.
 			</p>
 			<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
@@ -75,7 +75,7 @@
 					<div>
 						<h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2">1. Connect your tools</h3>
 						<p class="text-neutral-600 dark:text-neutral-400">
-							OpsPilot integrates with the tools you already use—QuickBooks, Xero, Stripe, Intercom, Zendesk, HubSpot, AWS, 
+							OpsPilot integrates with the tools you already use — QuickBooks, Xero, Stripe, Intercom, Zendesk, HubSpot, AWS, 
 							GitHub, and more. No data migration. No switching systems. Connectors are configured in minutes.
 						</p>
 					</div>
@@ -92,7 +92,7 @@
 					<div>
 						<h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2">2. Get unified visibility</h3>
 						<p class="text-neutral-600 dark:text-neutral-400">
-							All your operational data flows into a single, normalized layer. Finance, billing, support, monitoring, sales—
+							All your operational data flows into a single, normalized layer. Finance, billing, support, monitoring, sales & marketing — 
 							all correlated and queryable from one dashboard. See your entire business at a glance.
 						</p>
 					</div>
@@ -109,7 +109,7 @@
 					<div>
 						<h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2">3. Deploy AI agents</h3>
 						<p class="text-neutral-600 dark:text-neutral-400">
-							Domain-specific agents automatically detect cross-domain risks—churn signals, billing failures, cash flow shortfalls, 
+							Domain-specific agents automatically detect cross-domain risks — churn signals, billing failures, cash flow shortfalls, 
 							service degradation. Respond to support tickets. Flag overdue invoices. Triage incidents. Generate outreach.
 						</p>
 					</div>
@@ -143,7 +143,7 @@
 				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Integration Marketplace</h3>
 				<p class="text-neutral-600 dark:text-neutral-400">
 					Pre-built connectors to QuickBooks, Xero, Stripe, Intercom, Zendesk, HubSpot, AWS, GitHub, Slack, and more. 
-					Zero migration required—plug in your existing tools and start getting unified intelligence immediately.
+					Zero migration required — plug in your existing tools and start getting unified intelligence immediately.
 				</p>
 			</div>
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
@@ -156,8 +156,8 @@
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Domain Agents</h3>
 				<p class="text-neutral-600 dark:text-neutral-400">
-					AI agents that specialize in finance, support, billing, monitoring, and sales. They reason across unified data 
-					to surface risks, automate workflows, and surface decisions—all with human approval controls.
+					AI agents that specialize in accounting, finance, support, billing, monitoring, sales & marketing, and more. They reason across unified data 
+					to surface risks, automate workflows, and surface decisions — all with human approval controls.
 				</p>
 			</div>
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
@@ -171,15 +171,14 @@
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Data Sovereignty Architecture</h3>
 				<p class="text-neutral-600 dark:text-neutral-400">
-					Tenant-isolated storage, embeddings, agent memory, and LLM context. Business-sensitive operations route to 
-					self-hosted or zero-retention enterprise models. Your operational data never benefits competitors on the platform.
+					Your operational data stays private and never leaves your organization. We achieve this through tenant-isolated storage, embeddings, and agent memory management — with business-sensitive operations routed to self-hosted or zero-retention enterprise models.
 				</p>
 			</div>
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Native Modules (Optional)</h3>
 				<p class="text-neutral-600 dark:text-neutral-400">
-					OpsPilot-built replacements for individual domains—finance, support, billing, monitoring, HR, sales—
-					available as optional upgrades when you're ready to consolidate away from point solutions.
+					OpsPilot-built replacements for individual domains — accounting, finance, support, billing, monitoring, HR, sales & marketing —
+					available as optional upgrades when you're ready to consolidate away from standalone tools.
 				</p>
 			</div>
 		</div>
@@ -199,7 +198,7 @@
 				<svg class="w-5 h-5 text-[#fe1817] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
 				</svg>
-				<span class="text-neutral-700 dark:text-neutral-400"><strong>Automate workflows</strong> — Handle support ticket triage, invoice follow-ups, incident routing, and outreach—with your approval</span>
+				<span class="text-neutral-700 dark:text-neutral-400"><strong>Automate workflows</strong> — Handle support ticket triage, invoice follow-ups, incident routing, and outreach — with your approval</span>
 			</div>
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-4 flex items-start gap-3">
 				<svg class="w-5 h-5 text-[#fe1817] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -227,28 +226,28 @@
 		<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Who It's For</h2>
 		<div class="space-y-4">
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Solo SaaS Founders ($10K–$500K ARR)</h3>
+				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Solo SaaS Founders and Micro Teams</h3>
 				<p class="text-neutral-600 dark:text-neutral-400">
 					You have real customers, real revenue, and real operational complexity. But you haven't yet justified hiring operations staff. 
 					OpsPilot gives you the operational intelligence of a dedicated operations team without the headcount.
 				</p>
 			</div>
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Small Teams Managing Multiple Tools</h3>
+				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">SMBs Managing Multiple Tools</h3>
 				<p class="text-neutral-600 dark:text-neutral-400">
-					You're drowning in point solutions and context-switching. OpsPilot connects them without requiring you to abandon 
+					You're drowning in standalone tools and context-switching between them. OpsPilot connects them without requiring you to abandon 
 					the tools you know and have configured. You get unified intelligence while keeping your existing workflows intact.
 				</p>
 			</div>
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Data Privacy-First Organizations</h3>
 				<p class="text-neutral-600 dark:text-neutral-400">
-					You're concerned about competitive exposure on shared platforms. OpsPilot's architecture guarantees tenant isolation at 
-					the storage, embedding, and LLM context layers. Your operational intelligence never benefits competitors.
+					You're concerned about data exposure on a shared platform. OpsPilot's architecture guarantees tenant, or organizational, isolation at 
+					the storage, embedding, and LLM context layers. Your operational intelligence never benefits anyone but you.
 				</p>
 			</div>
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Founders Who Want Control</h3>
+				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Stakeholders Who Want Control</h3>
 				<p class="text-neutral-600 dark:text-neutral-400">
 					You don't want black-box automation. You want AI agents that present decisions for your review and approval. 
 					You want to see the reasoning. OpsPilot operates in a human-in-the-loop model where you stay in control.
@@ -264,8 +263,8 @@
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-3">Integration-First, Not Replacement-First</h3>
 				<p class="text-neutral-600 dark:text-neutral-400 mb-3">
-					Unlike Odoo and Holded, which demand you migrate away from your existing tools, OpsPilot connects to the systems you already use—
-					QuickBooks, Stripe, Intercom, HubSpot. You get unified intelligence from day one without data migration, no switching costs, 
+					Unlike Odoo and Holded, which demand you migrate away from your existing tools, OpsPilot connects to the systems you already use — 
+					QuickBooks, Stripe, Intercom, HubSpot, and more. You get unified intelligence from day one without data migration, no switching costs, 
 					no workflow disruption.
 				</p>
 			</div>
@@ -283,8 +282,8 @@
 				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-3">Data Isolation as Architecture, Not Policy</h3>
 				<p class="text-neutral-600 dark:text-neutral-400 mb-3">
 					Unlike Salesforce Einstein and HubSpot AI, which process user data through shared commercial infrastructure, OpsPilot enforces 
-					tenant isolation at the storage, embedding, agent memory, and LLM context layers. Business-sensitive operations route exclusively 
-					to self-hosted or zero-retention enterprise models. Your data never trains models that benefit your competitors.
+					tenant, or organizational, isolation at the storage, embedding, agent memory, and LLM context layers. Business-sensitive operations route exclusively 
+					to self-hosted or zero-retention enterprise models. Your data never trains models that benefit any business but your own.
 				</p>
 			</div>
 
@@ -298,10 +297,10 @@
 			</div>
 
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-3">ERP-Grade Scope at Founder Velocity</h3>
+				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-3">ERP-Grade Scope, Configured in Minutes</h3>
 				<p class="text-neutral-600 dark:text-neutral-400 mb-3">
 					Unlike SAP Business One and NetSuite, which require dedicated implementation teams and months of onboarding, OpsPilot is built 
-					for a single founder to configure in a session. No consultants. No complex data models. Just connect your tools and start getting 
+					so a single person on your team can configure it in a session. No consultants. No complex data models. Just connect your tools and start getting 
 					operational intelligence immediately.
 				</p>
 			</div>
@@ -323,7 +322,7 @@
 				rel="noopener noreferrer"
 				class="inline-flex items-center gap-2 px-6 py-3 bg-[#fedf19] text-[#202020] font-semibold rounded-md hover:bg-[#fe1817] hover:text-white transition-colors"
 			>
-				Read the OpsPilot series
+				Read the OpsPilot blog series
 				<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
 				</svg>
@@ -410,7 +409,7 @@
 					</span>
 				</summary>
 				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
-					OpsPilot enforces data isolation at the architectural level, not just contractually. Every tenant's data is isolated at the storage layer, 
+					OpsPilot enforces data isolation at the architectural level, not just contractually. Every tenant's, or organization's, data is isolated at the storage layer, 
 					embedding namespace, agent memory, and LLM context level. Business-sensitive operations (financial decisions, churn predictions) route 
 					exclusively to self-hosted open models or enterprise-tier zero-retention services. Your operational intelligence never trains shared models 
 					and is never accessible to other platform users.
@@ -419,14 +418,14 @@
 
 			<details class="group bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6 [&_summary::-webkit-details-marker]:hidden">
 				<summary class="flex items-center justify-between font-semibold text-neutral-900 dark:text-neutral-100 cursor-pointer">
-					<span>Do I have to migrate my data out of QuickBooks / Stripe / Intercom?</span>
+					<span>Do I have to migrate my data out of QuickBooks / Stripe / Intercom / etc.?</span>
 					<span class="transition duration-300 group-open:-rotate-180">
 						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
 					</span>
 				</summary>
 				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
 					No. OpsPilot is integration-first, not replacement-first. You keep all your data in your existing tools and connect them to OpsPilot 
-					via pre-built connectors. Data flows into OpsPilot's unified layer in real time, but your source of truth stays wherever it is today—
+					via pre-built connectors. Data flows into OpsPilot's unified layer in real time, but your source of truth stays wherever it is today — 
 					QuickBooks, Stripe, Intercom, etc. You can add OpsPilot as an additional intelligence layer without disrupting your existing workflows.
 				</p>
 			</details>
@@ -453,7 +452,7 @@
 				</summary>
 				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
 					OpsPilot operates on a human-in-the-loop continuum. Early on, agents surface recommendations for your review and approval. As trust builds 
-					and you see their reliability, you can gradually increase automation. But the default is always approval gates on consequential actions—
+					and you see their reliability, you can gradually increase automation. But the default is always approval gates on consequential actions — 
 					especially anything involving financial or customer-facing decisions. You're always in control.
 				</p>
 			</details>
@@ -466,8 +465,7 @@
 					</span>
 				</summary>
 				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
-					OpsPilot has an open API for third-party integrations and an integration marketplace. Pre-built connectors cover the dominant platforms 
-					(QuickBooks, Xero, Stripe, Intercom, Zendesk, HubSpot, AWS, GitHub, Slack, etc.), and for long-tail tools, you can build custom connectors 
+					OpsPilot has an open API for third-party integrations. In fact, OpsPilot was conceived as primarily an integration platform and marketplace first. Pre-built connectors cover the dominant platforms (QuickBooks, Xero, Stripe, Intercom, Zendesk, HubSpot, AWS, GitHub, Slack, etc.), and for niche tools, you can build custom connectors 
 					or request integrations.
 				</p>
 			</details>
@@ -480,8 +478,8 @@
 					</span>
 				</summary>
 				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
-					OpsPilot accumulates your operational history—which customers churned, which billing issues were recovered, which support patterns led to 
-					customer escalations. This data is stored in a tenant-isolated memory that agents use to improve their future recommendations. Over time, 
+					OpsPilot accumulates your operational history — which customers churned, which billing issues were recovered, which support patterns led to 
+					customer escalations. This data is stored in a tenant, or organization, isolated memory that agents use to improve their future recommendations. Over time, 
 					agents learn what patterns actually drive outcomes for your business, and their scoring becomes progressively more accurate.
 				</p>
 			</details>
@@ -495,7 +493,7 @@
 				</summary>
 				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
 					Currently in active development. Waitlist members will get early access and founding member pricing. 
-					Expected launch: Q3 2026.
+					Expected launch: Q3-Q4 2026.
 				</p>
 			</details>
 
@@ -516,9 +514,9 @@
 
 	<!-- Final CTA -->
 	<section class="bg-neutral-50 dark:bg-[#202020] border-4 border-neutral-200 dark:border-neutral-700 rounded-lg mx-4 sm:mx-6 lg:mx-10 p-12 text-center">
-		<h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-4">Ready to run your business like an enterprise—without the team?</h2>
+		<h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-4">Ready to run your business like an enterprise — without the team?</h2>
 		<p class="text-lg text-neutral-600 dark:text-neutral-300 mb-8 max-w-2xl mx-auto">
-			Join the waitlist to get early access, founding member pricing, and a chance to shape the future of operational intelligence for founders.
+			Join the waitlist to get early access, founding member pricing, and a chance to shape the future of operational intelligence for your business.
 		</p>
 		<button 
 			on:click={openWaitlist}

@@ -39,12 +39,6 @@
       Get framework-aligned security policies ready for audit submission in minutes instead of weeks. 
       No $5k–$15k consulting fees. No weeks of discovery meetings.
     </p>
-
-    <div class="bg-[#fedf19] text-[#202020] rounded-lg p-4 mb-8">
-      <p class="font-semibold">
-        Typical scenario: Insurance renewal deadline is Feb 1. You have 17 days. Consulting would take 3–4 weeks. PolicyForge generates policies in 1 day.
-      </p>
-    </div>
   </section>
 
   <!-- ============================================
@@ -119,7 +113,7 @@
               and which compliance framework you need to meet.
             </p>
             <p class="text-neutral-600 dark:text-neutral-400 mt-2 text-sm">
-              Time investment: <strong>15–20 minutes</strong>. No expertise required—just describe your actual setup.
+              Time investment: <strong>15–20 minutes</strong>. No expertise required — just describe your actual setup.
             </p>
           </div>
         </div>
@@ -158,7 +152,7 @@
               Review and export
             </h3>
             <p class="text-neutral-600 dark:text-neutral-400">
-              Read through the policies. Make any edits (add company name, adjust language if needed). Export as PDF or Word. 
+              Read through the policies. Make any edits (e.g. add company name, adjust language if needed). Export as PDF or Word. 
               Submit directly to your auditor, insurance carrier, or customers.
             </p>
             <p class="text-neutral-600 dark:text-neutral-400 mt-2 text-sm">
@@ -514,7 +508,7 @@
 				rel="noopener noreferrer"
 				class="inline-flex items-center gap-2 px-6 py-3 bg-[#fedf19] text-[#202020] font-semibold rounded-md hover:bg-[#fe1817] hover:text-white transition-colors"
 			>
-				Read the PolicyForge series
+				Read the PolicyForge blog series
 				<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
 				</svg>
@@ -670,7 +664,7 @@
         </summary>
         <p class="mt-3 text-neutral-600 dark:text-neutral-400">
           At launch: SOC 2 Type II, ISO 27001:2022, HIPAA. Post-launch roadmap: NIST Cybersecurity Framework, CMMC, PCI DSS, GDPR, others. 
-          If your framework is not listed, reach out—we may add it to the roadmap.
+          If your framework is not listed, reach out — we can consider adding it to the roadmap.
         </p>
       </details>
 
@@ -685,7 +679,7 @@
           </span>
         </summary>
         <p class="mt-3 text-neutral-600 dark:text-neutral-400">
-          PolicyForge asks questions about YOUR tech stack and controls—things you already know about. We've designed the interview 
+          PolicyForge asks questions about YOUR tech stack and controls — things you already know about. We've designed the interview 
           to be conversational and clear. If a question doesn't apply (e.g., "Do you use encryption in transit?" and you haven't implemented 
           that yet), you can skip or answer "not yet." The system adapts.
         </p>
@@ -735,8 +729,8 @@
           </span>
         </summary>
         <p class="mt-3 text-neutral-600 dark:text-neutral-400">
-          Currently in pre-beta validation phase (validating assumptions with real auditors and customers). Expected launch: Q3 2025. 
-          Waitlist members will get early access and founding member pricing.
+          Currently in active development. Waitlist members will get early access and founding member pricing. 
+          Expected launch: Q3 2026.
         </p>
       </details>
 

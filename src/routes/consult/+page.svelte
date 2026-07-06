@@ -19,8 +19,8 @@
 			<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">What We Do</h2>
 			<div class="space-y-4 text-neutral-700 dark:text-neutral-400 leading-relaxed">
 				<p>
-					We work with startups and product teams to turn AI agent prototypes into production systems. 
-					Our focus is on the messy middle—the gap between "it works in a notebook" and "it's running reliably in production."
+					We work with startups and established companies to turn AI agent prototypes into production systems. 
+					Our focus is on the messy middle — the gap between "it works in a notebook" and "it's running reliably in production."
 				</p>
 				<p>
 					We specialize in <strong class="text-neutral-900 dark:text-neutral-100">LangGraph-based agentic AI systems</strong> that need to handle 
@@ -121,7 +121,7 @@
 				</li>
 				<li class="flex items-start gap-2">
 					<span class="text-[#fe1817]">→</span>
-					<span><strong class="text-neutral-900 dark:text-neutral-100">Product teams</strong> adding agentic AI capabilities to existing platforms</span>
+					<span><strong class="text-neutral-900 dark:text-neutral-100">Enterprises</strong> adding agentic AI capabilities to existing platforms</span>
 				</li>
 				<li class="flex items-start gap-2">
 					<span class="text-[#fe1817]">→</span>

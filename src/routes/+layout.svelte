@@ -72,7 +72,7 @@
 						href="https://nickthiru.dev/writing"
 						target="_blank"
 						rel="noopener noreferrer"
-						class="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-semibold bg-brand-dark text-white dark:bg-neutral-100 dark:text-brand-dark hover:bg-[#fedf19] hover:text-[#fe1817] rounded transition-colors"
+						class="inline-flex items-center gap-1.5 px-4 pt-2 pb-[10px] text-sm font-semibold bg-brand-dark text-white dark:bg-neutral-100 dark:text-brand-dark hover:bg-[#fedf19] hover:text-[#fe1817] rounded transition-colors"
 					>
 						Blog
 						<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>

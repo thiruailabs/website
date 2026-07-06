@@ -24,7 +24,7 @@
 		<h1 class="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">Social Engagement Radar</h1>
 		<p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed mb-8">
 			A radar for discovering high-value conversations on X and LinkedIn early. Get AI-scored opportunities, personalized reply angles, 
-			and human-approved drafts—all in one dashboard. Engage meaningfully and build your presence without endless scrolling.
+			and human-approved drafts — all in one dashboard. Engage meaningfully and build your presence without endless scrolling.
 		</p>
 	</div>
 
@@ -33,7 +33,7 @@
 		<h2 class="text-2xl font-bold text-neutral-900 dark:text-[#fedf19] mb-6">The Problem</h2>
 		<div class="bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-8 space-y-4">
 			<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
-				You want to grow your presence on X and LinkedIn through meaningful engagement. But engagement only works if you're early—
+				You want to grow your presence on X and LinkedIn through meaningful engagement. But engagement only works if you're early — 
 				if you reply after a conversation has cooled, you're invisible.
 			</p>
 			<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
@@ -43,10 +43,10 @@
 			</p>
 			<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
 				Even when you find something worth replying to, <strong>writing a good reply takes time</strong>. 
-				You need to match the tone of the conversation, add genuine value, and make sure you sound like yourself—not like a chatbot.
+				You need to match the tone of the conversation, add genuine value, and make sure you sound like yourself — not like a chatbot.
 			</p>
 			<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
-				And if you're managing <strong>multiple interests simultaneously</strong> (product discussions, AI/ML, SaaS operations, fundraising), 
+				And if you're managing <strong>multiple interests or topics simultaneously</strong>, 
 				the cognitive load multiplies. You're constantly context-switching between different niches, different keywords, different audiences.
 			</p>
 			<p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
@@ -76,7 +76,7 @@
 					<div>
 						<h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2">1. Configure your niche(s)</h3>
 						<p class="text-neutral-600 dark:text-neutral-400">
-							Set up keywords for each area you want to engage in—Product Management, AI/ML, SaaS, Fundraising, etc. 
+							Set up keywords for each area you want to engage in (e.g. Product Management, AI/ML, SaaS, Fundraising, etc.). 
 							Each space is independent, so your searches never mix together.
 						</p>
 					</div>
@@ -94,7 +94,7 @@
 						<h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2">2. Get a ranked dashboard</h3>
 						<p class="text-neutral-600 dark:text-neutral-400">
 							Every day, the Radar scans recent conversations matching your keywords and ranks them by engagement potential. 
-							You see the top 10–20 opportunities—not an endless noisy feed. Decision is "which of these?" not "is there anything here?"
+							You see the top 10–20 opportunities — not an endless noisy feed. Decision is "which of these?" not "is there anything here?"
 						</p>
 					</div>
 				</div>
@@ -110,7 +110,7 @@
 					<div>
 						<h3 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2">3. AI generates reply angles</h3>
 						<p class="text-neutral-600 dark:text-neutral-400">
-							For each opportunity, the system generates 2–3 distinct reply angles—different approaches to add value. 
+							For each opportunity, the system generates 2–3 distinct reply angles — different approaches to add value. 
 							You pick the angle that resonates, and the AI drafts a full reply conditioned on your personal voice.
 						</p>
 					</div>
@@ -171,7 +171,7 @@
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Space-Based Organization</h3>
 				<p class="text-neutral-600 dark:text-neutral-400">
-					Organize discovery into separate named spaces—one per interest. Each space has its own keywords and conversation history. 
+					Organize discovery into separate named spaces — one per interest or topic. Each space has its own keywords and conversation history. 
 					Switch instantly without re-configuring.
 				</p>
 			</div>
@@ -213,7 +213,7 @@
 			<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
 				<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">People Pursuing Multiple Interests</h3>
 				<p class="text-neutral-600 dark:text-neutral-400">
-					You engage across different topics (Product, AI, SaaS, Fundraising, etc.) and each requires different context. 
+					You engage across different topics and each requires different context. 
 					Space-based organization lets you switch between interests without mental overhead.
 				</p>
 			</div>
@@ -289,7 +289,7 @@
 				rel="noopener noreferrer"
 				class="inline-flex items-center gap-2 px-6 py-3 bg-[#fedf19] text-[#202020] font-semibold rounded-md hover:bg-[#fe1817] hover:text-white transition-colors"
 			>
-				Read the Social Engagement Radar series
+				Read the Social Engagement Radar blog series
 				<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
 				</svg>
@@ -384,7 +384,7 @@
 					</span>
 				</summary>
 				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
-					The system analyzes your published X and LinkedIn posts to build a profile of your voice—sentence structure, vocabulary, tone, emoji usage, 
+					The system analyzes your published X and LinkedIn posts to build a profile of your voice — sentence structure, vocabulary, tone, emoji usage, 
 					paragraph length, and patterns. It captures the delta between AI-generated drafts and what you actually publish, 
 					learning from your edits over time. The more posts you publish, the better the drafts match your style.
 				</p>
@@ -411,7 +411,7 @@
 					</span>
 				</summary>
 				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
-					Yes. You can create unlimited spaces—one per interest (Product Management, AI/ML, SaaS, Fundraising, etc.). 
+					Yes. You can create unlimited spaces — one per interest or topic. 
 					Each space has its own keywords, conversation history, and voice profile. Switching between spaces is instant and requires no re-configuration.
 				</p>
 			</details>
@@ -425,7 +425,7 @@
 				</summary>
 				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
 					After you publish a reply, you can log whether it led to DMs, follows, collaborations, or other business outcomes. 
-					The Radar uses this data to improve its scoring algorithm over time—surfacing conversations that match patterns of your historically successful replies.
+					The Radar uses this data to improve its scoring algorithm over time — surfacing conversations that match patterns of your historically successful replies.
 				</p>
 			</details>
 
@@ -451,7 +451,7 @@
 				</summary>
 				<p class="mt-3 text-neutral-600 dark:text-neutral-400 animate-fadeIn">
 					Currently in active development. Waitlist members will get early access and founding member pricing. 
-					Expected launch: Q4 2025.
+					Expected launch: Q3 2026.
 				</p>
 			</details>
 		</div>
