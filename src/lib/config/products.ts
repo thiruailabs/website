@@ -22,7 +22,7 @@ export const products: Product[] = [
 		title: 'Social Engagement Radar',
 		status: 'Building',
 		shortDescription: 'Monitor X and LinkedIn conversations in real-time. Find relevant discussions about your topics, get AI-drafted responses ready to review, edit, and send. Plug into communities without manual monitoring.',
-		targetAudience: 'Founders, product managers, and community builders looking to participate authentically on X',
+		targetAudience: 'Founders, product managers, and community builders looking to participate authentically on X and LinkedIn',
 		waitlistId: 'social_engagement_radar',
 		order: 1,
 		featured: true
