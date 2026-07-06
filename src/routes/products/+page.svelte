@@ -56,20 +56,20 @@
         <ProductCard {product} padding="p-8" titleSize="text-2xl">
           <!-- Title section - min-h reserves space for longest title (2 lines) -->
           {#snippet titleSlot()}
-            <div class="min-h-[4rem]">
+            <div class="md:min-h-[4rem]">
               <h3 class="text-2xl font-semibold text-neutral-900 dark:text-neutral-100">{product.title}</h3>
             </div>
           {/snippet}
 
           <!-- Description section - min-h reserves space for longest description -->
-          <div class="min-h-[10rem] mb-6">
+          <div class="md:min-h-[10rem] mb-6">
             <p class="text-neutral-700 dark:text-neutral-400 leading-relaxed">
               {product.shortDescription}
             </p>
           </div>
           
           <!-- Who it's for section - min-h reserves space for longest audience text -->
-          <div class="min-h-[6rem]">
+          <div class="md:min-h-[6rem]">
             <h4 class="text-sm font-semibold text-neutral-700 dark:text-neutral-300 mb-1">
               Who it's for
             </h4>
@@ -137,7 +137,7 @@
 							<h4 class="text-sm font-semibold text-neutral-700 dark:text-neutral-300">{phase.title}</h4>
 						</div>
 						
-						<div class="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-6 space-y-3 ml-11">
+						<div class="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-6 space-y-3">
 							{#each phase.items as item}
 								<div class="flex gap-3">
 									<div class="text-[#fe1817] font-bold text-xl flex-shrink-0">→</div>
