@@ -32,7 +32,7 @@ export const products: Product[] = [
 		slug: 'ops-pilot',
 		title: 'OpsPilot',
 		status: 'Building',
-		shortDescription: 'SMBs will be able to run their entire business with the operational efficiency and intelligence previously available only to enterprises with dedicated accounting, finance, support, engineering, sales & marketing, and operations teams.',
+		shortDescription: 'SMBs will be able to run their entire business with the operational efficiency and intelligence previously available only to enterprises with dedicated accounting, finance, customer support, sales & marketing, and operations teams.',
 		targetAudience: 'Business leaders and ops teams managing fast-growing companies (20–200 people)',
 		waitlistId: 'ops_pilot',
 		order: 2,
