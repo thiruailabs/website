@@ -1,6 +1,7 @@
 <script lang="ts">
   import WaitlistModal from '$lib/components/WaitlistModal.svelte';
   import ProductCard from '$lib/components/ProductCard.svelte';
+  import SEO from '$lib/components/SEO.svelte';
   import { getAllProducts, secureStackVision } from '$lib/config/products';
   import type { Product } from '$lib/config/products';
 
@@ -17,9 +18,10 @@
   }
 </script>
 
-<svelte:head>
-  <title>Products - Thiru AI Labs</title>
-</svelte:head>
+<SEO
+	title="Products"
+	description="Explore Thiru AI Labs' production-grade AI products: Social Engagement Radar, OpsPilot, and PolicyForge."
+/>
 
 <WaitlistModal
   bind:isOpen={isWaitlistOpen}

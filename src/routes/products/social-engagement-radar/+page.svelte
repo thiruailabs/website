@@ -1,5 +1,6 @@
 <script>
 	import WaitlistModal from '$lib/components/WaitlistModal.svelte';
+	import SEO from '$lib/components/SEO.svelte';
 	
 	let isWaitlistOpen = false;
 	
@@ -8,10 +9,10 @@
 	}
 </script>
 
-<svelte:head>
-	<title>Social Engagement Radar - Discover High-Value X & LinkedIn Conversations - Thiru AI Labs</title>
-	<meta name="description" content="Discover high-value conversations on X and LinkedIn early. AI-powered conversation scoring, personalized reply angle generation, and human-approved publishing. Build your presence through meaningful engagement." />
-</svelte:head>
+<SEO
+	title="Social Engagement Radar - Discover High-Value X & LinkedIn Conversations"
+	description="Discover high-value conversations on X and LinkedIn early. AI-powered conversation scoring, personalized reply angle generation, and human-approved publishing. Build your presence through meaningful engagement."
+/>
 
 <WaitlistModal bind:isOpen={isWaitlistOpen} productName="Social Engagement Radar" productId="social_engagement_radar" />
 

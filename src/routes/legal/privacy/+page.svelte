@@ -1,6 +1,11 @@
-<svelte:head>
-	<title>Privacy Policy - Thiru AI Labs</title>
-</svelte:head>
+<script>
+import SEO from '$lib/components/SEO.svelte';
+</script>
+
+<SEO
+	title="Privacy Policy"
+	description="Thiru AI Labs' privacy policy — how we collect, use, disclose, and safeguard your information."
+/>
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 	<div class="max-w-3xl mx-auto">

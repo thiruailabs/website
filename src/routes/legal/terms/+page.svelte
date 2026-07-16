@@ -1,6 +1,11 @@
-<svelte:head>
-	<title>Terms of Service - Thiru AI Labs</title>
-</svelte:head>
+<script>
+import SEO from '$lib/components/SEO.svelte';
+</script>
+
+<SEO
+	title="Terms of Service"
+	description="Thiru AI Labs' terms of service — agreement, use license, and disclaimers."
+/>
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 	<div class="max-w-3xl mx-auto">

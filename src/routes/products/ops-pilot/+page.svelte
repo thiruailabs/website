@@ -1,5 +1,6 @@
 <script>
 	import WaitlistModal from '$lib/components/WaitlistModal.svelte';
+	import SEO from '$lib/components/SEO.svelte';
 	
 	let isWaitlistOpen = false;
 	
@@ -8,10 +9,10 @@
 	}
 </script>
 
-<svelte:head>
-	<title>OpsPilot - Business Operational Tools and Intelligence for SMBs - Thiru AI Labs</title>
-	<meta name="description" content="Run your entire business with enterprise-grade operational intelligence. Unified view across finance, billing, support, and monitoring. AI agents that detect risks, automate workflows, and surface growth opportunities. Data isolation guaranteed." />
-</svelte:head>
+<SEO
+	title="OpsPilot - Business Operational Tools and Intelligence for SMBs"
+	description="Run your entire business with enterprise-grade operational intelligence. Unified view across finance, billing, support, and monitoring. AI agents that detect risks, automate workflows, and surface growth opportunities. Data isolation guaranteed."
+/>
 
 <WaitlistModal bind:isOpen={isWaitlistOpen} productName="OpsPilot" productId="ops_pilot" />
 

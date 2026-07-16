@@ -1,5 +1,6 @@
 <script>
   import WaitlistModal from '$lib/components/WaitlistModal.svelte';
+  import SEO from '$lib/components/SEO.svelte';
   
   let isWaitlistOpen = false;
   
@@ -8,13 +9,10 @@
   }
 </script>
 
-<svelte:head>
-  <title>PolicyForge - Cybersecurity Policies in Minutes, Not Weeks - Thiru AI Labs</title>
-  <meta 
-    name="description" 
-    content="Generate compliant cybersecurity policies in minutes instead of weeks. Answer 15–20 questions about your tech stack, get framework-aligned policies ready for audit submission. No expensive consulting. Insurance renewal ready." 
-  />
-</svelte:head>
+<SEO
+  title="PolicyForge - Cybersecurity Policies in Minutes, Not Weeks"
+  description="Generate compliant cybersecurity policies in minutes instead of weeks. Answer 15–20 questions about your tech stack, get framework-aligned policies ready for audit submission. No expensive consulting. Insurance renewal ready."
+/>
 
 <WaitlistModal bind:isOpen={isWaitlistOpen} productName="PolicyForge" productId="policyforge" />
 

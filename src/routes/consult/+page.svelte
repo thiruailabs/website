@@ -1,10 +1,11 @@
 <script>
+import SEO from '$lib/components/SEO.svelte';
 </script>
 
-<svelte:head>
-	<title>Consulting - Thiru AI Labs</title>
-	<meta name="description" content="Need help shipping agentic AI systems? We help teams design, build, and deploy production-grade LangGraph agents." />
-</svelte:head>
+<SEO
+	title="Consulting"
+	description="Need help shipping agentic AI systems? We help teams design, build, and deploy production-grade LangGraph agents."
+/>
 
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 	<header class="mb-12">

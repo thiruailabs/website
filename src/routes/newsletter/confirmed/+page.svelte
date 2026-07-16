@@ -1,10 +1,12 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
+  import SEO from "$lib/components/SEO.svelte";
 </script>
 
-<svelte:head>
-  <title>Email Confirmed | Thiru AI Labs</title>
-</svelte:head>
+<SEO
+  title="Email Confirmed"
+  description="Your email has been confirmed. Welcome to the Thiru AI Labs newsletter."
+/>
 
 <div class="mx-auto max-w-2xl px-6 py-24 text-center">
   <div class="mb-8">

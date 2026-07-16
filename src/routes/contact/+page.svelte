@@ -1,6 +1,11 @@
-<svelte:head>
-	<title>Contact - Thiru AI Labs</title>
-</svelte:head>
+<script>
+import SEO from '$lib/components/SEO.svelte';
+</script>
+
+<SEO
+	title="Contact"
+	description="Get in touch with Thiru AI Labs for inquiries about products, consulting, partnerships, or general questions."
+/>
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 	<div class="max-w-2xl mx-auto">

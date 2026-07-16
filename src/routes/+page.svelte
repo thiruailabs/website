@@ -2,15 +2,17 @@
 	import AboutTheFounder from "$lib/components/AboutTheFounder.svelte";
 	import WhySoloStudio from "$lib/components/WhySoloStudio.svelte";
 	import ProductCard from "$lib/components/ProductCard.svelte";
+	import SEO from "$lib/components/SEO.svelte";
 	import { getFeaturedProducts } from "$lib/config/products";
 	import type { Product } from "$lib/config/products";
 
 	const featuredProducts: Product[] = getFeaturedProducts(4);
 </script>
 
-<svelte:head>
-	<title>Thiru AI Labs - AI Systems Studio</title>
-</svelte:head>
+<SEO
+	title="Thiru AI Labs - AI Systems Studio"
+	description="A solo AI systems studio building production-grade, agentic AI SaaS products and bespoke systems — secure, data-isolated, reliable, and production-grade."
+/>
 
 <!-- Hero Section - Unified Corporate Design -->
 <section class="relative min-h-[65vh] flex items-center justify-center overflow-hidden bg-white dark:bg-neutral-950 py-16 lg:py-24">

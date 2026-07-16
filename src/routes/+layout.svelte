@@ -3,6 +3,7 @@
 	const favicon = "/logo-icon.png";
 	import { page } from '$app/stores';
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
+	import SEO from '$lib/components/SEO.svelte';
 	import { theme } from '$lib/stores/theme';
 	import { onMount } from 'svelte';
 	import { slide } from 'svelte/transition';
@@ -24,11 +25,7 @@
 	});
 </script>
 
-<svelte:head>
-	<link rel="icon" href={favicon} />
-	<title>Thiru AI Labs</title>
-	<meta name="description" content="A solo AI systems studio building production-grade, agentic AI systems and SaaS products." />
-</svelte:head>
+<SEO />
 
 <div class="min-h-screen flex flex-col bg-neutral-50 dark:bg-neutral-900">
 	<header class="sticky top-0 z-50 bg-neutral-50/90 dark:bg-neutral-900/90 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800">
