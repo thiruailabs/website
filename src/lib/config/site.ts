@@ -15,7 +15,7 @@ export const siteConfig = {
 		github: "https://github.com/thiruailabs",
 		linkedin: "https://linkedin.com/in/nick-thiru",
 	},
-	defaultImage: "/logo-icon.png",
+	defaultImage: "/static/logo-icon.png",
 } as const;
 
 export type SiteConfig = typeof siteConfig;
