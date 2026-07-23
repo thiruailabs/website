@@ -1,4 +1,4 @@
-export type ProductStatus = 'Building' | 'Idea' | 'Launched' | 'Platform Vision';
+export type ProductStatus = 'Building' | 'Idea' | 'Launched' | 'Suite Vision';
 
 export interface Product {
 	id: string;
@@ -51,11 +51,11 @@ export const products: Product[] = [
 	}
 ];
 
-// SecureStack platform vision - not a standalone product, but a roadmap card
-export interface PlatformVision {
+// SecureStack suite vision - not a standalone product, but a roadmap card
+export interface SuiteVision {
 	id: string;
 	title: string;
-	status: 'Platform Vision';
+	status: 'Suite Vision';
 	statusBg: string;
 	statusText: string;
 	description: string;
@@ -73,13 +73,13 @@ export interface PlatformVision {
 	timelineNote: string;
 }
 
-export const secureStackVision: PlatformVision = {
+export const secureStackVision: SuiteVision = {
 	id: 'secure_stack',
 	title: 'SecureStack',
-	status: 'Platform Vision',
+	status: 'Suite Vision',
 	statusBg: 'bg-[#202020] dark:bg-neutral-700',
 	statusText: 'text-white',
-	description: 'A modular AI-native cybersecurity compliance platform for SMBs and the defense industry supply chain at large. Each product reinforces the others, building a coherent story: <strong>"We assessed our gaps, generated policies, scanned our codebase for crypto vulnerabilities, and had everything organized for our auditor in 4 weeks — using one integrated platform."</strong>',
+	description: 'A modular AI-native cybersecurity compliance suite of products for regulated SMBs and the defense industry supply chain at large. Each product reinforces the others, building a coherent story: <strong>"We assessed our gaps, generated policies, scanned our codebase for crypto vulnerabilities, and had everything organized for our auditor in 4 weeks — using one integrated suite."</strong>',
 	phases: [
 		{
 			number: 1,
@@ -107,7 +107,7 @@ export const secureStackVision: PlatformVision = {
 		},
 		{
 			number: 3,
-			title: 'Phase 3: Platform Expansion (Q2 2027)',
+			title: 'Phase 3: Suite Expansion (Q2 2027)',
 			items: [
 				{
 					name: 'ThreatBrief',
@@ -120,7 +120,7 @@ export const secureStackVision: PlatformVision = {
 			]
 		}
 	],
-	strategicFit: 'Designed for cybersecurity-regulated SMBs (healthcare, fintech, defense tech, SaaS) and National Department of Defence-adjacent partners. Each product solves a specific bottleneck; together they form a complete security + compliance platform that competes with Drata, Vanta, and enterprise GRC tools — but at SMB pricing and speed.',
+	strategicFit: 'Designed for cybersecurity-regulated SMBs (healthcare, fintech, defense tech, SaaS) and National Department of Defence-adjacent partners. Each product solves a specific bottleneck; together they form a complete security + compliance suite that competes with Drata, Vanta, and enterprise GRC tools — but at SMB pricing and speed.',
 	differentiator: 'Built by a founder shipping modern UX instead of enterprise bloat. Every recommendation is auditable and cited — not black-box scoring. Developed transparently in public so you see exactly what you\'re getting.',
 	timeline: 'PolicyForge (Q3 2026) → CipherScan (Q4 2026) → ComplianceQ (Q1 2027)',
 	timelineNote: 'ThreatBrief & VendorShield follow based on customer feedback and market response.'

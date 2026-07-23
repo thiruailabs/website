@@ -117,7 +117,7 @@
 		
 		<div class="grid md:grid-cols-1 gap-6 items-stretch">
 			
-			<!-- SecureStack Platform -->
+			<!-- SecureStack Suite -->
 			<ProductCard 
 				title={secureStackVision.title}
 				status={secureStackVision.status}
