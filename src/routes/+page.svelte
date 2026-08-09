@@ -30,7 +30,7 @@
 
 		<!-- Main Value Prop as H1 -->
 		<h1 class="text-lg md:text-xl lg:text-2xl text-neutral-700 dark:text-neutral-300 max-w-3xl mx-auto mb-12 leading-snug font-light tracking-tight">
-			A solo AI systems studio building full-stack, agentic AI SaaS products and bespoke systems — secure, data-isolated, reliable, and production-grade — for the real world.
+			A solo AI systems studio building full-stack AI SaaS products and bespoke systems — secure, data-isolated, reliable, and production-grade — for the real world.
 		</h1>
 
 		<!-- Secondary Links -->
