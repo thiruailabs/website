@@ -119,7 +119,7 @@
 				</div>
 				
 				<div class="bg-white border dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 rounded-lg p-6 border-l-4 border-l-brand-dark dark:border-l-neutral-100">
-					<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Purpose-Built Agents</h3>
+					<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Purpose-Built AI Applications</h3>
 					<p class="text-neutral-600 dark:text-neutral-400">
 						Developing specialized AI for specific tasks, not generic chatbots that try to do everything. Each application executes its designated goal exceptionally well.
 					</p>
