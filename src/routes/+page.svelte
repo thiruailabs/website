@@ -144,7 +144,7 @@
 						</svg>
 					</div>
 					<h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">AI & LLMs</h3>
-					<p class="text-sm text-neutral-600 dark:text-neutral-400 mb-3">OpenAI GPT-4, Claude, LangChain, LangGraph for agentic AI workflows</p>
+					<p class="text-sm text-neutral-600 dark:text-neutral-400 mb-3">OpenAI GPT, Claude, LangChain, LangGraph for agentic AI workflows</p>
 				</div>
 
 				<div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg p-6 text-center">

@@ -173,7 +173,7 @@ Body: { "event": "listAddition", "list_id": 123, "email": "user@example.com" }
 2. Parse payload, extract event type
 3. Only process `list_addition` events for the `newsletter_subs` list
 4. Fetch contact to read boolean attributes (webhook payload doesn't include them)
-5. Check which waitlist boolean attributes are set (`WAITLIST_OPSPILOT`, `WAITLIST_SOCIAL_ENGAGEMENT_RADAR`, `WAITLIST_POLICYFORGE`)
+5. Check which waitlist boolean attributes are set (`WAITLIST_OPSPILOT`, `WAITLIST_SOCIAL_ENGAGEMENT_RADAR`, `WAITLIST_POLICYFORGE`, `WAITLIST_GOVCON_LEADS_RADAR`)
 6. If waitlists are pending:
    - Add contact to each product's waitlist list
    - Send consolidated waitlist email with `{% if %}` conditionals for each product
@@ -230,6 +230,7 @@ Defines product IDs, Brevo boolean attribute names, and display labels.
 | `ops_pilot`               | `WAITLIST_OPSPILOT`                |
 | `social_engagement_radar` | `WAITLIST_SOCIAL_ENGAGEMENT_RADAR` |
 | `policyforge`             | `WAITLIST_POLICYFORGE`             |
+| `govcon_leads_radar`      | `WAITLIST_GOVCON_LEADS_RADAR`      |
 
 **Product Labels:**
 
@@ -238,6 +239,7 @@ Defines product IDs, Brevo boolean attribute names, and display labels.
 | `ops_pilot`               | OpsPilot                |
 | `social_engagement_radar` | Social Engagement Radar |
 | `policyforge`             | PolicyForge             |
+| `govcon_leads_radar`      | GovCon Leads Radar      |
 
 **Utility Functions:**
 
@@ -278,6 +280,7 @@ export const BREVO_TEMPLATE_IDS = {
 | `WAITLIST_OPSPILOT`                | boolean | User joined OpsPilot waitlist                |
 | `WAITLIST_SOCIAL_ENGAGEMENT_RADAR` | boolean | User joined Social Engagement Radar waitlist |
 | `WAITLIST_POLICYFORGE`             | boolean | User joined PolicyForge waitlist             |
+| `WAITLIST_GOVCON_LEADS_RADAR`      | boolean | User joined GovCon Leads Radar waitlist      |
 
 **Important:** Boolean attributes are used instead of multiple-choice attributes because Brevo's template language cannot render multiple-choice attribute values in email templates.
 
@@ -305,7 +308,7 @@ export const BREVO_TEMPLATE_IDS = {
 - **Trigger:** Used for **both** scenarios:
   1. Webhook handler when user confirms DOI (has pending waitlist joins)
   2. API call when confirmed user joins a waitlist (immediate)
-- **Variables:** `{{params.first_name}}`, `{{params.joined_ops_pilot}}`, `{{params.joined_social_engagement_radar}}`, `{{params.joined_policyforge}}`
+- **Variables:** `{{params.first_name}}`, `{{params.joined_ops_pilot}}`, `{{params.joined_social_engagement_radar}}`, `{{params.joined_policyforge}}`, `{{params.joined_govcon_leads_radar}}`
 - **Template syntax:** Uses `{% if %}` conditionals to display only joined products
 
 ```html
@@ -315,6 +318,7 @@ You've been added to the waitlist for:
 {% if params.joined_ops_pilot %}• OpsPilot{% endif %}
 {% if params.joined_social_engagement_radar %}• Social Engagement Radar{% endif %}
 {% if params.joined_policyforge %}• PolicyForge{% endif %}
+{% if params.joined_govcon_leads_radar %}• GovCon Leads Radar{% endif %}
 
 We'll notify you as soon as we launch!
 
@@ -429,12 +433,14 @@ When skipped, the script outputs placeholder IDs (`0`) — you'll need to manual
 🆕 Created attribute "WAITLIST_OPSPILOT" (boolean)
 🆕 Created attribute "WAITLIST_SOCIAL_ENGAGEMENT_RADAR" (boolean)
 🆕 Created attribute "WAITLIST_POLICYFORGE" (boolean)
+🆕 Created attribute "WAITLIST_GOVCON_LEADS_RADAR" (boolean)
 
 ─── Lists ───
 🆕 Created list "Newsletter Subscribers" (ID: 123)
 🆕 Created list "OpsPilot Waitlist" (ID: 124)
 🆕 Created list "Social Engagement Radar Waitlist" (ID: 125)
 🆕 Created list "PolicyForge Waitlist" (ID: 126)
+🆕 Created list "GovCon Leads Radar Waitlist" (ID: 127)
 
 ─── Email Templates ───
 🆕 Created template "Newsletter Verify" (ID: 1)
@@ -467,7 +473,7 @@ export const BREVO_TEMPLATE_IDS = { ... } as const;
 ─── Contact Attributes ───
 ⚠️  Attribute creation skipped (CREATE_ATTRIBUTES=false)
    Manually create attributes in Brevo dashboard:
-   WAITLIST_OPSPILOT, WAITLIST_SOCIAL_ENGAGEMENT_RADAR, WAITLIST_POLICYFORGE (boolean type)
+   WAITLIST_OPSPILOT, WAITLIST_SOCIAL_ENGAGEMENT_RADAR, WAITLIST_POLICYFORGE, WAITLIST_GOVCON_LEADS_RADAR (boolean type)
 ```
 
 **Output example (with CREATE_LISTS=false):**
@@ -483,7 +489,8 @@ export const BREVO_LIST_IDS = {
   "newsletter_subs": 0,
   "waitlist_ops_pilot": 0,
   "waitlist_social_engagement_radar": 0,
-  "waitlist_policyforge": 0
+  "waitlist_policyforge": 0,
+  "waitlist_govcon_leads_radar": 0
 } as const;
 ```
 

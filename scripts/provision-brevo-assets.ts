@@ -65,6 +65,7 @@ const LIST_DEFINITIONS = [
   { name: "OpsPilot Waitlist", key: "waitlist_ops_pilot" },
   { name: "Social Engagement Radar Waitlist", key: "waitlist_social_engagement_radar" },
   { name: "PolicyForge Waitlist", key: "waitlist_policyforge" },
+  { name: "GovCon Leads Radar Waitlist", key: "waitlist_govcon_leads_radar" },
 ];
 
 // ─── Attribute Definitions ──────────────────────────────────────────────────
@@ -72,6 +73,7 @@ const ATTRIBUTE_DEFINITIONS = [
   "WAITLIST_OPSPILOT",
   "WAITLIST_SOCIAL_ENGAGEMENT_RADAR",
   "WAITLIST_POLICYFORGE",
+  "WAITLIST_GOVCON_LEADS_RADAR",
   "WELCOME_SENT",
 ];
 
@@ -125,7 +127,7 @@ async function provisionAttributes() {
   if (!CREATE_ATTRIBUTES) {
     console.log("⚠️  Attribute creation skipped (CREATE_ATTRIBUTES=false)");
     console.log("   Manually create attributes in Brevo dashboard:");
-    console.log("   WAITLIST_OPSPILOT, WAITLIST_SOCIAL_ENGAGEMENT_RADAR, WAITLIST_POLICYFORGE (boolean type)");
+    console.log("   WAITLIST_OPSPILOT, WAITLIST_SOCIAL_ENGAGEMENT_RADAR, WAITLIST_POLICYFORGE, WAITLIST_GOVCON_LEADS_RADAR (boolean type)");
     return;
   }
 
@@ -160,6 +162,7 @@ async function provisionLists(): Promise<Record<string, number>> {
       waitlist_ops_pilot: 0,
       waitlist_social_engagement_radar: 0,
       waitlist_policyforge: 0,
+      waitlist_govcon_leads_radar: 0,
     };
   }
 

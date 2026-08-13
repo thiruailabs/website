@@ -10,6 +10,7 @@ export const PRODUCT_ATTR_MAP = {
   ops_pilot: "WAITLIST_OPSPILOT",
   social_engagement_radar: "WAITLIST_SOCIAL_ENGAGEMENT_RADAR",
   policyforge: "WAITLIST_POLICYFORGE",
+  govcon_leads_radar: "WAITLIST_GOVCON_LEADS_RADAR",
 } as const;
 
 /**
@@ -19,6 +20,7 @@ export const PRODUCT_LABELS: Record<string, string> = {
   ops_pilot: "OpsPilot",
   social_engagement_radar: "Social Engagement Radar",
   policyforge: "PolicyForge",
+  govcon_leads_radar: "GovCon Leads Radar",
 } as const;
 
 /**

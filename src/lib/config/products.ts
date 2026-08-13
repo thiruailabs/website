@@ -39,6 +39,17 @@ export const products: Product[] = [
 		featured: true
 	},
 	{
+		id: 'govcon_leads_radar',
+		slug: 'govcon-leads-radar',
+		title: 'GovCon Leads Radar',
+		status: 'Building',
+		shortDescription: 'Turn raw USA federal contracting data into ranked, actionable lead lists. AI-driven tiering of USAspending.gov prospects, automated SAM.gov cross-referencing for compliance flags and POC data.',
+		targetAudience: 'GovCon sales/BD teams, compliance vendors, IT/engineering service providers, and any entity selling to the U.S. government',
+		waitlistId: 'govcon_leads_radar',
+		order: 4,
+		featured: true
+	},
+	{
 		id: 'policyforge',
 		slug: 'policy-forge',
 		title: 'PolicyForge',
