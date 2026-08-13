@@ -556,6 +556,11 @@ export const BREVO_TEMPLATE_IDS = {
 
 ### Step 4: Configure Brevo Webhook
 
+> **Important: The production webhook URL (`https://www.thiruailabs.com/api/brevo/webhook`) points to your deployed production site.**
+> Any changes to the webhook code (`src/routes/api/brevo/webhook/+server.ts`) must be deployed to production before they take effect.
+> If you add a new product and update the webhook code locally but don't deploy, the production webhook will not recognize the new product's boolean attribute,
+> and waitlist join emails will not be sent for that product. Always deploy after updating the webhook code.
+
 **Two-Webhook Architecture:**
 
 Both thiru-ai-labs and nickthiru.dev share the same `newsletter_subs` list (ID 11). Each project has its own webhook configured in Brevo:
@@ -627,5 +632,19 @@ The provisioning script creates templates with placeholder HTML. To update with 
 | [`src/lib/config/brevo-email-templates.ts`](../src/lib/config/brevo-email-templates.ts) | Brevo template IDs               |
 | [`src/lib/components/WaitlistModal.svelte`](../src/lib/components/WaitlistModal.svelte) | Waitlist signup modal            |
 | [`scripts/provision-brevo-assets.ts`](../scripts/provision-brevo-assets.ts)             | One-time provisioning script     |
-| [`.env.example`](../.env.example)                                                       | Environment variable template    |
-| [`plans/brevo/migration-plan.md`](../../plans/brevo/migration-plan.md)                  | Full migration plan              |
+
+## Adding a New Product
+
+When adding a new product to the waitlist system, you must update **all** of the following:
+
+1. **`src/lib/config/waitlists.ts`** — Add product ID to `PRODUCT_ATTR_MAP` and `PRODUCT_LABELS`
+2. **`src/lib/config/brevo-lists.ts`** — Add `waitlist_<product_id>` entry (with placeholder `0` until list is created)
+3. **`src/routes/api/brevo/webhook/+server.ts`** — Add hardcoded `if` check for the new boolean attribute in three places:
+   - Waitlist detection (push to `joinedWaitlists` array)
+   - Add contact to product waitlist list
+   - Email template params (`joined_<product_id>`)
+4. **`scripts/provision-brevo-assets.ts`** — Add product to `LIST_DEFINITIONS` and `ATTRIBUTE_DEFINITIONS`
+5. **Brevo dashboard** — Create the boolean contact attribute and waitlist list, then update the email template with the `{% if %}` conditional
+6. **Deploy to production** — The webhook endpoint runs on your production server, so local code changes won't take effect until deployed
+   | [`.env.example`](../.env.example) | Environment variable template |
+   | [`plans/brevo/migration-plan.md`](../../plans/brevo/migration-plan.md) | Full migration plan |
