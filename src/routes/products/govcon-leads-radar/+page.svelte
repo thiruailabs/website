@@ -26,7 +26,7 @@
 		<p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed mb-8">
 			Every company selling to the U.S. government can identify their best-fit prospects in minutes instead of hours. 
 			GovCon Leads Radar turns raw federal contracting data into a ranked, actionable lead list. AI-driven tiering,
-			automated SAM.gov cross-referencing, compliance flags, and POC data, all in one dashboard. Free your sales team
+			automated SAM.gov cross-referencing, compliance flags, and point-of-contact (POC) data, all in one dashboard. Free your sales team
 			to close deals instead of cross-referencing public data.
 		</p>
 	</div>
