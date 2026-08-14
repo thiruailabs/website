@@ -7,7 +7,11 @@
 	import { theme } from '$lib/stores/theme';
 	import { onMount } from 'svelte';
 	import { slide } from 'svelte/transition';
-	
+	import { dev } from '$app/environment';
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+
+	injectAnalytics({ mode: dev ? 'development' : 'production' });
+
 	let { children } = $props();
 
 	let mobileMenuOpen = $state(false);
