@@ -10,7 +10,16 @@
 	import { dev } from '$app/environment';
 	import { injectAnalytics } from '@vercel/analytics/sveltekit';
 
-	injectAnalytics({ mode: dev ? 'development' : 'production' });
+	injectAnalytics({ 
+		mode: dev ? 'development' : 'production',
+		beforeSend: (event) => {
+			// Check if the current browser environment has the ignore flag set
+			if (typeof window !== 'undefined' && localStorage.getItem('ignore_me') === 'true') {
+				return null; // Returning null drops the analytic tracking event entirely
+			}
+			return event;
+		}
+	});
 
 	let { children } = $props();
 
